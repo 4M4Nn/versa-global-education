@@ -1,41 +1,30 @@
-﻿import { siteConfig } from "@/lib/data"
+"use client"
+import { siteConfig, services } from "@/lib/data"
 export default function Footer() {
   return (
-    <footer className="bg-[#1B2A4A] py-12 px-6">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+    <footer className="bg-[#0A1628] pt-16 pb-8">
+      <div className="max-w-6xl mx-auto px-6 md:px-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
           <div>
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-full bg-[#C9A84C] flex items-center justify-center">
-                <span className="text-white font-bold text-xs">VG</span>
-              </div>
-              <div>
-                <p className="font-playfair text-white font-bold">Versa Global</p>
-                <p className="text-[#C9A84C] text-xs">Study Abroad Consultancy</p>
-              </div>
-            </div>
-            <p className="text-blue-200 text-sm">Your trusted partner for overseas education in 60+ countries.</p>
+            <p className="font-playfair font-bold text-xl text-white mb-3">VERSA <span className="text-[#C49A2E] italic">Global</span></p>
+            <p className="text-white/40 text-sm font-inter leading-relaxed">Your international trade partner. Part of Versa Growth Ventures.</p>
           </div>
           <div>
-            <h4 className="text-[#C9A84C] font-semibold mb-4 text-sm uppercase tracking-wider">Destinations</h4>
-            <div className="grid grid-cols-2 gap-1 text-blue-200 text-sm">
-              {["United Kingdom", "United States", "Canada", "Australia", "Germany", "Dubai"].map((d) => (
-                <span key={d}>{d}</span>
-              ))}
-            </div>
+            <p className="label text-[#C49A2E] mb-4">Services</p>
+            <ul className="space-y-2">{services.map(s => <li key={s.id}><a href="#services" className="text-sm text-white/40 hover:text-white transition-colors font-inter">{s.short}</a></li>)}</ul>
           </div>
           <div>
-            <h4 className="text-[#C9A84C] font-semibold mb-4 text-sm uppercase tracking-wider">Contact</h4>
-            <div className="flex flex-col gap-2 text-blue-200 text-sm">
-              <span>{siteConfig.phone}</span>
-              <span>{siteConfig.email}</span>
-              <span>{siteConfig.address}</span>
-            </div>
+            <p className="label text-[#C49A2E] mb-4">Quick Links</p>
+            <ul className="space-y-2">{[["Countries","#countries"],["Testimonials","#testimonials"],["Contact","#contact"]].map(([l,h]) => <li key={l}><a href={h} className="text-sm text-white/40 hover:text-white transition-colors font-inter">{l}</a></li>)}</ul>
+          </div>
+          <div>
+            <p className="label text-[#C49A2E] mb-4">Contact</p>
+            <ul className="space-y-2 text-sm text-white/40 font-inter"><li>{siteConfig.phone}</li><li>{siteConfig.email}</li><li>{siteConfig.location}</li></ul>
           </div>
         </div>
-        <div className="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-blue-200 text-sm">© {new Date().getFullYear()} Versa Global · A Versa Growth Ventures Company</p>
-          <p className="text-blue-200 text-sm">Built by <span className="text-[#C9A84C]">Loopgen Technologies</span></p>
+        <div className="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between gap-2">
+          <p className="text-xs text-white/20 font-inter">© {new Date().getFullYear()} Versa Global | Part of Versa Growth Ventures</p>
+          <p className="text-xs text-white/20 font-inter">Designed by Loopgen Technologies</p>
         </div>
       </div>
     </footer>

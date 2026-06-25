@@ -1,23 +1,27 @@
-import type { Metadata } from "next"
-import OpeningAnimation from "@/components/sections/OpeningAnimation"
-import Hero from "@/components/sections/Hero"
-import Stats from "@/components/sections/Stats"
-import Destinations from "@/components/sections/Destinations"
-import GlobalContact from "@/components/sections/GlobalContact"
-
-export const metadata: Metadata = {
-  title: "Versa Global Education — Study Abroad Consultancy Kerala",
-  description: "Expert study abroad guidance from Kerala. 60+ countries, 500+ universities, 95% visa success rate. Free consultation.",
-}
+import LoadingScreen from "@/components/loading/LoadingScreen"
+import HeroSection from "@/components/sections/HeroSection"
+import NumbersSection from "@/components/sections/NumbersSection"
+import ServicesSection from "@/components/sections/ServicesSection"
+import StatementSection from "@/components/sections/StatementSection"
+import CountriesSection from "@/components/sections/CountriesSection"
+import TestimonialsSection from "@/components/sections/TestimonialsSection"
+import ContactSection from "@/components/sections/ContactSection"
+import MobileStickyBar from "@/components/ui/MobileStickyBar"
 
 export default function HomePage() {
   return (
-    <main>
-      <OpeningAnimation />
-      <Hero />
-      <Stats />
-      <Destinations />
-      <GlobalContact />
-    </main>
+    <>
+      <LoadingScreen />
+      <main>
+        <HeroSection />
+        <NumbersSection />
+        <ServicesSection />
+        <StatementSection />
+        <CountriesSection />
+        <TestimonialsSection />
+        <ContactSection />
+      </main>
+      <MobileStickyBar />
+    </>
   )
 }

@@ -1,31 +1,31 @@
 import type { Metadata } from "next"
-import { Inter, Playfair_Display } from "next/font/google"
+import { Playfair_Display, Inter } from "next/font/google"
 import "./globals.css"
+import LenisProvider from "@/components/providers/LenisProvider"
 import Navbar from "@/components/layout/Navbar"
 import Footer from "@/components/layout/Footer"
-import CustomCursor from "@/components/CustomCursor"
-import FloatingWhatsApp from "@/components/FloatingWhatsApp"
-import MobileStickyCTA from "@/components/MobileStickyCTA"
+import FloatingWhatsApp from "@/components/layout/FloatingWhatsApp"
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
-const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" })
+const playfair = Playfair_Display({ subsets: ["latin"], weight: ["400","500","600","700","800"], variable: "--font-playfair", display: "swap" })
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" })
 
 export const metadata: Metadata = {
-  title: "Versa Global Education — Study Abroad Consultancy Kerala",
-  description: "Your dream university in 60+ countries. Expert study abroad guidance from Kerala. 500+ universities, 95% visa success rate.",
-  keywords: ["study abroad Kerala", "overseas education consultancy Kochi", "university admission India", "Versa Global"],
+  title: "Versa Global — International Trade & Export-Import Consultancy Kerala",
+  description: "Kerala's trusted export-import consultancy. 60+ countries. ₹50Cr+ trade facilitated. Import consulting, export management, logistics and compliance.",
+  keywords: ["export import consultancy Kerala", "Versa Global", "international trade Kochi", "import consulting India", "export management Kerala"],
+  openGraph: { title: "Versa Global — International Trade Consultancy", description: "60+ countries. Complete import-export solutions.", type: "website" },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
-      <body className="bg-white text-[#1B2A4A] antialiased">
-        <CustomCursor />
-        <Navbar />
-        {children}
-        <Footer />
-        <FloatingWhatsApp />
-        <MobileStickyCTA />
+    <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
+      <body className="bg-[#FAFBFF] text-[#0A1628] overflow-x-hidden">
+        <LenisProvider>
+          <Navbar />
+          {children}
+          <Footer />
+          <FloatingWhatsApp />
+        </LenisProvider>
       </body>
     </html>
   )
