@@ -5,12 +5,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        bg: "#FAFBFF", navy: "#0A1628", "navy-light": "#1E3A5F",
-        gold: "#C49A2E", "gold-light": "#E8B84B",
-        "text-dark": "#0A1628", "text-muted": "#4A5568",
+        bg: "#F8F6F0", navy: "#1B2A4A", "navy-dark": "#0F1A2E",
+        gold: "#C9A84C", "gold-light": "#E8C96A",
+        "text-dark": "#1B2A4A", "text-muted": "#6B7280",
       },
       fontFamily: {
-        playfair: ["var(--font-playfair)", "serif"],
+        cormorant: ["var(--font-cormorant)", "serif"],
         inter: ["var(--font-inter)", "sans-serif"],
       },
     },

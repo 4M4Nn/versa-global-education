@@ -1,30 +1,33 @@
 import type { Metadata } from "next"
-import { Playfair_Display, Inter } from "next/font/google"
+import { Cormorant_Garamond, Inter } from "next/font/google"
 import "./globals.css"
-import LenisProvider from "@/components/providers/LenisProvider"
 import Navbar from "@/components/layout/Navbar"
 import Footer from "@/components/layout/Footer"
 import FloatingWhatsApp from "@/components/layout/FloatingWhatsApp"
+import MobileStickyBar from "@/components/ui/MobileStickyBar"
+import LenisProvider from "@/components/providers/LenisProvider"
 
-const playfair = Playfair_Display({ subsets: ["latin"], weight: ["400","500","600","700","800"], variable: "--font-playfair", display: "swap" })
+const cormorant = Cormorant_Garamond({ subsets: ["latin"], weight: ["400","500","600","700"], variable: "--font-cormorant", display: "swap" })
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" })
 
 export const metadata: Metadata = {
-  title: "Versa Global — International Trade & Export-Import Consultancy Kerala",
-  description: "Kerala's trusted export-import consultancy. 60+ countries. ₹50Cr+ trade facilitated. Import consulting, export management, logistics and compliance.",
-  keywords: ["export import consultancy Kerala", "Versa Global", "international trade Kochi", "import consulting India", "export management Kerala"],
-  openGraph: { title: "Versa Global — International Trade Consultancy", description: "60+ countries. Complete import-export solutions.", type: "website" },
+  title: { default: "Versa Global — Study Abroad Consultancy Kerala | 60+ Countries", template: "%s | Versa Global" },
+  description: "Kerala's trusted study abroad consultancy. 1,000+ students placed in 60+ countries with 95% visa success rate. UK, Canada, Australia, Germany, USA, Ireland, and more.",
+  keywords: ["study abroad Kerala", "study in UK from Kerala", "Canada study visa", "Germany free education", "Australia student visa Kerala"],
+  openGraph: { type: "website", locale: "en_IN", siteName: "Versa Global" },
+  robots: { index: true, follow: true },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
-      <body className="bg-[#FAFBFF] text-[#0A1628] overflow-x-hidden">
+    <html lang="en" className={`${cormorant.variable} ${inter.variable}`}>
+      <body className="bg-[#F8F6F0] font-inter antialiased">
         <LenisProvider>
           <Navbar />
-          {children}
+          <main>{children}</main>
           <Footer />
           <FloatingWhatsApp />
+          <MobileStickyBar />
         </LenisProvider>
       </body>
     </html>

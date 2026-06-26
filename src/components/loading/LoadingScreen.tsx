@@ -1,138 +1,68 @@
 "use client"
 import { useEffect, useState } from "react"
 
+const COUNTRIES = ["🇬🇧","🇨🇦","🇦🇺","🇩🇪","🇺🇸","🇮🇪","🇳🇿","🇦🇪"]
+
 export default function LoadingScreen({ onDone }: { onDone?: () => void }) {
-  const [visible, setVisible] = useState(true)
   const [phase, setPhase] = useState(0)
+  const [visible, setVisible] = useState(true)
   const [done, setDone] = useState(false)
 
   useEffect(() => {
-    if (typeof window !== "undefined" && sessionStorage.getItem("global-intro-done")) {
-      if (onDone) onDone(); setDone(true); return
+    if (typeof window !== "undefined" && sessionStorage.getItem("global-intro")) {
+      onDone?.(); setDone(true); return
     }
     const t1 = setTimeout(() => setPhase(1), 300)
     const t2 = setTimeout(() => setPhase(2), 1000)
     const t3 = setTimeout(() => setPhase(3), 1800)
-    const t4 = setTimeout(() => {
+    const t4 = setTimeout(() => setPhase(4), 2600)
+    const t5 = setTimeout(() => {
       setVisible(false)
-      setTimeout(() => {
-        sessionStorage.setItem("global-intro-done", "1")
-        if (onDone) onDone()
-        setDone(true)
-      }, 500)
-    }, 3500)
-    return () => { clearTimeout(t1); clearTimeout(t2); clearTimeout(t3); clearTimeout(t4) }
+      setTimeout(() => { sessionStorage.setItem("global-intro","1"); onDone?.(); setDone(true) }, 700)
+    }, 3400)
+    return () => [t1,t2,t3,t4,t5].forEach(clearTimeout)
   }, [onDone])
 
   if (done) return null
 
-  const pins = [
-    { top: "38%", left: "52%", label: "Delhi" },
-    { top: "42%", left: "55%", label: "Kochi" },
-    { top: "30%", left: "72%", label: "Beijing" },
-    { top: "35%", left: "25%", label: "London" },
-    { top: "38%", left: "18%", label: "New York" },
-  ]
-
-  const letters = "VERSA GLOBAL".split("")
-
   return (
-    <div
-      style={{
-        position: "fixed", inset: 0, background: "#0A1628", zIndex: 9999,
-        overflow: "hidden", transition: "opacity 0.5s", opacity: visible ? 1 : 0,
-        display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center",
-      }}
-    >
-      {/* World map SVG outline */}
-      <div
-        style={{
-          position: "absolute", inset: 0, display: "flex",
-          alignItems: "center", justifyContent: "center",
-          opacity: phase >= 1 ? 1 : 0, transition: "opacity 0.6s",
-        }}
-      >
-        <svg viewBox="0 0 800 400" style={{ width: "80%", maxWidth: 700, opacity: 0.3 }}>
-          <path
-            d="M80,120 Q120,100 160,110 Q200,90 240,100 Q280,80 320,90 Q360,70 400,80 Q440,70 480,85 Q520,75 560,90 Q600,80 640,95 Q680,85 720,100 L720,180 Q680,200 640,190 Q600,200 560,185 Q520,195 480,180 Q440,190 400,175 Q360,185 320,170 Q280,180 240,165 Q200,175 160,160 Q120,170 80,155 Z"
-            fill="none" stroke="#10B981" strokeWidth="1.5"
-            style={{ strokeDasharray: 2000, strokeDashoffset: phase >= 1 ? 0 : 2000, transition: "stroke-dashoffset 2s ease" }}
-          />
-          <path
-            d="M180,180 Q200,170 220,175 Q240,165 260,172 L260,220 Q240,230 220,225 Q200,232 180,225 Z"
-            fill="none" stroke="#10B981" strokeWidth="1"
-            style={{ strokeDasharray: 500, strokeDashoffset: phase >= 1 ? 0 : 500, transition: "stroke-dashoffset 2s ease 0.3s" }}
-          />
-          <path
-            d="M400,200 Q420,185 450,190 Q480,180 510,195 Q540,185 560,200 L560,250 Q540,260 510,255 Q480,265 450,255 Q420,262 400,255 Z"
-            fill="none" stroke="#10B981" strokeWidth="1"
-            style={{ strokeDasharray: 600, strokeDashoffset: phase >= 1 ? 0 : 600, transition: "stroke-dashoffset 2s ease 0.5s" }}
-          />
-        </svg>
-        {/* Location pins */}
-        {pins.map((pin, i) => (
-          <div
-            key={i}
-            style={{
-              position: "absolute", top: pin.top, left: pin.left,
-              transform: "translate(-50%,-50%)",
-              opacity: phase >= 2 ? 1 : 0, transition: `opacity 0.4s ${i * 0.15}s`,
-            }}
-          >
-            <div
-              style={{
-                width: 10, height: 10, borderRadius: "50%",
-                background: "#10B981", boxShadow: "0 0 15px #10B981",
-                animation: "mapPulse 2s ease-in-out infinite",
-              }}
-            />
-          </div>
+    <div style={{
+      position:"fixed",inset:0,background:"#F8F6F0",zIndex:9999,
+      display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",
+      transition:"opacity 0.7s ease",opacity:visible?1:0
+    }}>
+      {/* SVG world arc */}
+      <svg width="280" height="80" viewBox="0 0 280 80" style={{ opacity: phase>=1?1:0, transition:"opacity 0.5s" }}>
+        <path d="M 20 60 Q 140 10 260 60" stroke="#C9A84C" strokeWidth="2" fill="none"
+          strokeDasharray="320" strokeDashoffset={phase>=2?0:320}
+          style={{ transition:"stroke-dashoffset 1s ease" }} />
+        {/* Airplane emoji text */}
+        {phase>=2 && <text x="130" y="20" textAnchor="middle" fontSize="18">✈️</text>}
+      </svg>
+      {/* Country flags orbiting */}
+      <div style={{ display:"flex", gap:8, marginTop:8, flexWrap:"wrap", justifyContent:"center", maxWidth:220 }}>
+        {COUNTRIES.map((flag, i) => (
+          <span key={i} style={{
+            fontSize:22,
+            opacity: phase>=1 ? 1 : 0,
+            transform: phase>=1 ? "scale(1)" : "scale(0)",
+            transition:`opacity 0.3s ${i*0.1}s, transform 0.3s ${i*0.1}s`
+          }}>{flag}</span>
         ))}
       </div>
-
-      {/* Airplane */}
-      <div
-        style={{
-          position: "absolute", top: "42%",
-          left: phase >= 2 ? "60%" : "10%",
-          transition: "left 2.5s cubic-bezier(0.25,0,0.75,1)",
-          fontSize: 24, filter: "drop-shadow(0 0 8px #10B981)",
-          animation: "flyPlane 3s ease-in-out infinite",
-        }}
-      >
-        ✈
+      {/* Brand */}
+      <div style={{
+        marginTop:20,textAlign:"center",
+        opacity:phase>=3?1:0, transform:phase>=3?"translateY(0)":"translateY(16px)",
+        transition:"opacity 0.5s, transform 0.5s"
+      }}>
+        <p style={{ fontSize:42,fontWeight:900,color:"#1B2A4A",letterSpacing:"0.15em",fontFamily:"serif" }}>VERSA <span style={{ color:"#C9A84C" }}>GLOBAL</span></p>
+        <p style={{ fontSize:11,color:"#6B7280",letterSpacing:"0.4em",textTransform:"uppercase",marginTop:4 }}>Study Abroad Consultancy</p>
       </div>
-
-      {/* Text */}
-      <div style={{ position: "relative", zIndex: 10, textAlign: "center" }}>
-        <div style={{ display: "flex", gap: 4, justifyContent: "center", marginBottom: 16 }}>
-          {letters.map((l, i) => (
-            <span
-              key={i}
-              style={{
-                fontSize: "clamp(28px,5vw,52px)", fontWeight: 900,
-                color: l === " " ? "transparent" : "#10B981",
-                textShadow: "0 0 20px #10B981", letterSpacing: "0.08em",
-                transition: "opacity 0.4s, transform 0.5s",
-                opacity: phase >= 3 ? 1 : 0,
-                transform: phase >= 3 ? "translateY(0)" : "translateY(20px)",
-                transitionDelay: `${i * 0.05}s`,
-              }}
-            >
-              {l === " " ? " " : l}
-            </span>
-          ))}
-        </div>
-        <p
-          style={{
-            fontSize: 11, letterSpacing: "0.25em",
-            color: "rgba(16,185,129,0.7)",
-            opacity: phase >= 3 ? 1 : 0, transition: "opacity 0.5s 0.6s",
-          }}
-        >
-          CONNECTING INDIA TO THE WORLD
-        </p>
-      </div>
+      <div style={{
+        height:1,background:"linear-gradient(90deg,transparent,#C9A84C,transparent)",
+        width:phase>=4?180:0,marginTop:12,transition:"width 0.8s ease"
+      }} />
     </div>
   )
 }

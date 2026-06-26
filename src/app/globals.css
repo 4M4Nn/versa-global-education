@@ -1,27 +1,29 @@
 @import "tailwindcss";
-:root { --navy:#0A1628;--gold:#C49A2E; }
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{-webkit-font-smoothing:antialiased}
-body{background:#FAFBFF;color:#0A1628;font-family:var(--font-inter),sans-serif;overflow-x:hidden}
-::selection{background:rgba(196,154,46,.2);color:#0A1628}
-.word-wrap{display:inline-block;overflow:hidden;margin-right:.28em}
-.word{display:inline-block;will-change:transform}
-.label{font-size:11px;letter-spacing:3px;text-transform:uppercase;font-family:var(--font-inter),sans-serif}
-@keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-18px)}}
-@keyframes floatSlow{0%,100%{transform:translateY(0)}50%{transform:translateY(-24px)}}
-@keyframes pulseGlow{0%,100%{box-shadow:0 0 15px rgba(16,185,129,.3)}50%{box-shadow:0 0 45px rgba(16,185,129,.8)}}
-@keyframes orbit{from{transform:rotate(0deg) translateX(var(--r,80px)) rotate(0deg)}to{transform:rotate(360deg) translateX(var(--r,80px)) rotate(-360deg)}}
-@keyframes spinSlow{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
-@keyframes drift{0%{transform:translate(0,0);opacity:.4}50%{transform:translate(40px,-30px);opacity:.7}100%{transform:translate(0,0);opacity:.4}}
-@keyframes gradientShift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
-@keyframes shimmer{from{background-position:-200% 0}to{background-position:200% 0}}
-@keyframes arcDraw{0%{stroke-dashoffset:300;opacity:0}20%{opacity:1}100%{stroke-dashoffset:0;opacity:.7}}
-@keyframes fadeSlideUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
-@keyframes ripple{0%{transform:scale(1);opacity:.6}100%{transform:scale(3.5);opacity:0}}
-@keyframes pulse-wa{0%,100%{box-shadow:0 0 0 0 rgba(37,211,102,.4)}70%{box-shadow:0 0 0 12px rgba(37,211,102,0)}}
-@keyframes particle-rise{0%{transform:translateY(0) scale(1);opacity:.8}100%{transform:translateY(-120px) scale(0);opacity:0}}
-@keyframes glow-pulse{0%,100%{opacity:.15}50%{opacity:.4}}
-@keyframes flyPlane{0%{transform:translateX(-20px) translateY(5px) rotate(-5deg)}50%{transform:translateX(10px) translateY(-8px) rotate(3deg)}100%{transform:translateX(-20px) translateY(5px) rotate(-5deg)}}
-@keyframes worldMapDraw{from{stroke-dashoffset:2000;opacity:0}to{stroke-dashoffset:0;opacity:0.6}}
-@keyframes mapPulse{0%,100%{transform:scale(1);opacity:0.6}50%{transform:scale(1.4);opacity:1}}
+
+:root {
+  --bg: #F8F6F0;
+  --navy: #1B2A4A;
+  --gold: #C9A84C;
+  --text: #1B2A4A;
+  --muted: #6B7280;
+}
+
+body { background: var(--bg); color: var(--text); }
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(201, 168, 76, 0.15);
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.glass-card:hover { box-shadow: 0 8px 32px rgba(27,42,74,0.12); border-color: rgba(201,168,76,0.35); }
+
+.navy-card {
+  background: linear-gradient(135deg, #1B2A4A, #0F1A2E);
+  border: 1px solid rgba(201,168,76,0.2);
+}
+
+@keyframes fadeSlideUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+.animate-fade-up { animation: fadeSlideUp 0.8s ease forwards; }
+
+@keyframes worldDraw { from { stroke-dashoffset: 1000; } to { stroke-dashoffset: 0; } }
