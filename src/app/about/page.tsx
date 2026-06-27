@@ -1,57 +1,107 @@
 import type { Metadata } from "next"
-import { FOUNDERS, WA_URL } from "@/lib/data"
+import Image from "next/image"
 import Link from "next/link"
+import { ArrowRight, CheckCircle2 } from "lucide-react"
+import { FOUNDERS, STATS, SITE } from "@/lib/data"
 
 export const metadata: Metadata = {
-  title: "About Versa Global | Kerala Study Abroad Consultancy",
-  description: "Versa Global was founded by three Keralites who believed every student from the state deserves access to a global education. Meet our founders and learn our story.",
+  title: "About Us — Kerala Study Abroad Experts",
+  description: "Learn about Versa Global — Kerala's trusted study abroad consultancy founded by three passionate professionals.",
 }
 
 export default function AboutPage() {
   return (
-    <main className="pt-24 pb-20 bg-[#F8F6F0]">
-      <div className="max-w-4xl mx-auto px-6">
-        <div className="text-center mb-14">
-          <p className="text-[#C9A84C] text-xs tracking-[0.4em] uppercase mb-4">OUR STORY</p>
-          <h1 className="font-cormorant text-5xl font-bold text-[#1B2A4A] mb-4">About Versa Global</h1>
-          <p className="text-[#6B7280] max-w-2xl mx-auto text-lg leading-relaxed">
-            Versa Global was born from a simple observation: too many brilliant Kerala students were missing out on world-class education because they didn&apos;t have the right guidance.
-          </p>
+    <div>
+      {/* Hero */}
+      <section className="bg-[#1B2A4A] text-white py-20 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="text-[#C9A84C] text-xs font-semibold tracking-widest uppercase mb-4">About Versa Global</p>
+          <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-5">We Help Kerala Students<br />Reach the World</h1>
+          <p className="text-blue-200 text-lg max-w-2xl mx-auto">Versa Global was founded with a simple mission: make world-class education accessible to every Kerala student, regardless of background.</p>
         </div>
-        <div className="glass-card rounded-2xl p-8 mb-10">
-          <h2 className="font-cormorant text-3xl font-bold text-[#1B2A4A] mb-4">Why We Started</h2>
-          <p className="text-[#6B7280] leading-relaxed mb-4">Kerala has one of India&apos;s highest rates of students studying abroad — yet for every student who makes it, there are ten who don&apos;t, simply because they were misguided, received incorrect information, or couldn&apos;t navigate the complex application processes alone.</p>
-          <p className="text-[#6B7280] leading-relaxed">Versa Global was created to change that. We are not just a consultancy — we are advocates for every Kerala student who wants more from their education than what they can access locally. We speak their language, we understand their budgets, and we have helped over 1,000 of them reach universities in 60+ countries.</p>
-        </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-14">
-          {[["1,000+","Students Placed"],["60+","Countries"],["95%","Visa Success"],["2019","Founded"]].map(([v,l]) => (
-            <div key={l} className="glass-card rounded-xl p-5 text-center">
-              <p className="font-cormorant text-3xl font-bold text-[#C9A84C]">{v}</p>
-              <p className="text-[#6B7280] text-xs mt-1">{l}</p>
+      </section>
+
+      {/* Stats */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6">
+          {STATS.map((stat) => (
+            <div key={stat.label} className="text-center p-6 bg-[#F8F9FA] rounded-2xl">
+              <p className="font-playfair text-4xl font-bold text-[#C9A84C]">{stat.value.toLocaleString("en-IN")}{stat.suffix}</p>
+              <p className="text-[#6B7280] text-sm mt-1">{stat.label}</p>
             </div>
           ))}
         </div>
-        <h2 className="font-cormorant text-3xl font-bold text-[#1B2A4A] mb-8 text-center">Our Founders</h2>
-        <div className="grid md:grid-cols-3 gap-6 mb-14">
-          {FOUNDERS.map(f => (
-            <div key={f.name} className="glass-card rounded-2xl p-7 hover:shadow-lg transition-all">
-              <div className="w-14 h-14 rounded-full flex items-center justify-center text-lg font-bold text-white mb-4" style={{ background:`linear-gradient(135deg,${f.color},${f.color}88)` }}>{f.monogram}</div>
-              <h3 className="font-cormorant text-xl font-bold text-[#1B2A4A] mb-1">{f.name}</h3>
-              <p className="text-xs tracking-widest uppercase mb-3" style={{ color:f.color }}>{f.role}</p>
-              <p className="text-[#6B7280] text-sm leading-relaxed mb-3">{f.bio}</p>
-              <blockquote className="border-l-2 border-[#C9A84C] pl-3 italic text-xs text-[#C9A84C]">&ldquo;{f.quote}&rdquo;</blockquote>
-            </div>
-          ))}
-        </div>
-        <div className="navy-card rounded-2xl p-10 text-center">
-          <h2 className="font-cormorant text-3xl font-bold text-white mb-3">Ready to Start Your Journey?</h2>
-          <p className="text-[#A8B89A] mb-6">The first conversation is free. Let&apos;s find out which university is the right fit for you.</p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <a href={WA_URL} target="_blank" rel="noopener noreferrer" className="px-8 py-3 bg-[#C9A84C] text-white text-sm font-bold tracking-widest hover:bg-[#E8C96A] transition-colors">WhatsApp Us</a>
-            <Link href="/contact" className="px-8 py-3 border border-[#C9A84C]/40 text-[#C9A84C] text-sm tracking-widest">Book Appointment</Link>
+      </section>
+
+      {/* Mission */}
+      <section className="py-16 px-4 bg-[#EEF2FF]">
+        <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 className="font-playfair text-3xl font-bold text-[#1B2A4A] mb-5">Our Mission</h2>
+            <p className="text-[#6B7280] leading-relaxed mb-5">
+              Too many brilliant Kerala students miss life-changing opportunities abroad due to lack of guidance, misinformation, or financial barriers. Versa Global exists to change that.
+            </p>
+            <ul className="space-y-3">
+              {[
+                "Honest, research-backed university recommendations",
+                "End-to-end visa support with 95% success rate",
+                "Scholarship and financial aid guidance",
+                "Post-arrival support in your destination country",
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-3 text-sm text-[#374151]">
+                  <CheckCircle2 size={16} className="text-[#C9A84C] mt-0.5 shrink-0" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="relative h-72 rounded-2xl overflow-hidden">
+            <Image
+              src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=80&auto=format&fit=crop"
+              alt="Students studying"
+              fill
+              className="object-cover"
+            />
           </div>
         </div>
-      </div>
-    </main>
+      </section>
+
+      {/* Team */}
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-14">
+            <h2 className="font-playfair text-3xl font-bold text-[#1B2A4A]">Meet the Founders</h2>
+          </div>
+          <div className="grid sm:grid-cols-3 gap-8">
+            {FOUNDERS.map((f) => (
+              <div key={f.name} className="bg-[#F8F9FA] rounded-2xl p-8 text-center border border-gray-100">
+                <div className="w-20 h-20 rounded-full flex items-center justify-center text-2xl font-bold text-white mx-auto mb-5" style={{ backgroundColor: f.color }}>
+                  {f.monogram}
+                </div>
+                <h3 className="font-playfair text-lg font-bold text-[#1B2A4A] mb-1">{f.name}</h3>
+                <p className="text-[#C9A84C] text-xs font-semibold mb-3">{f.role}</p>
+                <p className="text-[#6B7280] text-sm leading-relaxed">{f.bio}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-16 px-4 bg-[#C9A84C]">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="font-playfair text-3xl font-bold text-[#1B2A4A] mb-4">Ready to Study Abroad?</h2>
+          <p className="text-[#1B2A4A]/80 mb-8">Book your free profile evaluation today. No obligation, no pressure — just expert guidance.</p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link href="/#contact" className="bg-[#1B2A4A] text-white font-bold px-8 py-3.5 rounded-lg hover:bg-[#0F1A2E] transition-colors flex items-center gap-2">
+              Free Evaluation <ArrowRight size={18} />
+            </Link>
+            <a href={`tel:${SITE.phone}`} className="border-2 border-[#1B2A4A] text-[#1B2A4A] font-bold px-8 py-3.5 rounded-lg hover:bg-[#1B2A4A] hover:text-white transition-colors">
+              {SITE.phone}
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
   )
 }

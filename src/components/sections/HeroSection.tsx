@@ -1,40 +1,53 @@
-"use client"
 import Link from "next/link"
-import { WA_URL, DESTINATIONS } from "@/lib/data"
+import { ArrowRight, Globe, CheckCircle2 } from "lucide-react"
+import { STATS, SITE } from "@/lib/data"
 
 export default function HeroSection() {
+  const waUrl = `https://wa.me/91${SITE.phone.replace(/\D/g, "").slice(-10)}`
+
   return (
-    <section className="relative min-h-screen bg-[#F8F6F0] flex items-center overflow-hidden">
-      {/* Background pattern */}
-      <div className="absolute inset-0 opacity-5" style={{ backgroundImage: "radial-gradient(circle at 20% 50%, #1B2A4A 0%, transparent 60%), radial-gradient(circle at 80% 30%, #C9A84C 0%, transparent 60%)" }} />
-      <div className="relative z-10 max-w-7xl mx-auto px-6 pt-24 pb-16 grid lg:grid-cols-2 gap-16 items-center">
+    <section className="bg-[#1B2A4A] text-white py-24 px-4 relative overflow-hidden">
+      <div className="absolute inset-0 opacity-5 pointer-events-none">
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#C9A84C] rounded-full blur-3xl" />
+      </div>
+
+      <div className="relative max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
         <div>
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6" style={{ background:"rgba(27,42,74,0.08)", border:"1px solid rgba(201,168,76,0.3)" }}>
-            <span className="text-[#C9A84C] text-xs tracking-widest uppercase">Kerala&apos;s Trusted Study Abroad Partner</span>
-          </div>
-          <h1 className="font-cormorant text-5xl md:text-6xl lg:text-7xl font-bold text-[#1B2A4A] leading-tight mb-6">
-            Your Dream University<br/>is <span className="text-[#C9A84C]">Closer</span><br/>Than You Think.
+          <span className="inline-flex items-center gap-2 bg-[#C9A84C]/20 border border-[#C9A84C]/30 text-[#C9A84C] text-xs font-semibold tracking-widest uppercase px-5 py-2.5 rounded-full mb-6">
+            <Globe size={13} />
+            Kerala&apos;s Study Abroad Experts
+          </span>
+          <h1 className="font-playfair text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+            Your Dream University.<br />
+            <span className="text-[#C9A84C]">We Make It Happen.</span>
           </h1>
-          <p className="text-[#6B7280] text-lg leading-relaxed mb-8 max-w-lg">
-            1,000+ Kerala students have studied in 60+ countries through Versa Global. Our counselors know every university, every scholarship, and every visa requirement — so you don&apos;t have to.
+          <p className="text-blue-200 text-lg leading-relaxed mb-6">
+            From university selection to visa approval — Versa Global guides Kerala students to the world&apos;s top universities in 60+ countries with a 95% visa success rate.
           </p>
-          <div className="flex flex-wrap gap-4 mb-8">
-            <a href={WA_URL} target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-[#C9A84C] text-white font-bold text-sm tracking-widest uppercase hover:bg-[#E8C96A] transition-colors">Free Consultation</a>
-            <Link href="/destinations" className="px-8 py-4 border border-[#1B2A4A] text-[#1B2A4A] text-sm tracking-widest uppercase hover:bg-[#1B2A4A]/5 transition-colors">Explore Destinations</Link>
-          </div>
-          <div className="flex gap-6">
-            {[["1,000+","Students Placed"],["60+","Countries"],["95%","Visa Success"],["8+","Destinations"]].map(([v,l]) => (
-              <div key={l}><p className="font-cormorant text-2xl font-bold text-[#1B2A4A]">{v}</p><p className="text-[#6B7280] text-xs">{l}</p></div>
+          <ul className="space-y-2 mb-8">
+            {["60+ destination countries", "95% visa success rate", "1,000+ students placed", "Free profile evaluation"].map((item) => (
+              <li key={item} className="flex items-center gap-2.5 text-sm text-blue-100">
+                <CheckCircle2 size={16} className="text-[#C9A84C] shrink-0" />
+                {item}
+              </li>
             ))}
+          </ul>
+          <div className="flex flex-wrap gap-4">
+            <Link href="/#contact" className="flex items-center gap-2 bg-[#C9A84C] text-[#1B2A4A] font-bold px-7 py-3.5 rounded-lg hover:bg-[#E8C96A] transition-colors">
+              Free Profile Evaluation <ArrowRight size={18} />
+            </Link>
+            <a href={waUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 border border-[#C9A84C]/40 text-[#C9A84C] font-semibold px-7 py-3.5 rounded-lg hover:bg-[#C9A84C]/10 transition-colors">
+              WhatsApp Us
+            </a>
           </div>
         </div>
-        {/* Country grid */}
-        <div className="grid grid-cols-4 gap-3">
-          {DESTINATIONS.map(d => (
-            <Link key={d.id} href={`/destinations/${d.id}`} className="glass-card rounded-xl p-3 text-center hover:scale-105 transition-transform">
-              <p className="text-3xl mb-1">{d.flag}</p>
-              <p className="text-[#1B2A4A] text-xs font-medium leading-tight">{d.name}</p>
-            </Link>
+
+        <div className="grid grid-cols-2 gap-4">
+          {STATS.map((stat) => (
+            <div key={stat.label} className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:border-[#C9A84C]/30 transition-all">
+              <p className="font-playfair text-4xl font-bold text-[#C9A84C] mb-1">{stat.value.toLocaleString("en-IN")}{stat.suffix}</p>
+              <p className="text-blue-200 text-xs tracking-wide">{stat.label}</p>
+            </div>
           ))}
         </div>
       </div>

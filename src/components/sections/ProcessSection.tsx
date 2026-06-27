@@ -1,19 +1,26 @@
 import { PROCESS_STEPS } from "@/lib/data"
+
 export default function ProcessSection() {
   return (
-    <section className="py-20 bg-[#1B2A4A]">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-12">
-          <p className="text-[#C9A84C] text-xs tracking-[0.4em] uppercase mb-4">HOW WE WORK</p>
-          <h2 className="font-cormorant text-4xl font-bold text-white">9-Step Journey from Kerala to Your University</h2>
+    <section id="process" className="py-20 px-4 bg-white">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-14">
+          <p className="text-[#C9A84C] text-xs font-semibold tracking-widest uppercase mb-3">How It Works</p>
+          <h2 className="font-playfair text-3xl md:text-4xl font-bold text-[#1B2A4A]">Your Journey Abroad — Step by Step</h2>
         </div>
-        <div className="grid md:grid-cols-3 gap-6">
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
           {PROCESS_STEPS.map((step, i) => (
-            <div key={i} className="flex gap-4 p-5 rounded-xl border border-[#C9A84C]/15 hover:border-[#C9A84C]/35 transition-all" style={{ background:"rgba(255,255,255,0.04)" }}>
-              <div className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-cormorant font-bold text-lg" style={{ background:"rgba(201,168,76,0.2)", color:"#C9A84C" }}>{step.num}</div>
-              <div>
-                <h3 className="font-cormorant text-lg font-bold text-white mb-1">{step.title}</h3>
-                <p className="text-[#A8B89A] text-sm leading-relaxed">{step.desc}</p>
+            <div key={step.number} className="relative">
+              {i < PROCESS_STEPS.length - 1 && (
+                <div className="hidden lg:block absolute top-9 left-[calc(100%-8px)] w-full h-0.5 bg-gradient-to-r from-[#C9A84C]/40 to-transparent z-0" />
+              )}
+              <div className="relative z-10 text-center p-6 bg-[#F8F9FA] rounded-2xl border border-gray-100 hover:border-[#C9A84C]/40 hover:shadow-md transition-all">
+                <div className="w-16 h-16 rounded-full bg-[#1B2A4A] text-[#C9A84C] font-playfair text-xl font-bold flex items-center justify-center mx-auto mb-4">
+                  {step.number}
+                </div>
+                <h3 className="font-bold text-[#1B2A4A] mb-2 text-sm">{step.title}</h3>
+                <p className="text-[#6B7280] text-xs leading-relaxed">{step.description}</p>
               </div>
             </div>
           ))}

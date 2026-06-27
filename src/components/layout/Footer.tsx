@@ -1,38 +1,74 @@
 import Link from "next/link"
-import { WA_URL, PHONE, EMAIL, ADDRESS, PARENT_URL } from "@/lib/data"
+import { Phone, Mail, MapPin } from "lucide-react"
+import { SITE, NAV_LINKS, DESTINATIONS } from "@/lib/data"
+
 export default function Footer() {
   return (
-    <footer className="bg-[#1B2A4A] pt-16 pb-8">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
-          <div>
-            <p className="font-cormorant text-2xl font-bold text-white mb-3">Versa <span className="text-[#C9A84C]">Global</span></p>
-            <p className="text-[#A8B89A] text-sm leading-relaxed">Study Abroad Consultancy. 60+ Countries. 95% Visa Success.</p>
-            <p className="text-[#A8B89A] text-xs mt-3">{ADDRESS}</p>
-            <a href={PARENT_URL} className="text-[#C9A84C] text-xs mt-2 inline-block hover:underline">A Versa Growth Ventures company</a>
+    <footer className="bg-[#1B2A4A] text-white">
+      <div className="max-w-7xl mx-auto px-4 py-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div>
+          <div className="mb-4">
+            <p className="font-playfair text-xl font-bold text-[#C9A84C] leading-tight">Versa Global</p>
+            <p className="text-xs tracking-widest uppercase text-blue-200">Study Abroad Consultancy</p>
           </div>
-          <div>
-            <p className="text-[#C9A84C] text-xs tracking-widest uppercase mb-4">Destinations</p>
-            {[["UK","/destinations/uk"],["Canada","/destinations/canada"],["Australia","/destinations/australia"],["Germany","/destinations/germany"],["USA","/destinations/usa"],["Dubai","/destinations/dubai"]].map(([n,h]) => (
-              <Link key={n} href={h} className="block text-[#A8B89A] text-sm mb-2 hover:text-[#C9A84C] transition-colors">{n}</Link>
+          <p className="text-sm text-blue-200 leading-relaxed mb-5">
+            Kerala&apos;s trusted study abroad consultancy. 60+ countries. 95% visa success rate.
+          </p>
+          <div className="flex items-center gap-2">
+            {["f", "in", "yt"].map((s) => (
+              <a key={s} href="#" aria-label={s} className="w-8 h-8 rounded-full border border-blue-400/40 flex items-center justify-center text-xs font-bold text-blue-300 hover:border-[#C9A84C] hover:text-[#C9A84C] transition-colors uppercase">{s}</a>
             ))}
-          </div>
-          <div>
-            <p className="text-[#C9A84C] text-xs tracking-widest uppercase mb-4">Services</p>
-            {[["Courses","/courses"],["Process","/process"],["About","/about"],["Blog","/blog"],["FAQ","/faq"],["Schemes","/schemes"]].map(([n,h]) => (
-              <Link key={n} href={h} className="block text-[#A8B89A] text-sm mb-2 hover:text-[#C9A84C] transition-colors">{n}</Link>
-            ))}
-          </div>
-          <div>
-            <p className="text-[#C9A84C] text-xs tracking-widest uppercase mb-4">Contact</p>
-            <a href={`tel:${PHONE}`} className="block text-[#A8B89A] text-sm mb-2 hover:text-[#C9A84C]">{PHONE}</a>
-            <a href={`mailto:${EMAIL}`} className="block text-[#A8B89A] text-sm mb-2 hover:text-[#C9A84C]">{EMAIL}</a>
-            <a href={WA_URL} target="_blank" rel="noopener noreferrer" className="block text-[#A8B89A] text-sm hover:text-[#C9A84C]">WhatsApp Us</a>
           </div>
         </div>
-        <div className="border-t border-[#C9A84C]/15 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-[#A8B89A] text-xs">© {new Date().getFullYear()} Versa Global Education. All rights reserved.</p>
-          <p className="text-[#A8B89A] text-xs">Part of Versa Growth Ventures</p>
+
+        <div>
+          <h4 className="font-semibold text-sm uppercase tracking-wider mb-4 text-[#C9A84C]">Quick Links</h4>
+          <ul className="space-y-2">
+            {NAV_LINKS.map((link) => (
+              <li key={link.href}>
+                <Link href={link.href} className="text-sm text-blue-200 hover:text-white transition-colors">{link.label}</Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h4 className="font-semibold text-sm uppercase tracking-wider mb-4 text-[#C9A84C]">Top Destinations</h4>
+          <ul className="space-y-2">
+            {DESTINATIONS.slice(0, 6).map((d) => (
+              <li key={d.id}>
+                <Link href={`/destinations/${d.id}`} className="text-sm text-blue-200 hover:text-white transition-colors">
+                  {d.flag} {d.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h4 className="font-semibold text-sm uppercase tracking-wider mb-4 text-[#C9A84C]">Contact</h4>
+          <ul className="space-y-3">
+            <li className="flex items-start gap-2.5 text-sm text-blue-200">
+              <MapPin size={16} className="mt-0.5 shrink-0 text-[#C9A84C]" />{SITE.address}
+            </li>
+            <li>
+              <a href={`tel:${SITE.phone}`} className="flex items-center gap-2.5 text-sm text-blue-200 hover:text-white transition-colors">
+                <Phone size={16} className="shrink-0 text-[#C9A84C]" />{SITE.phone}
+              </a>
+            </li>
+            <li>
+              <a href={`mailto:${SITE.email}`} className="flex items-center gap-2.5 text-sm text-blue-200 hover:text-white transition-colors">
+                <Mail size={16} className="shrink-0 text-[#C9A84C]" />{SITE.email}
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="border-t border-blue-800">
+        <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-blue-300">
+          <p>&copy; {new Date().getFullYear()} Versa Global. All rights reserved.</p>
+          <p>A <a href="https://versagrowthventures.com" target="_blank" rel="noopener noreferrer" className="text-[#C9A84C] hover:text-white transition-colors">Versa Growth Ventures</a> initiative</p>
         </div>
       </div>
     </footer>

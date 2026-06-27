@@ -1,22 +1,23 @@
 import type { Metadata } from "next"
-import ContactForm from "@/components/ContactForm"
+import ContactSection from "@/components/sections/ContactSection"
+import { SITE } from "@/lib/data"
 
 export const metadata: Metadata = {
-  title: "Contact Versa Global | Free Study Abroad Consultation",
-  description: "Book your free study abroad consultation with Versa Global. Talk to our expert counselors about UK, Canada, Australia, Germany, USA study options.",
+  title: "Contact Us — Free Study Abroad Consultation",
+  description: "Book your free study abroad consultation with Versa Global Kerala. Call, WhatsApp, or fill the form.",
 }
 
 export default function ContactPage() {
   return (
-    <main className="pt-24 pb-20 bg-[#F8F6F0]">
-      <div className="max-w-3xl mx-auto px-6">
-        <div className="text-center mb-12">
-          <p className="text-[#C9A84C] text-xs tracking-[0.4em] uppercase mb-4">GET IN TOUCH</p>
-          <h1 className="font-cormorant text-5xl font-bold text-[#1B2A4A] mb-4">Book Your Free Consultation</h1>
-          <p className="text-[#6B7280]">Fill out the form below and our counselors will contact you within 24 hours.</p>
+    <div>
+      <section className="bg-[#1B2A4A] text-white py-20 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="text-[#C9A84C] text-xs font-semibold tracking-widest uppercase mb-4">Contact</p>
+          <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-5">Get in Touch</h1>
+          <p className="text-blue-200 text-lg">Book your free profile evaluation or just ask us anything.</p>
         </div>
-        <ContactForm />
-      </div>
-    </main>
+      </section>
+      <ContactSection />
+    </div>
   )
 }

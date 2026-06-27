@@ -1,46 +1,88 @@
 import type { Metadata } from "next"
 import { notFound } from "next/navigation"
+import Image from "next/image"
 import Link from "next/link"
-import { BLOG_POSTS, WA_URL } from "@/lib/data"
-
-type Props = { params: Promise<{ slug: string }> }
+import { ArrowRight } from "lucide-react"
+import { BLOG_POSTS, SITE } from "@/lib/data"
 
 export async function generateStaticParams() {
-  return BLOG_POSTS.map(p => ({ slug: p.slug }))
+  return BLOG_POSTS.map((post) => ({ slug: post.slug }))
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params
-  const post = BLOG_POSTS.find(p => p.slug === slug)
-  if (!post) return {}
-  return { title: `${post.title} | Versa Global`, description: post.excerpt }
+  const post = BLOG_POSTS.find((p) => p.slug === slug)
+  if (!post) return { title: "Post Not Found" }
+  return {
+    title: post.title,
+    description: post.excerpt.replace(/&apos;/g, "'"),
+  }
 }
 
-export default async function BlogPostPage({ params }: Props) {
+export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
-  const post = BLOG_POSTS.find(p => p.slug === slug)
+  const post = BLOG_POSTS.find((p) => p.slug === slug)
   if (!post) notFound()
 
-  const paragraphs = post.body.split("\n\n")
+  const related = BLOG_POSTS.filter((p) => p.slug !== slug).slice(0, 2)
 
   return (
-    <main className="pt-24 pb-20 bg-[#F8F6F0]">
-      <div className="max-w-3xl mx-auto px-6">
-        <Link href="/blog" className="text-[#C9A84C] text-xs tracking-widest uppercase mb-6 inline-block hover:underline">← All Articles</Link>
-        <span className="text-xs px-3 py-1 rounded mb-4 inline-block" style={{ background:"#C9A84C20", color:"#C9A84C" }}>{post.tag}</span>
-        <h1 className="font-cormorant text-4xl md:text-5xl font-bold text-[#1B2A4A] mt-3 mb-4 leading-tight">{post.title}</h1>
-        <p className="text-[#6B7280] text-sm mb-10">{post.date}</p>
-        <div className="prose max-w-none mb-12">
-          {paragraphs.map((para, i) => (
-            <p key={i} className="text-[#6B7280] leading-relaxed mb-4">{para}</p>
-          ))}
+    <div>
+      <section className="bg-[#1B2A4A] text-white py-16 px-4">
+        <div className="max-w-3xl mx-auto">
+          <span className="text-[#C9A84C] text-xs font-bold uppercase tracking-widest">{post.category}</span>
+          <h1 className="font-playfair text-3xl md:text-4xl font-bold mt-3 mb-4">{post.title}</h1>
+          <p className="text-blue-200 text-sm">{post.date}</p>
         </div>
-        <div className="navy-card rounded-2xl p-8 text-center">
-          <h2 className="font-cormorant text-2xl font-bold text-white mb-2">Ready to Start Your Study Abroad Journey?</h2>
-          <p className="text-[#A8B89A] text-sm mb-5">Our counselors answer all your questions — for free. No commitment required.</p>
-          <a href={WA_URL} target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-3 bg-[#C9A84C] text-white text-sm font-bold tracking-widest hover:bg-[#E8C96A] transition-colors">WhatsApp for Free Counselling</a>
+      </section>
+
+      <div className="relative h-72 md:h-96 max-w-3xl mx-auto px-4 -mt-1">
+        <div className="relative h-full rounded-2xl overflow-hidden">
+          <Image src={post.image} alt={post.title} fill className="object-cover" />
         </div>
       </div>
-    </main>
+
+      <article className="max-w-3xl mx-auto px-4 py-12">
+        <div className="prose prose-lg max-w-none">
+          {post.body.split("\n\n").filter(Boolean).map((para, i) => (
+            <p key={i} className="text-[#374151] leading-relaxed mb-5">{para.trim().replace(/&apos;/g, "'")}</p>
+          ))}
+        </div>
+
+        <div className="mt-12 p-8 bg-[#EEF2FF] rounded-2xl border border-[#C9A84C]/20">
+          <h3 className="font-playfair text-xl font-bold text-[#1B2A4A] mb-3">Ready to Study Abroad?</h3>
+          <p className="text-[#6B7280] text-sm mb-5">Get a free profile evaluation from Versa Global&apos;s expert counsellors.</p>
+          <div className="flex flex-wrap gap-3">
+            <Link href="/#contact" className="bg-[#C9A84C] text-[#1B2A4A] font-bold px-6 py-2.5 rounded-lg hover:bg-[#E8C96A] transition-colors flex items-center gap-2 text-sm">
+              Book Free Evaluation <ArrowRight size={16} />
+            </Link>
+            <a href={`tel:${SITE.phone}`} className="border border-[#1B2A4A] text-[#1B2A4A] font-semibold px-6 py-2.5 rounded-lg hover:bg-[#1B2A4A] hover:text-white transition-colors text-sm">
+              {SITE.phone}
+            </a>
+          </div>
+        </div>
+      </article>
+
+      {related.length > 0 && (
+        <section className="py-12 px-4 bg-[#F8F9FA]">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="font-playfair text-2xl font-bold text-[#1B2A4A] mb-7">More Guides</h2>
+            <div className="grid sm:grid-cols-2 gap-6">
+              {related.map((p) => (
+                <Link key={p.slug} href={`/blog/${p.slug}`} className="group bg-white rounded-xl overflow-hidden border border-gray-100 hover:border-[#C9A84C]/30 hover:shadow-md transition-all">
+                  <div className="relative h-40 overflow-hidden">
+                    <Image src={p.image} alt={p.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                  </div>
+                  <div className="p-5">
+                    <span className="text-[#C9A84C] text-xs font-bold">{p.category}</span>
+                    <h3 className="font-playfair font-bold text-[#1B2A4A] mt-1 text-sm group-hover:text-[#C9A84C] transition-colors">{p.title}</h3>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+    </div>
   )
 }

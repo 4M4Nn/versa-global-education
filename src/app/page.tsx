@@ -1,26 +1,29 @@
 import type { Metadata } from "next"
-import ClientWrapper from "@/components/layout/ClientWrapper"
 import HeroSection from "@/components/sections/HeroSection"
 import DestinationsSection from "@/components/sections/DestinationsSection"
 import ProcessSection from "@/components/sections/ProcessSection"
+import FoundersSection from "@/components/sections/FoundersSection"
 import BlogSection from "@/components/sections/BlogSection"
 import FAQSection from "@/components/sections/FAQSection"
 import SchemesSection from "@/components/sections/SchemesSection"
+import ContactSection from "@/components/sections/ContactSection"
 
 export const metadata: Metadata = {
-  title: "Versa Global — Study Abroad Consultancy Kerala | 60+ Countries",
-  description: "Kerala's trusted study abroad consultancy. 1,000+ students placed in 60+ countries with 95% visa success rate. UK, Canada, Australia, Germany, USA, and more.",
+  title: "Study Abroad Consultancy Kerala — Versa Global",
+  description: "Kerala's #1 study abroad consultancy. UK, Canada, Australia, Germany, USA and more. 1,000+ students placed, 95% visa success rate.",
 }
 
 export default function HomePage() {
   return (
-    <ClientWrapper>
+    <>
       <HeroSection />
       <DestinationsSection />
       <ProcessSection />
+      <FoundersSection />
+      <SchemesSection />
       <BlogSection />
       <FAQSection />
-      <SchemesSection />
-    </ClientWrapper>
+      <ContactSection />
+    </>
   )
 }

@@ -1,34 +1,32 @@
 import type { Metadata } from "next"
-import { Cormorant_Garamond, Inter } from "next/font/google"
+import { Playfair_Display, Inter } from "next/font/google"
 import "./globals.css"
 import Navbar from "@/components/layout/Navbar"
 import Footer from "@/components/layout/Footer"
 import FloatingWhatsApp from "@/components/layout/FloatingWhatsApp"
 import MobileStickyBar from "@/components/ui/MobileStickyBar"
-import LenisProvider from "@/components/providers/LenisProvider"
+import { SITE } from "@/lib/data"
 
-const cormorant = Cormorant_Garamond({ subsets: ["latin"], weight: ["400","500","600","700"], variable: "--font-cormorant", display: "swap" })
+const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair", display: "swap" })
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" })
 
 export const metadata: Metadata = {
-  title: { default: "Versa Global — Study Abroad Consultancy Kerala | 60+ Countries", template: "%s | Versa Global" },
-  description: "Kerala's trusted study abroad consultancy. 1,000+ students placed in 60+ countries with 95% visa success rate. UK, Canada, Australia, Germany, USA, Ireland, and more.",
-  keywords: ["study abroad Kerala", "study in UK from Kerala", "Canada study visa", "Germany free education", "Australia student visa Kerala"],
-  openGraph: { type: "website", locale: "en_IN", siteName: "Versa Global" },
+  title: { default: `${SITE.name} — Study Abroad Consultancy Kerala`, template: `%s | ${SITE.name}` },
+  description: "Kerala's most trusted study abroad consultancy. 60+ countries, 95% visa success rate, expert counsellors.",
+  keywords: ["study abroad", "Kerala", "IELTS", "UK university", "Canada study", "Germany education", "Versa Global"],
+  openGraph: { type: "website", locale: "en_IN", siteName: SITE.name },
   robots: { index: true, follow: true },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${cormorant.variable} ${inter.variable}`}>
-      <body className="bg-[#F8F6F0] font-inter antialiased">
-        <LenisProvider>
-          <Navbar />
-          <main>{children}</main>
-          <Footer />
-          <FloatingWhatsApp />
-          <MobileStickyBar />
-        </LenisProvider>
+    <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
+      <body className="bg-white font-inter antialiased">
+        <Navbar />
+        <main className="pt-[94px] md:pt-[94px]">{children}</main>
+        <Footer />
+        <FloatingWhatsApp />
+        <MobileStickyBar />
       </body>
     </html>
   )
