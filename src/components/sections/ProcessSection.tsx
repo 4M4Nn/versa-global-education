@@ -1,12 +1,12 @@
-import { PROCESS_STEPS } from "@/lib/data"
+﻿import { PROCESS_STEPS } from "@/lib/data"
 
 export default function ProcessSection() {
   return (
-    <section id="process" className="py-20 px-4 bg-white">
+    <section id="process" className="py-14 md:py-20 px-5 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-14">
           <p className="text-[#C9A84C] text-xs font-semibold tracking-widest uppercase mb-3">How It Works</p>
-          <h2 className="font-playfair text-3xl md:text-4xl font-bold text-[#1B2A4A]">Your Journey Abroad — Step by Step</h2>
+          <h2 className="font-playfair text-3xl md:text-4xl font-bold text-[#1B2A4A]">Your Journey Abroad â€” Step by Step</h2>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
@@ -29,3 +29,4 @@ export default function ProcessSection() {
     </section>
   )
 }
+

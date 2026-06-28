@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 
 import { useState } from "react"
 import { ChevronDown } from "lucide-react"
@@ -8,7 +8,7 @@ export default function FAQSection() {
   const [open, setOpen] = useState<number | null>(null)
 
   return (
-    <section className="py-20 px-4 bg-white">
+    <section className="py-14 md:py-20 px-5 bg-white">
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-14">
           <p className="text-[#C9A84C] text-xs font-semibold tracking-widest uppercase mb-3">FAQ</p>
@@ -37,3 +37,4 @@ export default function FAQSection() {
     </section>
   )
 }
+

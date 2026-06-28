@@ -1,9 +1,9 @@
-import { GraduationCap } from "lucide-react"
+﻿import { GraduationCap } from "lucide-react"
 import { SCHEMES } from "@/lib/data"
 
 export default function SchemesSection() {
   return (
-    <section className="py-20 px-4 bg-[#F8F9FA]">
+    <section className="py-14 md:py-20 px-5 bg-[#F8F9FA]">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-14">
           <p className="text-[#C9A84C] text-xs font-semibold tracking-widest uppercase mb-3">Financial Aid</p>
@@ -26,3 +26,4 @@ export default function SchemesSection() {
     </section>
   )
 }
+

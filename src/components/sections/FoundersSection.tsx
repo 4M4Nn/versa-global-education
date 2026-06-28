@@ -1,8 +1,8 @@
-import { FOUNDERS } from "@/lib/data"
+﻿import { FOUNDERS } from "@/lib/data"
 
 export default function FoundersSection() {
   return (
-    <section id="about" className="py-20 px-4 bg-[#EEF2FF]">
+    <section id="about" className="py-14 md:py-20 px-5 bg-[#EEF2FF]">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-14">
           <p className="text-[#C9A84C] text-xs font-semibold tracking-widest uppercase mb-3">About Us</p>
@@ -29,3 +29,4 @@ export default function FoundersSection() {
     </section>
   )
 }
+

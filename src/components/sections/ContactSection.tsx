@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 
 import { useState } from "react"
 import { Phone, Mail, MapPin, Send } from "lucide-react"
@@ -35,7 +35,7 @@ export default function ContactSection() {
   }
 
   return (
-    <section id="contact" className="py-20 px-4 bg-[#1B2A4A]">
+    <section id="contact" className="py-14 md:py-20 px-5 bg-[#1B2A4A]">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-14">
           <p className="text-[#C9A84C] text-xs font-semibold tracking-widest uppercase mb-3">Get Started</p>
@@ -124,3 +124,4 @@ export default function ContactSection() {
     </section>
   )
 }
+
