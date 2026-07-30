@@ -188,9 +188,9 @@ export const FOUNDERS: Founder[] = [
     bio: "A serial entrepreneur with an M.Sc. in Chemistry, an MBA, and a Master's in Innovation Management, Sreenivasa has built ventures across healthcare, education, training, and technology. He pursued higher education in Europe himself and has worked across international markets — bringing a genuine global outlook to every student he advises.",
   },
   {
-    name: "Sandeep",
+    name: "Sandeep Neelamana",
     role: "Student Finance & Visa Advisory",
-    monogram: "S",
+    monogram: "SN",
     color: "#1B2A4A",
     bio: "A financial services veteran with leadership roles at Reliance Nippon Life Insurance, Future Generali India Insurance, and Care Health Insurance, Sandeep led franchise operations worth over ₹100 crore through AssureX Fin Solutions and is founder of Future Optima IT Solutions and LoopGen Technologies. He brings deep expertise in lending, financial planning, and regulatory compliance to every student's loan and visa journey.",
   },
