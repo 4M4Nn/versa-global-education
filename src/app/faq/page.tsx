@@ -7,6 +7,7 @@ import FAQSection from "@/components/sections/FAQSection"
 export const metadata: Metadata = {
   title: "FAQ — Study Abroad Questions Answered",
   description: "Answers to the most common questions students ask Versa Global about studying abroad — visa timelines, IELTS/TOEFL waivers, costs, and more.",
+  alternates: { canonical: "/faq" },
 }
 
 export default function FAQPage() {

@@ -6,6 +6,7 @@ import { PROCESS_STEPS, SITE } from "@/lib/data"
 export const metadata: Metadata = {
   title: "Our Process — How We Help You Study Abroad",
   description: "Step-by-step guide to Versa Global's study abroad process — from free counselling to visa approval and pre-departure support.",
+  alternates: { canonical: "/process" },
 }
 
 export default function ProcessPage() {

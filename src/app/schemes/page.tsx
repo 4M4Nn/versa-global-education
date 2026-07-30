@@ -6,6 +6,7 @@ import { SCHEMES, SITE } from "@/lib/data"
 export const metadata: Metadata = {
   title: "Education Loan Support — 20+ Bank & NBFC Partners",
   description: "Versa Global manages your entire education loan process through tie-ups with 20+ banks and NBFCs, so studying abroad is never held back by financing.",
+  alternates: { canonical: "/schemes" },
 }
 
 export default function SchemesPage() {

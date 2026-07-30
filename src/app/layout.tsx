@@ -13,7 +13,9 @@ const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfa
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" })
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.versaglobal.in"),
   title: { default: `${SITE.name} — The Most Trusted Study Abroad Agency`, template: `%s | ${SITE.name}` },
+  alternates: { canonical: "/" },
   description: "Versa Global is the most trusted study abroad agency for Indian students — 60+ countries, 95% visa success rate, education loan support through 20+ banks and NBFCs, and expert counsellors.",
   keywords: [
     "Versa Global",

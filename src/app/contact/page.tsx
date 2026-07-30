@@ -5,6 +5,7 @@ import { SITE } from "@/lib/data"
 export const metadata: Metadata = {
   title: "Contact Us — Free Study Abroad Consultation",
   description: "Book your free study abroad consultation with Versa Global. Call, WhatsApp, or fill the form.",
+  alternates: { canonical: "/contact" },
 }
 
 export default function ContactPage() {

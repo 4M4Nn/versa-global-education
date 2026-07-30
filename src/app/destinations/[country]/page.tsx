@@ -16,6 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<{ country: 
   return {
     title: `Study in ${dest.name} — Versa Global`,
     description: `Complete guide to studying in ${dest.name} for Indian students. Universities, visa, scholarships and costs.`,
+    alternates: { canonical: `/destinations/${dest.id}` },
   }
 }
 

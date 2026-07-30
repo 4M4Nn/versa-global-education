@@ -7,6 +7,7 @@ import { FOUNDERS, STATS, SITE } from "@/lib/data"
 export const metadata: Metadata = {
   title: "About Us — The Most Trusted Study Abroad Agency",
   description: "Learn about Versa Global — the most trusted study abroad agency, founded by professionals who have studied and worked internationally themselves.",
+  alternates: { canonical: "/about" },
 }
 
 export default function AboutPage() {

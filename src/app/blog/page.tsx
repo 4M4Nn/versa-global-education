@@ -7,6 +7,7 @@ import { BLOG_POSTS } from "@/lib/data"
 export const metadata: Metadata = {
   title: "Study Abroad Blog — Guides by Versa Global",
   description: "Expert guides on UK visa, Canada PGWP, Germany free education, Georgia medicine, Vietnam & South Korea, and more — from Versa Global, the most trusted study abroad agency.",
+  alternates: { canonical: "/blog" },
 }
 
 export default function BlogPage() {

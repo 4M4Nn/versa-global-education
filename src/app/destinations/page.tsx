@@ -7,6 +7,7 @@ import { DESTINATIONS } from "@/lib/data"
 export const metadata: Metadata = {
   title: "Study Destinations — UK, Canada, Australia, Germany, Georgia & More",
   description: "Explore 60+ study abroad destinations with Versa Global. Compare universities, visa requirements, and costs across the UK, Canada, Australia, Germany, Georgia, Vietnam, South Korea and more.",
+  alternates: { canonical: "/destinations" },
 }
 
 export default function DestinationsPage() {

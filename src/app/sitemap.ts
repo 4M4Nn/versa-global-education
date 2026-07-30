@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next"
 import { DESTINATIONS, BLOG_POSTS } from "@/lib/data"
 
-const BASE = "https://versaglobal.in"
+const BASE = "https://www.versaglobal.in"
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const destinations = DESTINATIONS.map((d) => ({
