@@ -4,8 +4,8 @@ import { ArrowRight, GraduationCap } from "lucide-react"
 import { SCHEMES, SITE } from "@/lib/data"
 
 export const metadata: Metadata = {
-  title: "Scholarships & Loan Schemes — Study Abroad Financial Aid",
-  description: "Government scholarships and education loan schemes for Kerala students planning to study abroad.",
+  title: "Education Loan Support — 20+ Bank & NBFC Partners",
+  description: "Versa Global manages your entire education loan process through tie-ups with 20+ banks and NBFCs, so studying abroad is never held back by financing.",
 }
 
 export default function SchemesPage() {
@@ -13,9 +13,9 @@ export default function SchemesPage() {
     <div>
       <section className="bg-[#1B2A4A] text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-[#C9A84C] text-xs font-semibold tracking-widest uppercase mb-4">Financial Aid</p>
-          <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-5">Scholarships &amp; Loan Schemes</h1>
-          <p className="text-blue-200 text-lg">Making study abroad accessible for every Kerala family.</p>
+          <p className="text-[#C9A84C] text-xs font-semibold tracking-widest uppercase mb-4">Education Loan Support</p>
+          <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-5">We Handle Your Loan Process, End to End</h1>
+          <p className="text-blue-200 text-lg">Tie-ups with 20+ banks and NBFCs mean faster approvals and the right loan structure for your profile.</p>
         </div>
       </section>
 
@@ -37,8 +37,8 @@ export default function SchemesPage() {
 
       <section className="py-16 px-4 bg-white">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="font-playfair text-2xl font-bold text-[#1B2A4A] mb-3">Need Help Choosing the Right Scheme?</h2>
-          <p className="text-[#6B7280] mb-7">Our counsellors will match you with the best financial aid options for your profile and destination.</p>
+          <h2 className="font-playfair text-2xl font-bold text-[#1B2A4A] mb-3">Need Help Financing Your Education Abroad?</h2>
+          <p className="text-[#6B7280] mb-7">Our counsellors will match you with the right lender and loan structure for your profile and destination.</p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link href="/#contact" className="bg-[#C9A84C] text-[#1B2A4A] font-bold px-7 py-3.5 rounded-lg hover:bg-[#E8C96A] transition-colors flex items-center gap-2">
               Free Evaluation <ArrowRight size={18} />

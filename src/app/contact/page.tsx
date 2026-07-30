@@ -4,7 +4,7 @@ import { SITE } from "@/lib/data"
 
 export const metadata: Metadata = {
   title: "Contact Us — Free Study Abroad Consultation",
-  description: "Book your free study abroad consultation with Versa Global Kerala. Call, WhatsApp, or fill the form.",
+  description: "Book your free study abroad consultation with Versa Global. Call, WhatsApp, or fill the form.",
 }
 
 export default function ContactPage() {

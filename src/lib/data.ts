@@ -2,7 +2,7 @@ import type { Destination, ProcessStep, Testimonial, BlogPost, Stat, Founder } f
 
 export const SITE = {
   name: "Versa Global",
-  phone: "+91 7907215816",
+  phone: "+91 9746433133",
   email: "admissions@versaglobal.in",
   address: "Kochi, Kerala, India",
 }
@@ -110,17 +110,43 @@ export const DESTINATIONS: Destination[] = [
       "Practical education, post-study work rights, extraordinary natural environment.",
   },
   {
-    id: "dubai",
-    name: "Dubai / UAE",
-    flag: "🇦🇪",
-    tagline: "Education Hub of the Middle East",
-    image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&q=80&auto=format&fit=crop",
-    programs: ["Business", "Hospitality", "Engineering", "Architecture", "Media"],
-    scholarships: "University merit scholarships",
+    id: "georgia",
+    name: "Georgia",
+    flag: "🇬🇪",
+    tagline: "Low-Cost MBBS & Management Degrees",
+    image: "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=600&q=80&auto=format&fit=crop",
+    programs: ["MBBS / Medicine", "Management & MBA", "Dentistry", "Business", "Engineering"],
+    scholarships: "University merit-based fee waivers",
     intake: "September & February",
-    visa: "Student Residence Visa",
+    visa: "Student Visa (D3)",
     description:
-      "Proximity to Kerala, growing university landscape, strong Indian community.",
+      "One of the most affordable routes to an internationally recognized medical degree — MCI/NMC-compliant MBBS at a fraction of Indian private college fees, alongside strong management and MBA programs taught in English.",
+  },
+  {
+    id: "south-korea",
+    name: "South Korea",
+    flag: "🇰🇷",
+    tagline: "A Destination Most Agencies Overlook",
+    image: "https://images.unsplash.com/photo-1517154421773-0529f29ea451?w=600&q=80&auto=format&fit=crop",
+    programs: ["Engineering", "Business & K-Trade", "Computer Science", "Design", "Biotechnology"],
+    scholarships: "Global Korea Scholarship (GKS), university tuition waivers",
+    intake: "March & September",
+    visa: "D-2 Student Visa",
+    description:
+      "Top-ranked technology and engineering universities, generous scholarships, and a fast-growing job market in electronics, gaming, and biotech — a destination we intentionally highlight because most consultancies don&apos;t.",
+  },
+  {
+    id: "vietnam",
+    name: "Vietnam",
+    flag: "🇻🇳",
+    tagline: "Affordable Education, Fast-Growing Economy",
+    image: "https://images.unsplash.com/photo-1528127269322-539801943592?w=600&q=80&auto=format&fit=crop",
+    programs: ["Business", "Medicine", "IT & Software Engineering", "Hospitality", "Engineering"],
+    scholarships: "University tuition scholarships for international students",
+    intake: "September & January",
+    visa: "Student Visa (DH Visa)",
+    description:
+      "Low tuition and living costs, English-taught programs, and rising demand for skilled graduates in one of Asia&apos;s fastest-growing economies — an emerging option we bring to students before it becomes mainstream.",
   },
 ]
 
@@ -134,7 +160,7 @@ export const PROCESS_STEPS: ProcessStep[] = [
   {
     number: "02",
     title: "University Shortlisting",
-    description: "Research-backed shortlist of 6-8 universities across 2-3 countries.",
+    description: "A shortlist built entirely around your preferred country, course, and budget — not a fixed template.",
   },
   {
     number: "03",
@@ -155,25 +181,25 @@ export const PROCESS_STEPS: ProcessStep[] = [
 
 export const FOUNDERS: Founder[] = [
   {
-    name: "Sandeep Neelamana",
-    role: "Founder & Operations Head",
-    monogram: "SN",
-    color: "#1B2A4A",
-    bio: "Sandeep ensures every Versa Global student receives meticulous support from first enquiry to landing in their destination.",
-  },
-  {
     name: "Sreenivasa Prabhu",
-    role: "Founder & Finance Head",
+    role: "Principal Advisor – Global Education Pathways",
     monogram: "SP",
     color: "#C9A84C",
-    bio: "Sreenivasa helps students maximize scholarship opportunities and plan their study abroad finances effectively.",
+    bio: "A serial entrepreneur with an M.Sc. in Chemistry, an MBA, and a Master's in Innovation Management, Sreenivasa has built ventures across healthcare, education, training, and technology. He pursued higher education in Europe himself and has worked across international markets — bringing a genuine global outlook to every student he advises.",
+  },
+  {
+    name: "Sandeep",
+    role: "Student Finance & Visa Advisory",
+    monogram: "S",
+    color: "#1B2A4A",
+    bio: "A financial services veteran with leadership roles at Reliance Nippon Life Insurance, Future Generali India Insurance, and Care Health Insurance, Sandeep led franchise operations worth over ₹100 crore through AssureX Fin Solutions and is founder of Future Optima IT Solutions and LoopGen Technologies. He brings deep expertise in lending, financial planning, and regulatory compliance to every student's loan and visa journey.",
   },
   {
     name: "Aman Faisal S",
-    role: "Founder & Marketing Head",
+    role: "Student Outreach & Digital Strategy",
     monogram: "AF",
     color: "#10B981",
-    bio: "Aman makes Versa Global the most recognized study abroad brand in Kerala, reaching students across the state.",
+    bio: "A digital marketing and talent-outreach specialist with a strong track record of building online communities and managing high-performing campaigns. Aman combines data-driven marketing with genuine student relationships to help aspiring applicants discover the right global education opportunities.",
   },
 ]
 
@@ -181,7 +207,7 @@ export const STATS: Stat[] = [
   { value: 1000, suffix: "+", label: "Students Placed" },
   { value: 60, suffix: "+", label: "Countries" },
   { value: 95, suffix: "%", label: "Visa Success Rate" },
-  { value: 8, suffix: "+", label: "Destinations" },
+  { value: 20, suffix: "+", label: "Bank & NBFC Partners" },
 ]
 
 export const TESTIMONIALS: Testimonial[] = [
@@ -213,21 +239,72 @@ export const TESTIMONIALS: Testimonial[] = [
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "most-trusted-study-abroad-agency",
+    title: "What Makes Versa Global the Most Trusted Study Abroad Agency for Indian Students",
+    category: "Versa Global",
+    date: "July 2026",
+    excerpt:
+      "Firsthand international experience, transparent counselling, and end-to-end support — here&apos;s why students across India choose Versa Global as their study abroad partner.",
+    image:
+      "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&q=80&auto=format&fit=crop",
+    body: `Choosing a study abroad agency is one of the most consequential decisions a student and their family will make, which is why Versa Global has built its reputation as the most trusted study abroad agency for students across India — not just in one state or city. Our team has personally studied at leading international institutions and built professional careers across global markets, giving us firsthand understanding of both the opportunities and the challenges of studying overseas.
+
+Unlike agencies that push students toward a fixed list of partner universities, Versa Global builds every recommendation around the individual — their academic profile, career goals, budget, and personal preferences. We support 60+ study destinations worldwide, from globally popular choices like the UK, Canada, Australia, and the USA, to high-value alternatives like Germany, and emerging destinations such as Georgia, Vietnam, and South Korea that most consultancies never mention.
+
+Our support does not stop at admission. Versa Global provides end-to-end assistance across the entire study abroad journey — university selection, application and admission support, education loan guidance through our tie-ups with 20+ banks and NBFCs, visa assistance, country-specific documentation, accommodation arrangements, and pre-departure and arrival support.
+
+With a 95%+ visa success rate and 1,000+ students placed, Versa Global combines global perspective, personalized mentorship, and transparent guidance to help students not only study abroad, but thrive abroad. Book a free profile evaluation today and experience why families trust Versa Global with their most important academic decision.`,
+  },
+  {
+    slug: "study-medicine-management-georgia",
+    title: "Study MBBS and Management in Georgia: The Low-Cost Alternative for Indian Students",
+    category: "Georgia",
+    date: "July 2026",
+    excerpt:
+      "Georgia offers MCI/NMC-recognized medical degrees and strong management programs at a fraction of the cost of private colleges in India.",
+    image:
+      "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=600&q=80&auto=format&fit=crop",
+    body: `While the UK, Canada, and Australia dominate study abroad conversations, Georgia has quietly become one of the smartest choices for Indian students seeking a medical or management degree without the extreme cost of private colleges back home. Georgian medical universities are recognized by the National Medical Commission (NMC), meaning graduates are eligible to practice in India after clearing the FMGE screening test, just like graduates from any other recognized foreign medical university.
+
+Tuition for a 6-year MBBS program in Georgia typically ranges from $40,000-50,000 for the entire course — a fraction of what private medical seats cost in India, with no capitation fees and transparent, English-medium instruction from year one. Living costs are equally affordable, and the application process does not require entrance exams beyond NEET eligibility for Indian students.
+
+Georgia&apos;s management and MBA programs are an equally strong option, offering internationally recognized business degrees, English-taught coursework, and significantly lower tuition than equivalent programs in Western Europe or North America — making it an excellent low-cost pathway into global business education.
+
+Versa Global&apos;s Georgia specialists handle university selection, NMC-compliance verification, visa documentation, and pre-departure preparation, ensuring students and families make a fully informed decision about this increasingly popular destination.`,
+  },
+  {
+    slug: "study-in-south-korea-vietnam",
+    title: "South Korea and Vietnam: Study Abroad Destinations Most Agencies Won't Tell You About",
+    category: "South Korea",
+    date: "June 2026",
+    excerpt:
+      "Two of Asia&apos;s fastest-growing economies offer world-class technology programs, generous scholarships, and low costs — yet most consultancies never mention them.",
+    image:
+      "https://images.unsplash.com/photo-1517154421773-0529f29ea451?w=600&q=80&auto=format&fit=crop",
+    body: `Most study abroad consultancies funnel every student toward the same handful of countries — the UK, Canada, Australia, and the USA. But South Korea and Vietnam offer real, underexplored opportunities that deserve far more attention than they get, which is exactly why Versa Global makes a point of highlighting them.
+
+South Korea has become a genuine hub for technology, engineering, and design education, home to globally ranked universities like Seoul National University, KAIST, and Yonsei University. The Global Korea Scholarship (GKS) and numerous university-level tuition waivers make South Korea highly affordable relative to its academic quality, and its booming electronics, gaming, and biotechnology industries offer strong post-study career prospects for international graduates.
+
+Vietnam, meanwhile, is one of Asia&apos;s fastest-growing economies, with rising demand for skilled professionals in IT, business, and engineering. Tuition and living costs are a fraction of those in traditional Western destinations, English-taught programs are increasingly common, and the cultural and geographic proximity to India makes the transition smoother for many students.
+
+Versa Global&apos;s counsellors evaluate whether South Korea or Vietnam genuinely fits a student&apos;s goals and budget — not because it&apos;s trendy, but because for the right profile, these destinations can outperform the more obvious choices.`,
+  },
+  {
     slug: "uk-study-visa-2026",
-    title: "Complete UK Student Visa Guide for Kerala Students 2026",
+    title: "Complete UK Student Visa Guide 2026",
     category: "UK",
     date: "June 2026",
     excerpt:
-      "Complete documentation checklist and timeline for Kerala students applying to UK universities.",
+      "Complete documentation checklist and timeline for Indian students applying to UK universities.",
     image:
       "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600&q=80&auto=format&fit=crop",
-    body: `Applying for a UK Student Visa (formerly Tier 4) requires careful preparation, especially for Kerala students navigating the process for the first time. The UK remains one of the most sought-after destinations for higher education, offering world-class universities, a 2-year post-study work visa, and a rich multicultural environment.
+    body: `Applying for a UK Student Visa (formerly Tier 4) requires careful preparation, especially for students navigating the process for the first time. The UK remains one of the most sought-after destinations for higher education, offering world-class universities, a 2-year post-study work visa, and a rich multicultural environment.
 
-The first step is securing a Confirmation of Acceptance for Studies (CAS) from your chosen UK university. Once you have your CAS number, you can apply online through the UK Visas and Immigration portal no more than 6 months before your course start date. Kerala students applying from India should budget approximately 5-6 weeks for the entire process, including biometrics at a UKVCAS service point in Kochi or Trivandrum.
+The first step is securing a Confirmation of Acceptance for Studies (CAS) from your chosen UK university. Once you have your CAS number, you can apply online through the UK Visas and Immigration portal no more than 6 months before your course start date. Applicants from India should budget approximately 5-6 weeks for the entire process, including biometrics at a UKVCAS service point.
 
-Key documents include your CAS letter, proof of English proficiency (IELTS 6.0+ for most programs), financial evidence showing at least £1,334 per month for up to 9 months of living costs plus your first year&apos;s tuition, valid passport, and academic transcripts. Students from Kerala often face additional scrutiny on financial documents, so it is critical to ensure bank statements show consistent balances over 28 consecutive days prior to application.
+Key documents include your CAS letter, proof of English proficiency (IELTS 6.0+ for most programs — though some universities waive this requirement depending on your academic background), financial evidence showing at least £1,334 per month for up to 9 months of living costs plus your first year&apos;s tuition, valid passport, and academic transcripts. It is critical to ensure bank statements show consistent balances over 28 consecutive days prior to application.
 
-Versa Global&apos;s dedicated UK visa team has maintained a 97% first-attempt success rate for Kerala students. Our counsellors review every document before submission, prepare you for potential immigration officer interviews, and guide you through the Healthcare Surcharge payment. Book your free profile assessment today and let us handle the complexity of your UK visa application.`,
+Versa Global&apos;s dedicated UK visa team has maintained a 97% first-attempt success rate for students across India. Our counsellors review every document before submission, prepare you for potential immigration officer interviews, and guide you through the Healthcare Surcharge payment. Book your free profile assessment today and let us handle the complexity of your UK visa application.`,
   },
   {
     slug: "canada-pgwp-guide",
@@ -235,14 +312,14 @@ Versa Global&apos;s dedicated UK visa team has maintained a 97% first-attempt su
     category: "Canada",
     date: "May 2026",
     excerpt:
-      "How Kerala students can use Canada&apos;s Post-Graduate Work Permit to get permanent residency.",
+      "How Indian students can use Canada&apos;s Post-Graduate Work Permit to get permanent residency.",
     image:
       "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=600&q=80&auto=format&fit=crop",
-    body: `Canada&apos;s Post-Graduate Work Permit (PGWP) program is one of the most powerful pathways to permanent residency available to international students anywhere in the world. For Kerala students dreaming of building a life in Canada, the PGWP is the critical bridge between your student life and your Canadian future.
+    body: `Canada&apos;s Post-Graduate Work Permit (PGWP) program is one of the most powerful pathways to permanent residency available to international students anywhere in the world. For students dreaming of building a life in Canada, the PGWP is the critical bridge between your student life and your Canadian future.
 
-The PGWP allows graduates of eligible Designated Learning Institutions (DLIs) to work in Canada for up to 3 years after graduation, depending on the length of their study program. A program of 2 years or longer earns you a 3-year PGWP, which gives you the time needed to accumulate the Canadian work experience required for programs like Canadian Experience Class (CEC) under Express Entry. Most Kerala students at Versa Global target programs between 2-3 years to maximize their PGWP duration.
+The PGWP allows graduates of eligible Designated Learning Institutions (DLIs) to work in Canada for up to 3 years after graduation, depending on the length of their study program. A program of 2 years or longer earns you a 3-year PGWP, which gives you the time needed to accumulate the Canadian work experience required for programs like Canadian Experience Class (CEC) under Express Entry. Most Versa Global students target programs between 2-3 years to maximize their PGWP duration.
 
-Once you have 1-2 years of skilled work experience in Canada under your PGWP, you become eligible to apply for permanent residency through Express Entry. The CEC stream has seen Comprehensive Ranking System (CRS) scores as low as 420-450 in recent draws, making it achievable for well-qualified Kerala professionals in fields like IT, engineering, healthcare, and business management.
+Once you have 1-2 years of skilled work experience in Canada under your PGWP, you become eligible to apply for permanent residency through Express Entry. The CEC stream has seen Comprehensive Ranking System (CRS) scores as low as 420-450 in recent draws, making it achievable for well-qualified professionals in fields like IT, engineering, healthcare, and business management.
 
 Versa Global&apos;s Canada specialists help you select programs at the right DLIs that align with in-demand NOC (National Occupation Classification) codes, maximizing your chances of a successful PR application. Our post-landing support team stays connected with students throughout their PGWP period, advising on job search strategies, PR documentation, and provincial nominee programs as backup pathways.`,
   },
@@ -252,16 +329,16 @@ Versa Global&apos;s Canada specialists help you select programs at the right DLI
     category: "Germany",
     date: "April 2026",
     excerpt:
-      "Germany&apos;s public universities charge zero tuition. Here&apos;s how Kerala students can access this.",
+      "Germany&apos;s public universities charge zero tuition. Here&apos;s how Indian students can access this.",
     image:
       "https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=600&q=80&auto=format&fit=crop",
-    body: `Germany is the world&apos;s best-kept secret in international education. While Indian families spend ₹40-80 lakhs on UK or US degrees, German public universities charge zero tuition for international students — including those from Kerala. You only pay a semester contribution of roughly €250-350 covering administrative fees and often a public transport pass.
+    body: `Germany is the world&apos;s best-kept secret in international education. While Indian families spend ₹40-80 lakhs on UK or US degrees, German public universities charge zero tuition for international students. You only pay a semester contribution of roughly €250-350 covering administrative fees and often a public transport pass.
 
-To access Germany&apos;s tuition-free universities, you will need to meet language requirements. Most undergraduate programs are taught in German, requiring at least B2-C1 German proficiency (TestDaF or DSH certification). However, Germany has seen an explosion of English-taught Master&apos;s programs, particularly in engineering, computer science, and business, where instruction is entirely in English and you only need IELTS 6.5 or equivalent. Universities like TU Munich, RWTH Aachen, and Heidelberg University offer world-class English programs at zero tuition cost.
+To access Germany&apos;s tuition-free universities, you will need to meet language requirements. Most undergraduate programs are taught in German, requiring at least B2-C1 German proficiency (TestDaF or DSH certification). However, Germany has seen an explosion of English-taught Master&apos;s programs, particularly in engineering, computer science, and business, where instruction is entirely in English and you only need IELTS 6.5 or equivalent — and some programs waive the requirement altogether based on prior medium of instruction. Universities like TU Munich, RWTH Aachen, and Heidelberg University offer world-class English programs at zero tuition cost.
 
-The application process for German universities goes through uni-assist, a centralized portal that evaluates international credentials. Kerala students with strong academic records (65%+ in their undergraduate degree) are competitive for German university admissions. You will need to demonstrate €11,208 in a blocked account (Sperrkonto) to cover your first year of living expenses — this money is yours to use after arrival.
+The application process for German universities goes through uni-assist, a centralized portal that evaluates international credentials. Students with strong academic records (65%+ in their undergraduate degree) are competitive for German university admissions. You will need to demonstrate €11,208 in a blocked account (Sperrkonto) to cover your first year of living expenses — this money is yours to use after arrival.
 
-Versa Global&apos;s Germany specialists have helped dozens of Kerala families save tens of lakhs by choosing Germany over more expensive English-speaking destinations. We handle your uni-assist application, blocked account setup, German consulate visa appointment, and connect you with Kerala student communities already thriving in cities like Munich, Berlin, and Stuttgart.`,
+Versa Global&apos;s Germany specialists have helped dozens of families save tens of lakhs by choosing Germany over more expensive English-speaking destinations. We handle your uni-assist application, blocked account setup, German consulate visa appointment, and connect you with student communities already thriving in cities like Munich, Berlin, and Stuttgart.`,
   },
 ]
 
@@ -272,9 +349,19 @@ export const FAQS = [
       "Typically 6-12 months from initial consultation to visa approval. We recommend starting at least 12 months before your intended intake date to maximize university options and scholarship opportunities.",
   },
   {
+    question: "How long does the visa process take once my documents are ready?",
+    answer:
+      "It takes about 1 to 1.5 months, if all the documents are in place. Delays usually happen only when documentation is incomplete, so our team reviews everything upfront to keep you on schedule.",
+  },
+  {
+    question: "Is IELTS or TOEFL compulsory for every university?",
+    answer:
+      "Not always. There are universities that may waive off the IELTS/TOEFL requirement depending on your academic background and prior medium of instruction. Please discuss this with our consultants during your profile evaluation.",
+  },
+  {
     question: "What are the English language requirements for studying abroad?",
     answer:
-      "Most universities require IELTS 6.0-7.0 or TOEFL 80-100. Requirements vary by university and program. We provide IELTS preparation guidance and can recommend partner coaching centres in Kerala.",
+      "Most universities require IELTS 6.0-7.0 or TOEFL 80-100. Requirements vary by university and program, and some universities waive this requirement altogether. We provide IELTS preparation guidance and can recommend partner coaching centres.",
   },
   {
     question: "How much does it cost to study abroad?",
@@ -300,19 +387,19 @@ export const FAQS = [
 
 export const SCHEMES = [
   {
-    name: "Kerala State Education Loan",
+    name: "20+ Bank & NBFC Partnerships",
     description:
-      "Government-backed loans up to ₹20 lakhs for students from Kerala pursuing higher education abroad. Low interest rates with moratorium during study period.",
+      "We work directly with 20+ leading banks and NBFCs, giving students access to competitive interest rates and faster loan approvals — without having to shop around on their own.",
   },
   {
-    name: "National Overseas Scholarship",
+    name: "End-to-End Loan Documentation Support",
     description:
-      "Central government scholarship for SC/ST students to pursue higher education abroad. Covers tuition, living expenses, and travel for Masters and PhD programs.",
+      "From collateral paperwork to income proof and sanction letters, our team manages the entire loan application process on your behalf, saving you time and preventing costly errors.",
   },
   {
-    name: "HDFC Credila Education Loan",
+    name: "Personalized Lender Matching",
     description:
-      "Specialized education loan product for Indian students studying abroad. Covers tuition, accommodation, travel, and other education-related expenses.",
+      "Every student's financial situation is different. We match you with the lender and loan structure best suited to your profile, collateral availability, and repayment timeline.",
   },
 ]
 

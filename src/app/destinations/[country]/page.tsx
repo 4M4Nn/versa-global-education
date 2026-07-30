@@ -14,8 +14,8 @@ export async function generateMetadata({ params }: { params: Promise<{ country: 
   const dest = DESTINATIONS.find((d) => d.id === country)
   if (!dest) return { title: "Destination Not Found" }
   return {
-    title: `Study in ${dest.name} — Versa Global Kerala`,
-    description: `Complete guide to studying in ${dest.name} for Kerala students. Universities, visa, scholarships and costs.`,
+    title: `Study in ${dest.name} — Versa Global`,
+    description: `Complete guide to studying in ${dest.name} for Indian students. Universities, visa, scholarships and costs.`,
   }
 }
 

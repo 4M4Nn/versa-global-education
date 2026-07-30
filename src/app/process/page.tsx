@@ -15,7 +15,7 @@ export default function ProcessPage() {
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-[#C9A84C] text-xs font-semibold tracking-widest uppercase mb-4">Our Process</p>
           <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-5">From Dream to Destination</h1>
-          <p className="text-blue-200 text-lg">A proven 5-step process that has guided 1,000+ Kerala students to universities worldwide.</p>
+          <p className="text-blue-200 text-lg">A proven 5-step process that has guided 1,000+ students to universities worldwide.</p>
         </div>
       </section>
 

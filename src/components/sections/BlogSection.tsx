@@ -18,7 +18,7 @@ export default function BlogSection() {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-7">
-          {BLOG_POSTS.map((post) => (
+          {BLOG_POSTS.slice(0, 3).map((post) => (
             <Link key={post.slug} href={`/blog/${post.slug}`} className="group bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg hover:border-[#C9A84C]/30 transition-all">
               <div className="relative h-48 overflow-hidden">
                 <Image src={post.image} alt={post.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />

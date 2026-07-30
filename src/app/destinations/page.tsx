@@ -5,8 +5,8 @@ import { ArrowRight } from "lucide-react"
 import { DESTINATIONS } from "@/lib/data"
 
 export const metadata: Metadata = {
-  title: "Study Destinations — UK, Canada, Australia, Germany & More",
-  description: "Explore 60+ study abroad destinations from Kerala. Compare universities, visa requirements, scholarships and costs.",
+  title: "Study Destinations — UK, Canada, Australia, Germany, Georgia & More",
+  description: "Explore 60+ study abroad destinations with Versa Global. Compare universities, visa requirements, and costs across the UK, Canada, Australia, Germany, Georgia, Vietnam, South Korea and more.",
 }
 
 export default function DestinationsPage() {
@@ -15,8 +15,8 @@ export default function DestinationsPage() {
       <section className="bg-[#1B2A4A] text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-[#C9A84C] text-xs font-semibold tracking-widest uppercase mb-4">Destinations</p>
-          <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-5">60+ Countries. 8 Expert-Curated Picks.</h1>
-          <p className="text-blue-200 text-lg">From zero-tuition Germany to PR-pathway Canada — we help you find the perfect fit.</p>
+          <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-5">60+ Countries. The Right Destination for You.</h1>
+          <p className="text-blue-200 text-lg">From zero-tuition Germany to PR-pathway Canada, low-cost medicine in Georgia, and hidden gems like Vietnam and South Korea — we help you find the perfect fit.</p>
         </div>
       </section>
 

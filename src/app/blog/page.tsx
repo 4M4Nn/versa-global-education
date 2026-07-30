@@ -5,8 +5,8 @@ import { ArrowRight } from "lucide-react"
 import { BLOG_POSTS } from "@/lib/data"
 
 export const metadata: Metadata = {
-  title: "Study Abroad Blog — Guides for Kerala Students",
-  description: "Expert guides on UK visa, Canada PGWP, Germany free education and more — for Kerala students planning to study abroad.",
+  title: "Study Abroad Blog — Guides by Versa Global",
+  description: "Expert guides on UK visa, Canada PGWP, Germany free education, Georgia medicine, Vietnam & South Korea, and more — from Versa Global, the most trusted study abroad agency.",
 }
 
 export default function BlogPage() {
@@ -16,7 +16,7 @@ export default function BlogPage() {
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-[#C9A84C] text-xs font-semibold tracking-widest uppercase mb-4">Resources</p>
           <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-5">Study Abroad Guides</h1>
-          <p className="text-blue-200 text-lg">Expert advice for Kerala students navigating universities, visas, and scholarships abroad.</p>
+          <p className="text-blue-200 text-lg">Expert advice for students navigating universities, visas, and financing options abroad.</p>
         </div>
       </section>
 

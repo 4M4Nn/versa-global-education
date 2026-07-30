@@ -6,7 +6,7 @@ import FAQSection from "@/components/sections/FAQSection"
 
 export const metadata: Metadata = {
   title: "FAQ — Study Abroad Questions Answered",
-  description: "Answers to the most common questions from Kerala students about studying abroad — visa, costs, timelines, and more.",
+  description: "Answers to the most common questions students ask Versa Global about studying abroad — visa timelines, IELTS/TOEFL waivers, costs, and more.",
 }
 
 export default function FAQPage() {
@@ -16,7 +16,7 @@ export default function FAQPage() {
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-[#C9A84C] text-xs font-semibold tracking-widest uppercase mb-4">FAQ</p>
           <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-5">Your Questions, Answered</h1>
-          <p className="text-blue-200 text-lg">Everything Kerala students ask us about studying abroad.</p>
+          <p className="text-blue-200 text-lg">Everything students ask us about studying abroad.</p>
         </div>
       </section>
 

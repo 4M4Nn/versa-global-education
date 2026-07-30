@@ -7,7 +7,7 @@ export default function FoundersSection() {
         <div className="text-center mb-14">
           <p className="text-[#C9A84C] text-xs font-semibold tracking-widest uppercase mb-3">About Us</p>
           <h2 className="font-playfair text-3xl md:text-4xl font-bold text-[#1B2A4A]">The Team Behind Versa Global</h2>
-          <p className="text-[#6B7280] mt-4 max-w-xl mx-auto">Three Kerala professionals who turned their passion for global education into a mission.</p>
+          <p className="text-[#6B7280] mt-4 max-w-xl mx-auto">Firsthand international education and professional experience, brought together to guide your global journey.</p>
         </div>
 
         <div className="grid sm:grid-cols-3 gap-8">

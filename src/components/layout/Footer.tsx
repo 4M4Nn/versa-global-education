@@ -12,7 +12,7 @@ export default function Footer() {
             <p className="text-xs tracking-widest uppercase text-blue-200">Study Abroad Consultancy</p>
           </div>
           <p className="text-sm text-blue-200 leading-relaxed mb-5">
-            Kerala&apos;s trusted study abroad consultancy. 60+ countries. 95% visa success rate.
+            The most trusted study abroad agency for Indian students. 60+ countries. 95% visa success rate.
           </p>
           <div className="flex items-center gap-2">
             {["f", "in", "yt"].map((s) => (

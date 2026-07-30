@@ -5,8 +5,8 @@ import { ArrowRight, CheckCircle2 } from "lucide-react"
 import { FOUNDERS, STATS, SITE } from "@/lib/data"
 
 export const metadata: Metadata = {
-  title: "About Us — Kerala Study Abroad Experts",
-  description: "Learn about Versa Global — Kerala's trusted study abroad consultancy founded by three passionate professionals.",
+  title: "About Us — The Most Trusted Study Abroad Agency",
+  description: "Learn about Versa Global — the most trusted study abroad agency, founded by professionals who have studied and worked internationally themselves.",
 }
 
 export default function AboutPage() {
@@ -16,8 +16,8 @@ export default function AboutPage() {
       <section className="bg-[#1B2A4A] text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-[#C9A84C] text-xs font-semibold tracking-widest uppercase mb-4">About Versa Global</p>
-          <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-5">We Help Kerala Students<br />Reach the World</h1>
-          <p className="text-blue-200 text-lg max-w-2xl mx-auto">Versa Global was founded with a simple mission: make world-class education accessible to every Kerala student, regardless of background.</p>
+          <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-5">We Help Students<br />Reach the World</h1>
+          <p className="text-blue-200 text-lg max-w-2xl mx-auto">Studying abroad is one of the most important decisions a student and their family will make. At Versa Global, we bring more than expertise to this journey — we bring firsthand experience.</p>
         </div>
       </section>
 
@@ -38,15 +38,18 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="font-playfair text-3xl font-bold text-[#1B2A4A] mb-5">Our Mission</h2>
+            <p className="text-[#6B7280] leading-relaxed mb-4">
+              Our team has studied at leading international institutions and built professional careers across global markets, giving us a deep understanding of both the opportunities and challenges that come with pursuing education overseas.
+            </p>
             <p className="text-[#6B7280] leading-relaxed mb-5">
-              Too many brilliant Kerala students miss life-changing opportunities abroad due to lack of guidance, misinformation, or financial barriers. Versa Global exists to change that.
+              We believe every student deserves guidance that is personalized, transparent, and grounded in real-world experience — not a one-size-fits-all approach. Because we have lived the journey ourselves, we understand what it takes to help students not only study abroad, but thrive abroad.
             </p>
             <ul className="space-y-3">
               {[
                 "Honest, research-backed university recommendations",
                 "End-to-end visa support with 95% success rate",
-                "Scholarship and financial aid guidance",
-                "Post-arrival support in your destination country",
+                "Education loan guidance through 20+ bank & NBFC partners",
+                "Pre-departure and post-arrival support in your destination country",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3 text-sm text-[#374151]">
                   <CheckCircle2 size={16} className="text-[#C9A84C] mt-0.5 shrink-0" />

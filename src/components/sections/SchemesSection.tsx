@@ -6,9 +6,9 @@ export default function SchemesSection() {
     <section className="py-14 md:py-20 px-5 bg-[#F8F9FA]">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-14">
-          <p className="text-[#C9A84C] text-xs font-semibold tracking-widest uppercase mb-3">Financial Aid</p>
-          <h2 className="font-playfair text-3xl md:text-4xl font-bold text-[#1B2A4A]">Scholarships &amp; Loan Schemes</h2>
-          <p className="text-[#6B7280] mt-4 max-w-xl mx-auto">Making study abroad accessible for every Kerala family through government and institutional funding options.</p>
+          <p className="text-[#C9A84C] text-xs font-semibold tracking-widest uppercase mb-3">Education Loan Support</p>
+          <h2 className="font-playfair text-3xl md:text-4xl font-bold text-[#1B2A4A]">We Handle Your Loan Process, End to End</h2>
+          <p className="text-[#6B7280] mt-4 max-w-xl mx-auto">Through our tie-ups with 20+ banks and NBFCs, we take the stress out of financing your education abroad.</p>
         </div>
 
         <div className="grid sm:grid-cols-3 gap-6">

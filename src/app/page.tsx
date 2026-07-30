@@ -9,8 +9,8 @@ import SchemesSection from "@/components/sections/SchemesSection"
 import ContactSection from "@/components/sections/ContactSection"
 
 export const metadata: Metadata = {
-  title: "Study Abroad Consultancy Kerala — Versa Global",
-  description: "Kerala's #1 study abroad consultancy. UK, Canada, Australia, Germany, USA and more. 1,000+ students placed, 95% visa success rate.",
+  title: "Versa Global — The Most Trusted Study Abroad Agency",
+  description: "Versa Global is the most trusted study abroad agency for Indian students. UK, Canada, Australia, Germany, Georgia, Vietnam, South Korea and more. 1,000+ students placed, 95% visa success rate.",
 }
 
 export default function HomePage() {

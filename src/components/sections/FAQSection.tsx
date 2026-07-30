@@ -7,8 +7,22 @@ import { FAQS } from "@/lib/data"
 export default function FAQSection() {
   const [open, setOpen] = useState<number | null>(null)
 
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: FAQS.map((faq) => ({
+      "@type": "Question",
+      name: faq.question.replace(/&apos;/g, "'"),
+      acceptedAnswer: { "@type": "Answer", text: faq.answer.replace(/&apos;/g, "'") },
+    })),
+  }
+
   return (
     <section className="py-14 md:py-20 px-5 bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-14">
           <p className="text-[#C9A84C] text-xs font-semibold tracking-widest uppercase mb-3">FAQ</p>

@@ -8,9 +8,9 @@ export default function DestinationsSection() {
     <section id="destinations" className="py-20 bg-[#F8F9FA] px-4">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-14">
-          <p className="text-[#C9A84C] text-xs font-semibold tracking-widest uppercase mb-3">Study Destinations</p>
-          <h2 className="font-playfair text-3xl md:text-4xl font-bold text-[#1B2A4A]">60+ Countries. 8 Top Picks.</h2>
-          <p className="text-[#6B7280] mt-4 max-w-xl mx-auto">From free German universities to Canadian PR pathways — we guide you to the right destination.</p>
+          <p className="text-[#C9A84C] text-xs font-semibold tracking-widest uppercase mb-3">60+ Study Destinations Worldwide</p>
+          <h2 className="font-playfair text-3xl md:text-4xl font-bold text-[#1B2A4A]">We Help You Find the Right Place to Learn, Grow, and Succeed</h2>
+          <p className="text-[#6B7280] mt-4 max-w-2xl mx-auto">From world-class universities in the UK, Canada, Australia and the USA, to affordable options like Germany, Georgia, Vietnam and South Korea — we match you to the destination that fits your goals, not the other way around.</p>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
