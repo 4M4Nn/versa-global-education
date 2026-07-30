@@ -1,4 +1,5 @@
 import { createClient } from "@supabase/supabase-js"
+import { SITE } from "@/lib/data"
 
 export async function saveLead(data: Record<string, string>) {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL!
@@ -9,6 +10,6 @@ export async function saveLead(data: Record<string, string>) {
 }
 
 export function openWhatsApp(message = "Hello, I want to study abroad.") {
-  const n = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "917907215816"
+  const n = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || `91${SITE.phone.replace(/\D/g, "").slice(-10)}`
   window.open(`https://wa.me/${n}?text=${encodeURIComponent(message)}`, "_blank")
 }
