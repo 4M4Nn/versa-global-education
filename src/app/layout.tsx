@@ -5,6 +5,7 @@ import Navbar from "@/components/layout/Navbar"
 import Footer from "@/components/layout/Footer"
 import FloatingWhatsApp from "@/components/layout/FloatingWhatsApp"
 import MobileStickyBar from "@/components/ui/MobileStickyBar"
+import SmoothScrollProvider from "@/components/layout/SmoothScrollProvider"
 import IntroWrapper from "@/components/ui/IntroWrapper"
 import ChatWidget from "@/components/chatbot/ChatWidget"
 import { SITE } from "@/lib/data"
@@ -57,13 +58,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
         />
-        <IntroWrapper />
-        <Navbar />
-        <main className="pt-[64px] md:pt-[94px] pb-16 md:pb-0 overflow-x-hidden">{children}</main>
-        <Footer />
-        <FloatingWhatsApp />
-        <MobileStickyBar />
-        <ChatWidget />
+        <SmoothScrollProvider>
+          <IntroWrapper />
+          <Navbar />
+          <main className="pt-[64px] md:pt-[94px] pb-16 md:pb-0 overflow-x-hidden">{children}</main>
+          <Footer />
+          <FloatingWhatsApp />
+          <MobileStickyBar />
+          <ChatWidget />
+        </SmoothScrollProvider>
       </body>
     </html>
   )
