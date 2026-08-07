@@ -4,7 +4,7 @@ export const SITE = {
   name: "Versa Global",
   phone: "+91 9746433133",
   email: "admissions@versaglobal.in",
-  address: "Kochi, Kerala, India",
+  address: "3rd Floor, Jogeo Building, Chembumukku, Kakkanad, Kochi, Kerala 682021",
 }
 
 export const NAV_LINKS = [
