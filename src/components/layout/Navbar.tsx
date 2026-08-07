@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Menu, X, Phone, MapPin } from "lucide-react"
 import { NAV_LINKS, SITE } from "@/lib/data"
 
@@ -25,11 +26,11 @@ export default function Navbar() {
       <header className="fixed top-0 left-0 right-0 z-50">
         <div className="bg-gold px-5 py-1.5 hidden md:block">
           <div className="max-w-7xl mx-auto flex items-center justify-between">
-            <div className="flex items-center gap-4 text-white text-xs">
+            <div className="flex items-center gap-4 text-navy text-xs font-medium">
               <span className="flex items-center gap-1"><MapPin className="w-3 h-3" />{SITE.address}</span>
               <span className="flex items-center gap-1"><Phone className="w-3 h-3" />{SITE.phone}</span>
             </div>
-            <span className="text-white text-xs">{SITE.email}</span>
+            <span className="text-navy text-xs font-medium">{SITE.email}</span>
           </div>
         </div>
 
@@ -37,9 +38,7 @@ export default function Navbar() {
           <div className="max-w-7xl mx-auto px-5 lg:px-8">
             <div className="flex items-center justify-between h-16">
               <Link href="/" onClick={() => setIsOpen(false)} className="flex items-center gap-2 flex-shrink-0">
-                <div className="w-8 h-8 bg-navy rounded-md flex items-center justify-center">
-                  <span className="text-gold font-bold text-sm font-playfair">V</span>
-                </div>
+                <Image src="/versa-global-icon.png" alt="Versa Global" width={182} height={120} className="h-9 w-auto object-contain" priority />
                 <div>
                   <span className="text-navy font-bold text-lg font-playfair leading-none block">Versa</span>
                   <span className="text-gold text-xs font-medium leading-none block">Global</span>
@@ -72,9 +71,7 @@ export default function Navbar() {
       <div className={`fixed inset-0 z-40 bg-white md:hidden flex flex-col transition-all duration-300 ${isOpen ? "opacity-100 pointer-events-auto translate-x-0" : "opacity-0 pointer-events-none translate-x-full"}`}>
         <div className="flex items-center justify-between px-5 h-16 border-b border-gray-100 shrink-0">
           <Link href="/" onClick={() => setIsOpen(false)} className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-navy rounded-md flex items-center justify-center">
-              <span className="text-gold font-bold text-sm font-playfair">V</span>
-            </div>
+            <Image src="/versa-global-icon.png" alt="Versa Global" width={182} height={120} className="h-9 w-auto object-contain" />
             <div>
               <span className="text-navy font-bold text-lg font-playfair leading-none block">Versa</span>
               <span className="text-gold text-xs font-medium leading-none block">Global</span>

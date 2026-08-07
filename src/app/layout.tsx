@@ -43,6 +43,8 @@ const organizationJsonLd = {
   alternateName: "Versa Global Education",
   description: "Versa Global is a study abroad consultancy helping students find the right country, university, and program abroad — with end-to-end support from counselling to visa approval and education loan guidance.",
   url: "https://versaglobal.in",
+  logo: "https://www.versaglobal.in/versa-global-icon.png",
+  image: "https://www.versaglobal.in/versa-global-icon.png",
   telephone: SITE.phone,
   email: SITE.email,
   address: { "@type": "PostalAddress", addressLocality: "Kochi", addressRegion: "Kerala", addressCountry: "IN" },

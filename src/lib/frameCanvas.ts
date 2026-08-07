@@ -15,6 +15,8 @@ export function renderFrame(canvas: HTMLCanvasElement, img: HTMLImageElement) {
     canvas.height = targetHeight
   }
   ctx.setTransform(dpr, 0, 0, dpr, 0, 0)
+  ctx.imageSmoothingEnabled = true
+  ctx.imageSmoothingQuality = "high"
 
   const imgRatio = img.naturalWidth / img.naturalHeight
   const canvasRatio = width / height
