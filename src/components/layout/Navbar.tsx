@@ -38,11 +38,7 @@ export default function Navbar() {
           <div className="max-w-7xl mx-auto px-5 lg:px-8">
             <div className="flex items-center justify-between h-16">
               <Link href="/" onClick={() => setIsOpen(false)} className="flex items-center gap-2 flex-shrink-0">
-                <Image src="/versa-global-icon.png" alt="Versa Global" width={182} height={120} className="h-9 w-auto object-contain" priority />
-                <div>
-                  <span className="text-navy font-bold text-lg font-playfair leading-none block">Versa</span>
-                  <span className="text-gold text-xs font-medium leading-none block">Global</span>
-                </div>
+                <Image src="/versa-global-logo.jpg" alt="Versa Global" width={1254} height={1254} className="h-14 w-14 object-contain" priority />
               </Link>
 
               <div className="hidden md:flex items-center gap-6">
@@ -71,11 +67,7 @@ export default function Navbar() {
       <div className={`fixed inset-0 z-40 bg-white md:hidden flex flex-col transition-all duration-300 ${isOpen ? "opacity-100 pointer-events-auto translate-x-0" : "opacity-0 pointer-events-none translate-x-full"}`}>
         <div className="flex items-center justify-between px-5 h-16 border-b border-gray-100 shrink-0">
           <Link href="/" onClick={() => setIsOpen(false)} className="flex items-center gap-2">
-            <Image src="/versa-global-icon.png" alt="Versa Global" width={182} height={120} className="h-9 w-auto object-contain" />
-            <div>
-              <span className="text-navy font-bold text-lg font-playfair leading-none block">Versa</span>
-              <span className="text-gold text-xs font-medium leading-none block">Global</span>
-            </div>
+            <Image src="/versa-global-logo.jpg" alt="Versa Global" width={1254} height={1254} className="h-14 w-14 object-contain" />
           </Link>
           <button className="p-2.5 rounded-lg text-navy hover:bg-gray-100" onClick={() => setIsOpen(false)} aria-label="Close menu">
             <X size={24} />
