@@ -17,6 +17,15 @@ export default {
         playfair: ["var(--font-playfair)", "serif"],
         inter: ["var(--font-inter)", "sans-serif"],
       },
+      keyframes: {
+        shimmer: {
+          "0%": { backgroundPosition: "0% center" },
+          "100%": { backgroundPosition: "200% center" },
+        },
+      },
+      animation: {
+        shimmer: "shimmer 4s linear infinite",
+      },
     },
   },
   plugins: [],
