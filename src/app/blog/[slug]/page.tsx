@@ -3,15 +3,16 @@ import { notFound } from "next/navigation"
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
-import { BLOG_POSTS, SITE } from "@/lib/data"
+import { SITE } from "@/lib/data"
+import { getAllBlogPosts } from "@/lib/content"
 
 export async function generateStaticParams() {
-  return BLOG_POSTS.map((post) => ({ slug: post.slug }))
+  return getAllBlogPosts().map((post) => ({ slug: post.slug }))
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params
-  const post = BLOG_POSTS.find((p) => p.slug === slug)
+  const post = getAllBlogPosts().find((p) => p.slug === slug)
   if (!post) return { title: "Post Not Found" }
   return {
     title: post.title,
@@ -22,6 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
+  const BLOG_POSTS = getAllBlogPosts()
   const post = BLOG_POSTS.find((p) => p.slug === slug)
   if (!post) notFound()
 

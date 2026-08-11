@@ -146,7 +146,7 @@ export const DESTINATIONS: Destination[] = [
     intake: "September & January",
     visa: "Student Visa (DH Visa)",
     description:
-      "Low tuition and living costs, English-taught programs, and rising demand for skilled graduates in one of Asia&apos;s fastest-growing economies — an emerging option we bring to students before it becomes mainstream.",
+      "Low tuition and living costs, English-taught programs, and rising demand for skilled graduates in one of Asia&apos;s fastest-growing economies. MBBS in Vietnam now starts from ₹31 lakhs — NMC-recognized, FMGE-eligible.",
   },
 ]
 
@@ -460,6 +460,84 @@ A visa stamp isn&apos;t the finish line. Ask what happens after you land — is 
 
 If you&apos;re evaluating Versa Global against any other Kochi consultancy using this exact checklist, we&apos;re comfortable with that — ask us our country-wise success rates, ask to meet the counsellor who&apos;ll actually handle your file, and ask what our post-landing support actually looks like. That&apos;s a fair way to choose, whoever you end up going with.`,
   },
+  {
+    slug: "mbbs-in-vietnam-cost-eligibility",
+    title: "MBBS in Vietnam 2026: Fees Starting at ₹31 Lakhs, Eligibility & NMC Recognition",
+    category: "Vietnam",
+    date: "August 2026",
+    excerpt:
+      "The full breakdown of what MBBS in Vietnam actually costs, why it starts at ₹31 lakhs, whether the degree is recognized in India, and what NEET and FMGE mean for your eligibility.",
+    image:
+      "https://images.unsplash.com/photo-1528127269322-539801943592?w=600&q=80&auto=format&fit=crop",
+    body: `MBBS in Vietnam has quietly become one of the most cost-effective ways for Indian students to earn a recognized medical degree — and it&apos;s a question we now get almost as often as our Georgia MBBS enquiries. Here&apos;s the complete, honest breakdown.
+
+## Why MBBS in Vietnam Starts From ₹31 Lakhs
+
+Through Versa Global, MBBS in Vietnam starts from ₹31 lakhs for the complete 6-year program — tuition, hostel, and administration fees included as a structured, transparent cost rather than a per-year estimate that grows unpredictably. This is meaningfully lower than most private medical seats in India, which routinely run ₹60 lakhs to over ₹1 crore with capitation fees on top, and it&apos;s competitive with or below most other popular MBBS-abroad destinations.
+
+## Total Cost Breakdown
+
+The ₹31 lakh starting figure covers your tuition and hostel accommodation for the full program. On top of this, budget for living expenses — food, local transport, and personal costs — which typically run modestly given Vietnam&apos;s low cost of living compared to Europe or North America. Exact final cost depends on the specific university and any optional accommodation upgrades, which our Vietnam counsellors walk you through university-by-university during your consultation, so there are no surprises after enrollment.
+
+## Is a Vietnam MBBS Degree Recognized in India?
+
+Yes, provided you study at an NMC (National Medical Commission) recognized university — which is the only kind of university Versa Global places students at. Graduates of NMC-recognized foreign medical universities are eligible to sit the FMGE (Foreign Medical Graduate Examination) to practice medicine in India, exactly the same requirement that applies to graduates from any other recognized foreign medical university, including Georgia, Russia, or the Philippines.
+
+## Do You Need NEET for MBBS in Vietnam?
+
+Yes — this applies to every Indian student pursuing MBBS abroad, in every destination, with no exceptions. A qualifying NEET score is mandatory to be eligible to practice medicine in India after you graduate, regardless of which country you study in. Be cautious of any consultancy suggesting otherwise; it&apos;s not a Vietnam-specific requirement we can work around, it&apos;s a national regulation that applies universally.
+
+## Eligibility Requirements
+
+Beyond a qualifying NEET score, eligibility for MBBS in Vietnam generally requires a minimum of 50% aggregate in Physics, Chemistry, and Biology at the 10+2 level (relaxed for reserved categories per NEET norms), and you must meet the minimum age requirement set by NMC guidelines. Unlike some other destinations, Vietnamese medical universities generally do not require a separate university entrance exam beyond these baseline requirements, which simplifies the admission timeline considerably.
+
+## Admission Process and Intake
+
+Vietnam&apos;s medical programs typically run September and January intakes. The process starts with document evaluation (10+2 marksheet, NEET scorecard, passport), followed by university application, offer letter, visa documentation (DH visa), and pre-departure preparation. From initial consultation to visa approval, most students complete the full process in 3-4 months when documentation is in order — noticeably faster than some other MBBS-abroad destinations.
+
+## Vietnam vs India: What You&apos;re Actually Saving
+
+A private MBBS seat in India frequently costs ₹60 lakhs to over ₹1 crore once capitation and hidden fees are factored in, with seat availability itself a major constraint given NEET cutoffs. At ₹31 lakhs for the complete program in Vietnam, the cost difference is substantial even after factoring in living expenses and travel — while the degree pathway to practicing in India (via FMGE) remains identical either way.
+
+## How Versa Global Helps
+
+Our Vietnam specialists work exclusively with NMC-recognized universities, handle your complete application and DH visa documentation, and prepare you for both university admission and eventual FMGE readiness from day one — not as an afterthought after you&apos;ve already graduated. If you&apos;re NEET-qualified and exploring MBBS-abroad options, a free consultation is the fastest way to see exactly how the ₹31 lakh Vietnam pathway compares to your other options.`,
+  },
+  {
+    slug: "where-to-study-mbbs-after-neet",
+    title: "Where to Study MBBS After NEET: Vietnam vs Georgia for Indian Students",
+    category: "Versa Global",
+    date: "August 2026",
+    excerpt:
+      "NEET-qualified but exploring options abroad? Here&apos;s an honest comparison of Vietnam and Georgia — Versa Global&apos;s two MBBS destinations — to help you decide.",
+    image:
+      "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&q=80&auto=format&fit=crop",
+    body: `Every year, a large number of NEET-qualified students don&apos;t get a seat that matches their budget or preferred college in India — and start asking the same question: where should I study MBBS instead? Versa Global works with two primary MBBS destinations, Vietnam and Georgia, and this is the honest comparison we walk every family through.
+
+## Do You Need NEET to Study MBBS Abroad?
+
+Yes, in every country, with no exceptions. A qualifying NEET score is required for any Indian student to be eligible to practice medicine in India after graduating from a foreign medical university — this is not destination-specific, so "which country doesn&apos;t require NEET" is the wrong question to ask. The real question is which NMC-recognized destination fits your budget and timeline best.
+
+## Vietnam: Starting From ₹31 Lakhs
+
+Vietnam is currently our most affordable MBBS destination, starting from ₹31 lakhs for the complete 6-year program including tuition and hostel. It suits students prioritizing cost above all else, with a comparatively fast 3-4 month admission timeline and September/January intakes. Vietnamese universities generally require only your NEET score and 10+2 marks for eligibility, without an additional university entrance exam.
+
+## Georgia: The Established Alternative
+
+Georgia typically runs $40,000-50,000 (roughly ₹33-42 lakhs) for the full program — a similar overall range to Vietnam, with a longer track record of Indian students studying there and a larger existing alumni and support network. Georgian medical universities are also NMC-recognized, with the same FMGE pathway to practice in India afterward.
+
+## How to Actually Decide Between Them
+
+Cost is close enough between the two that it usually isn&apos;t the deciding factor once you look at the real numbers — the more useful questions are about intake timing (Vietnam&apos;s January intake can mean starting sooner if you&apos;ve just missed a cycle), climate and lifestyle preference, and how established the current Indian student community is at your shortlisted university, which matters more for day-to-day comfort than most students expect going in.
+
+## Both Lead to the Same FMGE Pathway
+
+Whichever you choose, the path to practicing in India afterward is identical: graduate from your NMC-recognized university, then clear the FMGE. Neither destination gives you a shortcut around this step, and neither makes it harder than the other — the degree recognition pathway itself is not a differentiator between Vietnam and Georgia.
+
+## How Versa Global Helps You Decide
+
+Because we work with both destinations directly rather than pushing one over the other, our free consultation is a genuine comparison — we&apos;ll walk you through current costs, intake dates, and university options at both, matched to your NEET score, budget, and timeline, so you&apos;re choosing based on your actual situation rather than whichever destination a consultancy happens to specialize in.`,
+  },
 ]
 
 export const FAQS = [
@@ -502,6 +580,31 @@ export const FAQS = [
     question: "Can I work while studying abroad?",
     answer:
       "Yes — most destinations allow part-time work. UK allows 20 hours/week during term. Canada allows 20 hours/week off-campus. Australia allows 48 hours per fortnight. Germany allows 120 full days or 240 half days per year.",
+  },
+  {
+    question: "How much does MBBS in Vietnam cost?",
+    answer:
+      "MBBS in Vietnam through Versa Global starts from ₹31 lakhs for the full 6-year program (tuition, hostel, and administration fees), significantly lower than most private medical colleges in India and competitive with other popular MBBS-abroad destinations.",
+  },
+  {
+    question: "Is NEET required for MBBS in Vietnam?",
+    answer:
+      "Yes. A qualifying NEET score is mandatory for any Indian student pursuing MBBS abroad, including Vietnam, in order to be eligible to practice in India after graduation. This applies regardless of destination country.",
+  },
+  {
+    question: "Are Vietnam medical degrees recognized in India?",
+    answer:
+      "Yes — we place students only at NMC (National Medical Commission) recognized universities in Vietnam. Graduates are eligible to sit the FMGE (Foreign Medical Graduate Examination) to practice in India, the same requirement that applies to graduates from any recognized foreign medical university.",
+  },
+  {
+    question: "Where should I study MBBS after NEET?",
+    answer:
+      "It depends on your budget and priorities. Vietnam and Georgia are Versa Global&apos;s two primary MBBS destinations — Vietnam currently starts from ₹31 lakhs for the full program, while Georgia typically runs $40,000-50,000 total. Both are NMC-recognized with FMGE-eligible degrees. We help you compare both based on your specific budget and timeline in a free consultation.",
+  },
+  {
+    question: "How long does an MBBS program in Vietnam take?",
+    answer:
+      "The MBBS program in Vietnam is typically 6 years total, combining 5 years of academic study with a 1-year clinical internship — comparable in length to MBBS programs in India and most other MBBS-abroad destinations.",
   },
 ]
 

@@ -10,9 +10,26 @@ export const metadata: Metadata = {
   alternates: { canonical: "/faq" },
 }
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: FAQS.map((faq) => ({
+    "@type": "Question",
+    name: faq.question.replace(/&apos;/g, "'"),
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.answer.replace(/&apos;/g, "'"),
+    },
+  })),
+}
+
 export default function FAQPage() {
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <section className="bg-[#1B2A4A] text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-[#C9A84C] text-xs font-semibold tracking-widest uppercase mb-4">FAQ</p>

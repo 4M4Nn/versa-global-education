@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import { ArrowRight } from "lucide-react"
-import { BLOG_POSTS } from "@/lib/data"
+import { getAllBlogPosts } from "@/lib/content"
 
 export const metadata: Metadata = {
   title: "Study Abroad Blog — Guides by Versa Global",
@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 }
 
 export default function BlogPage() {
+  const BLOG_POSTS = getAllBlogPosts()
   return (
     <div>
       <section className="bg-[#1B2A4A] text-white py-20 px-4">
