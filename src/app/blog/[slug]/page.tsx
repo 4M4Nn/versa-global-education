@@ -45,9 +45,19 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
       <article className="max-w-3xl mx-auto px-4 py-12">
         <div className="prose prose-lg max-w-none">
-          {post.body.split("\n\n").filter(Boolean).map((para, i) => (
-            <p key={i} className="text-[#374151] leading-relaxed mb-5">{para.trim().replace(/&apos;/g, "'")}</p>
-          ))}
+          {post.body.split("\n\n").filter(Boolean).map((block, i) => {
+            const text = block.trim().replace(/&apos;/g, "'")
+            if (text.startsWith("## ")) {
+              return (
+                <h2 key={i} className="font-playfair text-2xl font-bold text-[#1B2A4A] mt-10 mb-4 first:mt-0">
+                  {text.slice(3)}
+                </h2>
+              )
+            }
+            return (
+              <p key={i} className="text-[#374151] leading-relaxed mb-5">{text}</p>
+            )
+          })}
         </div>
 
         <div className="mt-12 p-8 bg-[#EEF2FF] rounded-2xl border border-[#C9A84C]/20">

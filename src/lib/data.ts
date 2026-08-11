@@ -94,7 +94,7 @@ export const DESTINATIONS: Destination[] = [
     intake: "September",
     visa: "Study Visa",
     description:
-      "EU hub for Google, Apple, Facebook, Microsoft European HQs. Opens doors across Europe.",
+      "EU hub for Google, Apple, Facebook, Microsoft European HQs. Note: Ireland&apos;s free-fees scheme covers EU/EEA students only — international tuition applies, with strong scholarship support available.",
   },
   {
     id: "new-zealand",
@@ -308,20 +308,58 @@ Versa Global&apos;s dedicated UK visa team has maintained a 97% first-attempt su
   },
   {
     slug: "canada-pgwp-guide",
-    title: "Canada PGWP: From Student Visa to Permanent Residency",
+    title: "Canada PGWP 2026: Complete Guide to Eligibility, Cost, Application & Life After It Expires",
     category: "Canada",
-    date: "May 2026",
+    date: "August 2026",
     excerpt:
-      "How Indian students can use Canada&apos;s Post-Graduate Work Permit to get permanent residency.",
+      "What the Post-Graduate Work Permit is, who&apos;s eligible, how much it costs, how long it lasts, and what to do when it expires — everything Indian students ask us about PGWP.",
     image:
       "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=600&q=80&auto=format&fit=crop",
-    body: `Canada&apos;s Post-Graduate Work Permit (PGWP) program is one of the most powerful pathways to permanent residency available to international students anywhere in the world. For students dreaming of building a life in Canada, the PGWP is the critical bridge between your student life and your Canadian future.
+    body: `Canada&apos;s Post-Graduate Work Permit (PGWP) is one of the most powerful pathways to permanent residency available to international students anywhere in the world. It&apos;s also the single topic our Canada counsellors field the most questions about — so this guide answers the practical ones directly, in order.
 
-The PGWP allows graduates of eligible Designated Learning Institutions (DLIs) to work in Canada for up to 3 years after graduation, depending on the length of their study program. A program of 2 years or longer earns you a 3-year PGWP, which gives you the time needed to accumulate the Canadian work experience required for programs like Canadian Experience Class (CEC) under Express Entry. Most Versa Global students target programs between 2-3 years to maximize their PGWP duration.
+## What Is the PGWP?
 
-Once you have 1-2 years of skilled work experience in Canada under your PGWP, you become eligible to apply for permanent residency through Express Entry. The CEC stream has seen Comprehensive Ranking System (CRS) scores as low as 420-450 in recent draws, making it achievable for well-qualified professionals in fields like IT, engineering, healthcare, and business management.
+The PGWP is an open work permit issued to international students after they graduate from an eligible Designated Learning Institution (DLI) in Canada. "Open" means it isn&apos;t tied to a single employer — you can work for almost any employer, in almost any occupation, anywhere in Canada, for the duration of the permit. It exists specifically to let graduates gain Canadian work experience, which is the single biggest factor in qualifying for permanent residency afterward.
 
-Versa Global&apos;s Canada specialists help you select programs at the right DLIs that align with in-demand NOC (National Occupation Classification) codes, maximizing your chances of a successful PR application. Our post-landing support team stays connected with students throughout their PGWP period, advising on job search strategies, PR documentation, and provincial nominee programs as backup pathways.`,
+## Who Is Eligible for PGWP?
+
+Eligibility depends primarily on your program and institution, not your grades or field of study. In general, you qualify if you: completed a program at least 8 months long at an eligible DLI, studied full-time throughout your program (with limited exceptions for your final semester), graduated and received your credential confirmation, and apply within 180 days of receiving that confirmation. Programs shorter than 8 months, most online/distance programs, and certain non-DLI institutions do not qualify — this is exactly why Versa Global only recommends PGWP-eligible institutions and programs when we build your Canada application.
+
+## How to Apply for PGWP Inside Canada
+
+Most students apply from within Canada, online through your IRCC (Immigration, Refugees and Citizenship Canada) account, shortly after receiving official confirmation that you&apos;ve completed your program. You&apos;ll need your final transcript or an official completion letter, your study permit, a valid passport, and the application fee. You can typically continue working full-time under your existing study permit&apos;s post-graduation work authorization while your PGWP application is processed, as long as you applied before your study permit expired and meet the maintained-status conditions.
+
+## Can You Apply for PGWP From Outside Canada?
+
+Yes — if you left Canada after completing your program, you can still apply for PGWP from outside the country, provided you apply within the 180-day window and meet all other eligibility requirements. The process is largely the same, submitted online through your IRCC account, though you won&apos;t have implied status to work while it&apos;s processed since you&apos;re not physically in Canada. Because timing matters so much here, we recommend confirming your exact situation with a counsellor before you travel.
+
+## PGWP Cost and Fees
+
+The PGWP application involves a work permit processing fee plus an open work permit holder fee, both paid to IRCC at the time of application (fees are set by IRCC and revised periodically, so always confirm the current amount on the official IRCC fee schedule before paying). Budget for these as part of your overall post-study costs alongside any biometrics fee, which most applicants have already provided during their study permit application and won&apos;t need to repeat unless specifically requested.
+
+## PGWP Processing Time
+
+Processing times move around based on IRCC&apos;s current volumes, but most PGWP applications are processed within a few weeks to a couple of months when submitted online with complete documentation. Incomplete applications — missing transcripts, unclear completion letters, mismatched program details — are the most common cause of delay, which is why our team reviews every document before submission.
+
+## Do You Need IELTS or PTE for PGWP?
+
+No — unlike your original study permit or a future PR application, the PGWP application itself does not require an IELTS, PTE, or any other English test score. Your language test scores become relevant again later, when you apply for permanent residency through Express Entry, where a higher score directly improves your Comprehensive Ranking System (CRS) points.
+
+## How Long Does PGWP Last, and Can It Be Extended?
+
+Your PGWP length is tied directly to the length of your study program: programs of 8 months to under 2 years typically receive a permit matching the program length, while programs of 2 years or longer receive the maximum 3-year PGWP. This is why most Versa Global students target 2-year-plus programs specifically to maximize their post-study work window. Importantly, the PGWP itself generally cannot be extended beyond what your program length qualifies you for — which makes planning what happens next essential well before it expires.
+
+## From PGWP to Permanent Residency
+
+Once you have 1-2 years of skilled work experience in Canada under your PGWP, you become eligible to apply for permanent residency through Express Entry, most commonly via the Canadian Experience Class (CEC) stream. CRS score requirements shift with every draw, but CEC has historically been one of the more accessible streams for graduates with in-demand NOC (National Occupation Classification) codes in fields like IT, engineering, healthcare, and business management. Provincial Nominee Programs (PNPs) are a strong backup pathway if your CRS score falls short of a given Express Entry draw.
+
+## What Happens When Your PGWP Expires — How to Stay in Canada
+
+This is the question we get asked most urgently, usually with a few months of the permit left. The realistic options, roughly in order of how commonly they&apos;re used: apply for PR before your PGWP expires if you already qualify (the strongest option, since PR removes the expiry problem entirely); transition to an employer-specific work permit if you have a job offer and a positive LMIA or an LMIA-exempt category applies; apply under a Provincial Nominee Program stream that leads to a work permit bridge; or, in limited cases, apply for a bridging open work permit if you have a pending PR application. What you should not do is let your PGWP lapse without a plan — status gaps make every one of these paths harder. If your PGWP is expiring within the next year, that&apos;s exactly the point to start this conversation with us, not after.
+
+## How Versa Global Helps
+
+Our Canada specialists help you select programs at DLIs that align with in-demand NOC codes from day one, maximizing both your PGWP duration and your PR chances later. Our post-landing support team stays connected with students throughout their PGWP period — advising on job search strategy, PR documentation, and PNP backup pathways — so "what happens when my PGWP expires" is a question you&apos;re never asking us for the first time with three months left on the clock.`,
   },
   {
     slug: "germany-free-education",
@@ -339,6 +377,88 @@ To access Germany&apos;s tuition-free universities, you will need to meet langua
 The application process for German universities goes through uni-assist, a centralized portal that evaluates international credentials. Students with strong academic records (65%+ in their undergraduate degree) are competitive for German university admissions. You will need to demonstrate €11,208 in a blocked account (Sperrkonto) to cover your first year of living expenses — this money is yours to use after arrival.
 
 Versa Global&apos;s Germany specialists have helped dozens of families save tens of lakhs by choosing Germany over more expensive English-speaking destinations. We handle your uni-assist application, blocked account setup, German consulate visa appointment, and connect you with student communities already thriving in cities like Munich, Berlin, and Stuttgart.`,
+  },
+  {
+    slug: "study-in-ireland-cost-guide",
+    title: "Study in Ireland 2026: Real Cost Breakdown, Best Universities & Is It Actually Free?",
+    category: "Ireland",
+    date: "August 2026",
+    excerpt:
+      "What studying in Ireland actually costs for Indian students — tuition, living expenses, medicine and nursing programs, scholarships, and the honest answer to \"can I study in Ireland for free?\"",
+    image:
+      "https://images.unsplash.com/photo-1564959130747-897fb406b9af?w=600&q=80&auto=format&fit=crop",
+    body: `Ireland comes up in almost every conversation we have about the EU as an English-speaking gateway with Google, Apple, Meta, and Microsoft&apos;s European headquarters all based there. It also comes with more myths and mixed information than almost any other destination we advise on — so here&apos;s the honest, practical version.
+
+## Is Ireland Free to Study In?
+
+No, not for international students — this is the single biggest misconception we correct. Ireland&apos;s "free fees" scheme covers tuition for Irish and EU/EEA citizens at public universities, not international students from India or most non-EU countries. As a non-EU international student, you will pay full international tuition fees, which vary significantly by university and course. There is no blanket free-tuition pathway to Ireland the way there is with Germany&apos;s public universities — budget for real tuition costs from the start.
+
+## What Does It Actually Cost to Study in Ireland?
+
+For Indian students, total annual costs typically run in two parts: tuition and living expenses. Tuition for international undergraduate programs commonly ranges from roughly €10,000-€25,000 per year depending on the university and course, with postgraduate business and specialized programs often at the higher end. Living costs in Dublin — the most expensive city — typically run €12,000-€15,000 per year for accommodation, food, and transport, while smaller cities like Cork, Galway, and Limerick can bring this down meaningfully. Altogether, most Indian students should budget somewhere between ₹20-40 lakhs per year all-in, though this varies widely by course and city.
+
+## What Does It Cost to Study Medicine in Ireland?
+
+Medicine is Ireland&apos;s most expensive program category for international students, and one of the most commonly asked-about. International medical program fees typically run significantly higher than other courses — often in the range of €45,000-€60,000+ per year at leading medical schools, across a 5-6 year program. This makes Ireland a premium option for medicine specifically, generally more expensive than management or engineering programs, and worth planning for well in advance given the extended program length.
+
+## Best Universities and Cities to Study In
+
+Trinity College Dublin, University College Dublin, University College Cork, NUI Galway, and Dublin City University are Ireland&apos;s most recognized universities internationally, particularly strong in technology, pharma, business, and data analytics — directly aligned with the multinational employers headquartered in Dublin. Dublin offers the strongest job market and networking access but the highest living costs; Cork, Galway, and Limerick offer meaningfully lower living costs with strong programs and a less overwhelming adjustment for students new to living abroad.
+
+## Scholarships for Indian Students
+
+The Government of Ireland International Education Scholarship and various Enterprise Ireland and university-specific scholarships offer partial tuition support, though — unlike Germany&apos;s zero-tuition model — scholarships in Ireland typically offset rather than eliminate costs. University-specific merit scholarships are often the most accessible starting point, and our counsellors help identify which of your target universities offer them before you apply, since availability changes by intake.
+
+## Do You Need IELTS to Study in Ireland?
+
+Most programs require IELTS (typically 6.0-6.5 for undergraduate, 6.5-7.0 for postgraduate and professional programs like nursing), though some universities accept alternative proof of English proficiency — including PTE Academic or, in specific cases, a strong record of English-medium prior education. IELTS-waiver pathways exist but are university and course-specific, not a general rule, so this is worth confirming for your exact shortlist rather than assuming either way.
+
+## Studying Nursing or Law in Ireland
+
+Nursing is a genuinely strong Irish specialization with clear registration pathways into the Irish and broader EU healthcare system after graduation, though it requires meeting both academic and, for some programs, clinical-placement eligibility criteria. Law degrees in Ireland (LLB) are respected but note that practicing law in Ireland as a non-EU graduate involves additional qualification steps beyond the degree itself — this is a common point of confusion we walk students through before they commit to the program.
+
+## How Versa Global Helps With Ireland Applications
+
+We build your Ireland shortlist around your actual budget and career goals rather than university prestige alone — because the cost gap between a Dublin business master&apos;s and a Cork-based technology program can be enormous for a similar career outcome. Our team handles university applications, scholarship applications where available, visa documentation, and the financial evidence requirements for your Irish study visa, so the number you budget for at the start is the number you actually pay.`,
+  },
+  {
+    slug: "best-study-abroad-consultants-kochi-checklist",
+    title: "How to Choose the Best Study Abroad Consultant in Kochi (2026 Checklist)",
+    category: "Versa Global",
+    date: "August 2026",
+    excerpt:
+      "Kochi has dozens of study abroad consultancies. Here&apos;s the honest checklist to evaluate any of them — including us — before you commit.",
+    image:
+      "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80&auto=format&fit=crop",
+    body: `Search "study abroad consultants in Kochi" and you&apos;ll get dozens of names, most with a mix of genuinely good and clearly fake-looking reviews. We&apos;re not going to tell you Versa Global is the only good option in Kochi — that wouldn&apos;t be honest, and it wouldn&apos;t help you. Instead, here&apos;s the actual checklist we&apos;d want you to use to evaluate any consultant, including us.
+
+## Ask About Their Real Visa Success Rate — And Ask How It&apos;s Measured
+
+Every consultancy will quote you a success rate. Ask specifically: success rate out of applications submitted, or out of initial consultations? A consultancy that only takes on students it&apos;s confident about will naturally show a higher number than one that&apos;s transparent about every case. Ask for the rate broken down by country, since a strong UK number doesn&apos;t tell you anything about their Canada or Ireland track record.
+
+## Check Whether They Have a Physical Office You Can Visit
+
+This matters more for study-abroad decisions than almost any other service purchase, because you&apos;re trusting someone with a life decision involving lakhs of rupees and years of your life. A consultancy operating only through Instagram DMs and WhatsApp, with no verifiable office address in Kochi, is a real risk — not necessarily a scam, but harder to hold accountable if something goes wrong mid-process.
+
+## Ask Exactly What&apos;s Included in Their Fee — Before You Pay Anything
+
+This is where most complaints against consultancies in Kochi actually originate: unclear scope. Get a written breakdown of what&apos;s covered — university applications, SOP writing, visa documentation, post-landing support — and what costs extra. A consultancy that&apos;s vague about this upfront is far more likely to surprise you with add-on charges later.
+
+## Ask Who Will Actually Handle Your File
+
+Larger consultancies often have a sales counsellor who signs you up and a completely different, more junior team that actually processes your application. Ask directly who you&apos;ll be working with day-to-day, and whether that person specializes in your target country — a generalist counsellor handling UK, Canada, Ireland, and Australia applications simultaneously is not the same as a dedicated country specialist.
+
+## Read Reviews Critically, Not Just by Star Rating
+
+A consultancy with 500 five-star reviews and almost no detail in any of them is a weaker signal than one with 80 reviews that mention specific counsellor names, specific universities, and specific outcomes. Genuine reviews tend to be specific; incentivized or fake reviews tend to be generic.
+
+## Ask About Post-Landing Support, Not Just Visa Approval
+
+A visa stamp isn&apos;t the finish line. Ask what happens after you land — is there support with accommodation, initial banking setup, or (for Canada specifically) guidance through the PGWP and PR process later? Consultancies that treat visa approval as the end of the relationship tend to leave students unsupported exactly when questions get more complicated, not less.
+
+## What We&apos;d Want You to Ask Us
+
+If you&apos;re evaluating Versa Global against any other Kochi consultancy using this exact checklist, we&apos;re comfortable with that — ask us our country-wise success rates, ask to meet the counsellor who&apos;ll actually handle your file, and ask what our post-landing support actually looks like. That&apos;s a fair way to choose, whoever you end up going with.`,
   },
 ]
 
