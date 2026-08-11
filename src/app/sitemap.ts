@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next"
-import { DESTINATIONS, BLOG_POSTS } from "@/lib/data"
+import { DESTINATIONS } from "@/lib/data"
+import { getAllBlogPosts } from "@/lib/content"
 
 const BASE = "https://www.versaglobal.in"
 
@@ -11,7 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
-  const posts = BLOG_POSTS.map((p) => ({
+  const posts = getAllBlogPosts().map((p) => ({
     url: `${BASE}/blog/${p.slug}`,
     lastModified: new Date(),
     changeFrequency: "monthly" as const,
