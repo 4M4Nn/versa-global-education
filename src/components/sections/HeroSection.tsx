@@ -115,11 +115,11 @@ export default function HeroSection() {
             <span className="inline-flex items-center gap-2 bg-[#C9A84C]/20 border border-[#C9A84C]/30 text-[#C9A84C] text-xs font-semibold tracking-widest uppercase px-4 py-2 rounded-full mb-5">
               <Globe size={13} />India&apos;s Most Trusted Study Abroad Agency
             </span>
-            <h1 className="font-playfair text-[clamp(2rem,5.5vw,3.75rem)] font-bold leading-tight mb-4">
+            <h1 className="speakable-summary font-playfair text-[clamp(2rem,5.5vw,3.75rem)] font-bold leading-tight mb-4">
               Versa Global — The Most Trusted<br />
               <span className="text-[#C9A84C]">Study Abroad Agency</span> for Your Journey
             </h1>
-            <h2 className="text-blue-200 text-base md:text-lg font-semibold leading-relaxed mb-5">
+            <h2 className="speakable-summary text-blue-200 text-base md:text-lg font-semibold leading-relaxed mb-5">
               Expert guidance to 60+ countries — UK, Canada, Australia, Germany, Georgia, Vietnam, South Korea and more, with a 95% visa success rate.
             </h2>
             <p className="text-blue-200 text-base md:text-lg leading-relaxed mb-5">

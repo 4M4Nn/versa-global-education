@@ -9,9 +9,27 @@ export const metadata: Metadata = {
   alternates: { canonical: "/process" },
 }
 
+const howToJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "How to Study Abroad With Versa Global",
+  description:
+    "Versa Global's 5-step process for studying abroad, from free profile assessment to pre-departure support.",
+  step: PROCESS_STEPS.map((step) => ({
+    "@type": "HowToStep",
+    position: Number(step.number),
+    name: step.title,
+    text: step.description,
+  })),
+}
+
 export default function ProcessPage() {
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
+      />
       <section className="bg-[#1B2A4A] text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-[#C9A84C] text-xs font-semibold tracking-widest uppercase mb-4">Our Process</p>

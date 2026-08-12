@@ -40,7 +40,7 @@ export default function FAQSection() {
                 <ChevronDown size={18} className={`text-[#C9A84C] shrink-0 transition-transform ${open === i ? "rotate-180" : ""}`} />
               </button>
               {open === i && (
-                <div className="px-5 pb-5 text-sm text-[#6B7280] leading-relaxed border-t border-gray-100 pt-4">
+                <div className="speakable-answer px-5 pb-5 text-sm text-[#6B7280] leading-relaxed border-t border-gray-100 pt-4">
                   {faq.answer.replace(/&apos;/g, "'")}
                 </div>
               )}

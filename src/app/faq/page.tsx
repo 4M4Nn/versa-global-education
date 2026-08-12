@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
-import { FAQS, SITE } from "@/lib/data"
+import { SITE } from "@/lib/data"
 import FAQSection from "@/components/sections/FAQSection"
 
 export const metadata: Metadata = {
@@ -10,17 +10,13 @@ export const metadata: Metadata = {
   alternates: { canonical: "/faq" },
 }
 
-const faqJsonLd = {
+const speakableJsonLd = {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: FAQS.map((faq) => ({
-    "@type": "Question",
-    name: faq.question.replace(/&apos;/g, "'"),
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: faq.answer.replace(/&apos;/g, "'"),
-    },
-  })),
+  "@type": "WebPage",
+  speakable: {
+    "@type": "SpeakableSpecification",
+    cssSelector: [".speakable-answer"],
+  },
 }
 
 export default function FAQPage() {
@@ -28,7 +24,7 @@ export default function FAQPage() {
     <div>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableJsonLd) }}
       />
       <section className="bg-[#1B2A4A] text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">

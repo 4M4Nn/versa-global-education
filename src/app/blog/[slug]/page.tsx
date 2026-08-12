@@ -10,6 +10,43 @@ export async function generateStaticParams() {
   return getAllBlogPosts().map((post) => ({ slug: post.slug }))
 }
 
+/** Renders "**bold**" segments within a paragraph as <strong>, leaving everything else as plain text. */
+function renderInlineFormatting(text: string) {
+  const parts = text.split(/(\*\*[^*]+\*\*)/g)
+  return parts.map((part, i) =>
+    part.startsWith("**") && part.endsWith("**") ? (
+      <strong key={i} className="text-[#1B2A4A]">
+        {part.slice(2, -2)}
+      </strong>
+    ) : (
+      part
+    )
+  )
+}
+
+/** Pulls genuine question-headed sections ("## Is X true?") out of a post body for FAQPage schema. */
+function extractFaqPairs(body: string): { question: string; answer: string }[] {
+  const blocks = body.split("\n\n").filter(Boolean).map((b) => b.trim().replace(/&apos;/g, "'"))
+  const pairs: { question: string; answer: string }[] = []
+
+  for (let i = 0; i < blocks.length; i++) {
+    const block = blocks[i]
+    if (!block.startsWith("## ")) continue
+    const heading = block.slice(3).trim()
+    if (!heading.endsWith("?")) continue
+
+    const answerParts: string[] = []
+    for (let j = i + 1; j < blocks.length && !blocks[j].startsWith("## "); j++) {
+      answerParts.push(blocks[j])
+    }
+    if (answerParts.length > 0) {
+      pairs.push({ question: heading, answer: answerParts.join(" ").replace(/\*\*/g, "") })
+    }
+  }
+
+  return pairs
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params
   const post = getAllBlogPosts().find((p) => p.slug === slug)
@@ -28,9 +65,43 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   if (!post) notFound()
 
   const related = BLOG_POSTS.filter((p) => p.slug !== slug).slice(0, 2)
+  const faqPairs = extractFaqPairs(post.body)
+
+  const faqJsonLd =
+    faqPairs.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqPairs.map((pair) => ({
+            "@type": "Question",
+            name: pair.question,
+            acceptedAnswer: { "@type": "Answer", text: pair.answer },
+          })),
+        }
+      : null
+
+  const speakableJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: [".speakable-answer"],
+    },
+  }
 
   return (
     <div>
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableJsonLd) }}
+      />
+
       <section className="bg-[#1B2A4A] text-white py-16 px-4">
         <div className="max-w-3xl mx-auto">
           <span className="text-[#C9A84C] text-xs font-bold uppercase tracking-widest">{post.category}</span>
@@ -57,7 +128,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               )
             }
             return (
-              <p key={i} className="text-[#374151] leading-relaxed mb-5">{text}</p>
+              <p key={i} className="speakable-answer text-[#374151] leading-relaxed mb-5">
+                {renderInlineFormatting(text)}
+              </p>
             )
           })}
         </div>

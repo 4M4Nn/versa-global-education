@@ -407,6 +407,16 @@ Medicine is Ireland&apos;s most expensive program category for international stu
 
 Trinity College Dublin, University College Dublin, University College Cork, NUI Galway, and Dublin City University are Ireland&apos;s most recognized universities internationally, particularly strong in technology, pharma, business, and data analytics — directly aligned with the multinational employers headquartered in Dublin. Dublin offers the strongest job market and networking access but the highest living costs; Cork, Galway, and Limerick offer meaningfully lower living costs with strong programs and a less overwhelming adjustment for students new to living abroad.
 
+**Trinity College Dublin (TCD)** — Ireland&apos;s oldest and most internationally recognized university. International undergraduate fees typically range €13,758-€29,548/year depending on course, with postgraduate fees spanning roughly €6,000-€35,800/year. Strong across business, engineering, computer science, and law.
+
+**University College Dublin (UCD)** — Ireland&apos;s largest university, with particularly strong business (Smurfit) and engineering programs. International undergraduate fees typically run €16,800-€25,600/year.
+
+**University College Cork (UCC)** — Consistently ranked among Ireland&apos;s top universities for research, with especially strong medicine, dentistry, and pharma programs — though medicine and dentistry specifically are the most expensive courses in the country, often exceeding €52,000/year.
+
+**NUI Galway and Dublin City University (DCU)** — Both offer meaningfully lower fees than Trinity or UCD for comparable technology and business programs, making them strong options for students prioritizing value without sacrificing recognition.
+
+On top of tuition, nearly every Irish university also charges a Student Contribution Charge (capped around €2,500/year covering services and exams) and smaller annual levies (roughly €150-€300) for student union and campus facilities — worth budgeting for separately from headline tuition figures.
+
 ## Scholarships for Indian Students
 
 The Government of Ireland International Education Scholarship and various Enterprise Ireland and university-specific scholarships offer partial tuition support, though — unlike Germany&apos;s zero-tuition model — scholarships in Ireland typically offset rather than eliminate costs. University-specific merit scholarships are often the most accessible starting point, and our counsellors help identify which of your target universities offer them before you apply, since availability changes by intake.

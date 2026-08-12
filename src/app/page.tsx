@@ -15,9 +15,22 @@ export const metadata: Metadata = {
   description: "Versa Global is the most trusted study abroad agency for Indian students. UK, Canada, Australia, Germany, Georgia, Vietnam, South Korea and more. 1,000+ students placed, 95% visa success rate.",
 }
 
+const speakableJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  speakable: {
+    "@type": "SpeakableSpecification",
+    cssSelector: [".speakable-summary", ".speakable-answer"],
+  },
+}
+
 export default function HomePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableJsonLd) }}
+      />
       <AnnouncementBar />
       <HeroSection />
       <DestinationsSection />
