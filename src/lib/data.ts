@@ -394,12 +394,12 @@ export const CAREER_PROGRAMS: CareerProgram[] = [
       {
         question: "What is the fee for the IT Infrastructure Engineer Program and what does it include?",
         answer:
-          "The program fee is AED 23,500, payable as a single payment, and includes 250 hours of training over 4.5–6 months, full access to the 5-module curriculum, hands-on lab and client-site exposure, and the complete 7-step career-readiness and 100% job-assurance track. This excludes living expenses in Dubai and visa fees, and excludes the separate certification exam fees (MCSE Azure MS104 — AED 1,300, Office 365 MS101 — AED 1,300, and CCNA Routing & Switching — AED 3,900), which are paid directly as per the official Microsoft and Cisco exam schedules.",
+          "The program fee is AED 23,500, payable as a single payment, and includes 250 hours of training over 4.5–6 months, full access to the 5-module curriculum, hands-on lab and client-site exposure, the complete 7-step career-readiness and 100% job-assurance track, and all three certification exam fees — MCSE Azure (MS104), Office 365 (MS101), and CCNA Routing & Switching — worth AED 6,500 on their own, at no extra cost. This excludes only living expenses in Dubai and visa fees, which vary by individual circumstances.",
       },
       {
         question: "Is visa support provided for students coming to Dubai for this program?",
         answer:
-          "Yes. Versa Global provides visa support for students who choose the Dubai classroom or hybrid track, guiding you through the documentation needed to study in the UAE. Living expenses and the visa fee itself are not included in the AED 23,500 program fee and should be budgeted for separately.",
+          "Yes. Versa Global provides visa support for students who choose the Dubai classroom or hybrid track, guiding you through the documentation needed to study in the UAE. Living expenses and the visa fee itself are the only costs not included in the AED 23,500 program fee and should be budgeted for separately.",
       },
       {
         question: "Can I complete this program online from India without moving to Dubai?",
@@ -419,7 +419,7 @@ export const CAREER_PROGRAMS: CareerProgram[] = [
       {
         question: "What certifications and career roles does this program prepare me for?",
         answer:
-          "The curriculum prepares you for Microsoft's MCSE Azure (MS104) and Office 365 (MS101) certifications plus Cisco's CCNA Routing & Switching certification (exam fees payable separately). Graduates typically move into roles such as IT Administrator, IT Level 1/2 Administrator, IT System/Network Administrator, IT Coordinator, Microsoft Cloud Administrator, and Microsoft Messaging Administrator across GCC employers.",
+          "The curriculum prepares you for Microsoft's MCSE Azure (MS104) and Office 365 (MS101) certifications plus Cisco's CCNA Routing & Switching certification — all three exam fees are included in your program fee, at no extra cost. Graduates typically move into roles such as IT Administrator, IT Level 1/2 Administrator, IT System/Network Administrator, IT Coordinator, Microsoft Cloud Administrator, and Microsoft Messaging Administrator across GCC employers.",
       },
       {
         question: "Do I need prior IT experience to join this program?",
@@ -428,7 +428,7 @@ export const CAREER_PROGRAMS: CareerProgram[] = [
       },
     ],
     metaDescription:
-      "100% job-assured IT Infrastructure Engineer Program by Versa Global, in association with MACOB IT Solutions, Dubai. Windows Server, Azure, Office 365 & CCNA training — online, hybrid or classroom in Dubai. AED 23,500. 60+ students placed in GCC countries.",
+      "100% job-assured IT Infrastructure Engineer Program by Versa Global, in association with MACOB IT Solutions, Dubai. Windows Server, Azure, Office 365 & CCNA training — online, hybrid or classroom in Dubai. AED 23,500, all certification exam fees included. 60+ students placed in GCC countries.",
     keywords: [
       "assured job in GCC countries",
       "study in Dubai IT course",
@@ -773,7 +773,7 @@ It means every candidate who completes the program requirements and engages full
 
 ## How Much Does It Cost?
 
-The program fee is AED 23,500, paid as a single payment, covering the full 250-hour curriculum and the complete job-assurance and placement track. This excludes living expenses in Dubai and visa fees, which vary by individual circumstances, and excludes certification exam fees — MCSE Azure (MS104) and Office 365 (MS101) at AED 1,300 each, and CCNA Routing & Switching at AED 3,900 — which are paid separately per the official Microsoft and Cisco exam schedules.
+The program fee is AED 23,500, paid as a single payment, covering the full 250-hour curriculum, the complete job-assurance and placement track, and all three certification exam fees — MCSE Azure (MS104), Office 365 (MS101), and CCNA Routing & Switching — a combined AED 6,500 in exams included at no extra cost. This excludes only living expenses in Dubai and visa fees, which vary by individual circumstances.
 
 ## Who Should Apply?
 

@@ -326,18 +326,22 @@ export default async function CareerProgramPage({ params }: { params: Promise<{ 
             </p>
           </div>
           <div>
-            <h2 className="font-playfair text-2xl font-bold text-[#1B2A4A] mb-4">Certification Exams Required</h2>
+            <h2 className="font-playfair text-2xl font-bold text-[#1B2A4A] mb-4">Certification Exams — Included</h2>
             <div className="space-y-3 mb-4">
               {program.certificationExams.map((exam) => (
                 <div key={exam.code} className="flex items-center justify-between bg-[#F8F9FA] rounded-xl p-4">
                   <span className="text-sm font-semibold text-[#1B2A4A]">{exam.name}</span>
-                  <span className="text-sm font-bold text-[#C9A84C]">{exam.currency} {exam.fee.toLocaleString()}</span>
+                  <span className="text-sm font-bold text-[#C9A84C]">
+                    {exam.currency} {exam.fee.toLocaleString()} <span className="text-[10px] font-semibold text-green-600 uppercase ml-1">Included</span>
+                  </span>
                 </div>
               ))}
             </div>
             <p className="text-xs text-[#6B7280]">
-              Exam fees are payable separately as per the official Microsoft / Cisco certification schedule and are
-              not included in the program fee above.
+              All three certification exam fees — a combined {program.certificationExams[0].currency}{" "}
+              {program.certificationExams.reduce((sum, e) => sum + e.fee, 0).toLocaleString()} in value — are
+              included in your {program.fee.currency} {program.fee.amount.toLocaleString()} program fee at no
+              extra cost.
             </p>
           </div>
         </div>

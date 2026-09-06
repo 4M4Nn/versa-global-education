@@ -3,11 +3,13 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { X, ArrowRight, Sparkles } from "lucide-react"
+import { CAREER_PROGRAMS } from "@/lib/data"
 
 const DISMISS_KEY = "vg-career-academy-it-program-announcement-dismissed"
 
 export default function AnnouncementBar() {
   const [visible, setVisible] = useState(false)
+  const program = CAREER_PROGRAMS[0]
 
   useEffect(() => {
     queueMicrotask(() => {
@@ -36,8 +38,8 @@ export default function AnnouncementBar() {
         </span>
         <Sparkles size={16} className="shrink-0" />
         <p className="text-xs sm:text-sm font-bold flex flex-wrap items-center justify-center gap-x-1.5 gap-y-1">
-          <span className="uppercase tracking-wide">Just Launched:</span>
-          <span>100% Job-Assured IT Program — Study in Dubai, Get Placed in the GCC!</span>
+          <span className="uppercase tracking-wide">Career Academy:</span>
+          <span>100% Job-Assured IT Program in Dubai — {program.studentsPlaced} Students Already Placed in the GCC!</span>
           <span className="inline-flex items-center gap-1 underline underline-offset-2 group-hover:gap-1.5 transition-all">
             Learn more <ArrowRight size={13} />
           </span>
