@@ -1,117 +1,31 @@
-"use client"
-
-import { useCallback, useEffect, useRef, useState } from "react"
+import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, Globe, CheckCircle2 } from "lucide-react"
-import { gsap } from "gsap"
-import { ScrollTrigger } from "gsap/ScrollTrigger"
-import { useGSAP } from "@gsap/react"
 import { STATS, SITE } from "@/lib/data"
-import { HERO_FRAMES, HERO_FRAME_COUNT } from "@/lib/heroFrames"
-import { useFramePreloader } from "@/hooks/useFramePreloader"
-import { renderFrame } from "@/lib/frameCanvas"
-
-gsap.registerPlugin(ScrollTrigger)
 
 const CHECKLIST = ["60+ destination countries", "95% visa success rate", "1,000+ students placed", "Free profile evaluation"]
-const SCROLL_PX_PER_FRAME = 14
 
 export default function HeroSection() {
   const waUrl = `https://wa.me/91${SITE.phone.replace(/\D/g, "").slice(-10)}`
 
-  const sectionRef = useRef<HTMLElement>(null)
-  const canvasRef = useRef<HTMLCanvasElement>(null)
-  const contentRef = useRef<HTMLDivElement>(null)
-
-  const { images, progress, isLoaded } = useFramePreloader(HERO_FRAMES)
-  const [showLoader, setShowLoader] = useState(true)
-
-  useEffect(() => {
-    if (!isLoaded) return
-    const timeout = setTimeout(() => setShowLoader(false), 700)
-    return () => clearTimeout(timeout)
-  }, [isLoaded])
-
-  const drawFrame = useCallback(
-    (index: number) => {
-      const canvas = canvasRef.current
-      const img = images[index]
-      if (!canvas || !img) return
-      renderFrame(canvas, img)
-    },
-    [images]
-  )
-
-  useGSAP(
-    () => {
-      if (!isLoaded) return
-      const mm = gsap.matchMedia()
-
-      mm.add("(prefers-reduced-motion: no-preference)", () => {
-        drawFrame(0)
-        gsap.fromTo(
-          contentRef.current,
-          { opacity: 0, y: 24, filter: "blur(8px)" },
-          { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.9, ease: "power2.out", delay: 0.1 }
-        )
-
-        const state = { frame: 0 }
-        const tl = gsap.timeline({
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: "top top",
-            end: `+=${HERO_FRAME_COUNT * SCROLL_PX_PER_FRAME}`,
-            scrub: 0.5,
-            pin: true,
-            anticipatePin: 1,
-            invalidateOnRefresh: true,
-          },
-        })
-
-        tl.to(
-          state,
-          {
-            frame: HERO_FRAME_COUNT - 1,
-            duration: 1,
-            ease: "none",
-            onUpdate: () => drawFrame(Math.round(state.frame)),
-          },
-          0
-        ).to(
-          contentRef.current,
-          { opacity: 0, y: -36, filter: "blur(12px)", duration: 0.22, ease: "none" },
-          0.02
-        )
-
-        const onResize = () => drawFrame(Math.round(state.frame))
-        window.addEventListener("resize", onResize)
-        return () => window.removeEventListener("resize", onResize)
-      })
-
-      mm.add("(prefers-reduced-motion: reduce)", () => {
-        drawFrame(0)
-        gsap.set(contentRef.current, { opacity: 1, y: 0, filter: "blur(0px)" })
-      })
-
-      return () => mm.revert()
-    },
-    { scope: sectionRef, dependencies: [isLoaded, drawFrame] }
-  )
-
   return (
-    <section ref={sectionRef} className="relative bg-[#1B2A4A] text-white">
-      <div className="relative h-screen w-full overflow-hidden">
-        <canvas ref={canvasRef} className="absolute inset-0 h-full w-full" aria-hidden="true" />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#1B2A4A]/75 via-[#1B2A4A]/45 to-[#1B2A4A]/85 pointer-events-none" />
-        <div className="absolute inset-0 opacity-5 pointer-events-none">
+    <section className="relative bg-[#1B2A4A] text-white">
+      <div className="relative min-h-[92vh] w-full overflow-hidden">
+        <Image
+          src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=1920&q=80&auto=format&fit=crop"
+          alt="Graduates celebrating academic success abroad"
+          fill
+          priority
+          className="object-cover"
+          style={{ objectPosition: "center 25%" }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0F1A2E]/95 via-[#0F1A2E]/80 to-[#0F1A2E]/30" />
+        <div className="absolute inset-0 opacity-10 pointer-events-none">
           <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#C9A84C] rounded-full blur-3xl" />
         </div>
 
-        <div
-          ref={contentRef}
-          className="relative h-full max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 items-center px-5 opacity-0"
-        >
-          <div>
+        <div className="relative max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 items-center px-5 py-24 lg:py-0 lg:min-h-[92vh]">
+          <div className="animate-fade-in-up">
             <span className="inline-flex items-center gap-2 bg-[#C9A84C]/20 border border-[#C9A84C]/30 text-[#C9A84C] text-xs font-semibold tracking-widest uppercase px-4 py-2 rounded-full mb-5">
               <Globe size={13} />India&apos;s Most Trusted Study Abroad Agency
             </span>
@@ -143,7 +57,7 @@ export default function HeroSection() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-4 mt-2 lg:mt-0">
+          <div className="grid grid-cols-2 gap-4 mt-2 lg:mt-0 animate-fade-in-up [animation-delay:150ms]">
             {STATS.map((stat) => (
               <div key={stat.label} className="bg-white/5 border border-white/10 rounded-2xl p-5 md:p-6 text-center hover:border-[#C9A84C]/30 transition-all backdrop-blur-sm">
                 <p className="font-playfair text-3xl md:text-4xl font-bold text-[#C9A84C] mb-1">{stat.value.toLocaleString("en-IN")}{stat.suffix}</p>
@@ -152,22 +66,6 @@ export default function HeroSection() {
             ))}
           </div>
         </div>
-
-        {showLoader && (
-          <div
-            className={`absolute inset-0 z-30 flex flex-col items-center justify-center bg-[#1B2A4A] transition-opacity duration-700 ${
-              isLoaded ? "opacity-0 pointer-events-none" : "opacity-100"
-            }`}
-          >
-            <p className="text-white/80 font-playfair text-xs md:text-sm tracking-[0.3em] uppercase mb-4">
-              Loading Versa Global
-            </p>
-            <p className="text-[#C9A84C] text-4xl md:text-5xl font-bold tabular-nums">{progress}%</p>
-            <div className="mt-6 h-[2px] w-40 bg-white/10 overflow-hidden rounded-full">
-              <div className="h-full bg-[#C9A84C]" style={{ width: `${progress}%` }} />
-            </div>
-          </div>
-        )}
       </div>
     </section>
   )

@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import AnnouncementBar from "@/components/layout/AnnouncementBar"
 import HeroSection from "@/components/sections/HeroSection"
 import DestinationsSection from "@/components/sections/DestinationsSection"
+import CareerAcademyTeaser from "@/components/sections/CareerAcademyTeaser"
 import DigitalOfficeTeaser from "@/components/sections/DigitalOfficeTeaser"
 import ProcessSection from "@/components/sections/ProcessSection"
 import FoundersSection from "@/components/sections/FoundersSection"
@@ -34,6 +35,7 @@ export default function HomePage() {
       <AnnouncementBar />
       <HeroSection />
       <DestinationsSection />
+      <CareerAcademyTeaser />
       <DigitalOfficeTeaser />
       <ProcessSection />
       <FoundersSection />

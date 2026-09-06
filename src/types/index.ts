@@ -48,3 +48,46 @@ export interface Founder {
   color: string
   bio: string
 }
+
+export interface CareerProgramModule {
+  title: string
+  topics: string[]
+}
+
+export interface CareerProgramFaq {
+  question: string
+  answer: string
+}
+
+export interface CareerProgram {
+  slug: string
+  title: string
+  shortName: string
+  tagline: string
+  associationPartner: string
+  focus: string
+  durationHours: string
+  durationMonths: string
+  modes: string[]
+  targetAudience: string
+  prerequisites: string
+  learningObjectives: string[]
+  modules: CareerProgramModule[]
+  industryExposure: { title: string; description: string }[]
+  careerReadinessSteps: string[]
+  careerOutcomes: string[]
+  trainingMaterials: string[]
+  assessmentPlan: string[]
+  fee: { amount: number; currency: string; paymentMode: string; durationRange: string }
+  certificationExams: { name: string; code: string; fee: number; currency: string }[]
+  schedule: { fullTime: string[]; partTime: string[] }
+  instructorProfile: { summary: string; certifications: string[] }
+  studentsPlaced: string
+  jobAssuranceStatement: string
+  location: string
+  image: string
+  heroImage: string
+  faqs: CareerProgramFaq[]
+  metaDescription: string
+  keywords: string[]
+}

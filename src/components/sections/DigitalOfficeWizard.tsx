@@ -2,8 +2,8 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { ArrowRight, ArrowLeft, MessageCircle, RotateCcw, Check } from "lucide-react"
-import { SITE } from "@/lib/data"
+import { ArrowRight, ArrowLeft, MessageCircle, RotateCcw, Check, BriefcaseBusiness } from "lucide-react"
+import { SITE, CAREER_PROGRAMS } from "@/lib/data"
 import {
   COURSE_CATEGORIES,
   BUDGET_BANDS,
@@ -12,7 +12,7 @@ import {
   type BudgetBand,
 } from "@/lib/courseMatching"
 
-type Step = 1 | 2 | 3 | 4
+type Step = 1 | 2 | 3 | 4 | "career"
 
 export default function DigitalOfficeWizard() {
   const [step, setStep] = useState<Step>(1)
@@ -53,7 +53,7 @@ I'd like to talk to a counsellor about my options.`
           <div
             key={s}
             className={`h-1.5 flex-1 rounded-full transition-colors ${
-              s <= step ? "bg-[#C9A84C]" : "bg-gray-100"
+              step === "career" || s <= step ? "bg-[#C9A84C]" : "bg-gray-100"
             }`}
           />
         ))}
@@ -79,6 +79,61 @@ I'd like to talk to a counsellor about my options.`
                 <p className="text-xs text-[#6B7280] mt-1">{cat.description}</p>
               </button>
             ))}
+          </div>
+
+          <button
+            onClick={() => setStep("career")}
+            className="mt-4 w-full text-left p-4 rounded-xl border-2 border-[#C9A84C]/40 bg-[#FBF5E6] hover:border-[#C9A84C] transition-all flex items-center gap-3"
+          >
+            <BriefcaseBusiness size={20} className="text-[#C9A84C] shrink-0" />
+            <div>
+              <p className="font-bold text-[#1B2A4A] text-sm">Want a Job, Not Just a Degree?</p>
+              <p className="text-xs text-[#6B7280] mt-0.5">See our 100% job-assured Career & Skills Academy programs in the GCC — no budget/qualification quiz needed.</p>
+            </div>
+          </button>
+        </div>
+      )}
+
+      {step === "career" && (
+        <div>
+          <span className="text-[#C9A84C] text-xs font-semibold uppercase tracking-wider">Career & Skills Academy</span>
+          <h2 className="font-playfair text-2xl md:text-3xl font-bold text-[#1B2A4A] mt-2 mb-6">
+            100% Job-Assured Programs in the GCC
+          </h2>
+          <div className="space-y-4 mb-8">
+            {CAREER_PROGRAMS.map((program) => (
+              <div key={program.slug} className="rounded-2xl border-2 border-[#C9A84C] bg-[#FBF5E6] p-5">
+                <p className="font-playfair font-bold text-[#1B2A4A]">{program.shortName}</p>
+                <p className="text-xs text-[#C9A84C] font-semibold mt-0.5">{program.tagline.replace(/&apos;/g, "'")}</p>
+                <ul className="mt-3 space-y-1.5">
+                  <li className="flex items-start gap-2 text-xs text-[#374151]"><Check size={13} className="text-[#C9A84C] mt-0.5 shrink-0" /> {program.durationMonths}, {program.durationHours} — Online, Hybrid or Dubai Classroom</li>
+                  <li className="flex items-start gap-2 text-xs text-[#374151]"><Check size={13} className="text-[#C9A84C] mt-0.5 shrink-0" /> AED {program.fee.amount.toLocaleString()} — {program.studentsPlaced} students placed in GCC countries</li>
+                  <li className="flex items-start gap-2 text-xs text-[#374151]"><Check size={13} className="text-[#C9A84C] mt-0.5 shrink-0" /> Visa support for the Dubai and hybrid tracks</li>
+                </ul>
+                <Link
+                  href={`/career-academy/${program.slug}`}
+                  className="inline-flex items-center gap-1 mt-3 text-xs font-semibold text-[#1B2A4A] hover:text-[#C9A84C]"
+                >
+                  View Full Program <ArrowRight size={12} />
+                </Link>
+              </div>
+            ))}
+          </div>
+          <div className="flex flex-col sm:flex-row gap-3">
+            <a
+              href={`https://wa.me/91${SITE.phone.replace(/\D/g, "").slice(-10)}?text=${encodeURIComponent("Hi Versa Global, I'm interested in the Career & Skills Academy's IT Infrastructure Engineer Program with GCC job assurance. Can you share more details?")}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 inline-flex items-center justify-center gap-2 bg-[#1B2A4A] text-white font-bold px-6 py-3.5 rounded-lg hover:bg-[#0F1A2E] transition-colors"
+            >
+              <MessageCircle size={18} /> Talk to a Career Academy Counsellor
+            </a>
+            <button
+              onClick={() => setStep(1)}
+              className="inline-flex items-center justify-center gap-2 border border-gray-200 text-[#6B7280] font-semibold px-6 py-3.5 rounded-lg hover:bg-gray-50 transition-colors text-sm"
+            >
+              <ArrowLeft size={15} /> Back to Study Abroad Options
+            </button>
           </div>
         </div>
       )}

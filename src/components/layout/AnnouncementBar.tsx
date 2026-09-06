@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import { X, ArrowRight, Sparkles } from "lucide-react"
 
-const DISMISS_KEY = "vg-mbbs-vietnam-announcement-dismissed"
+const DISMISS_KEY = "vg-career-academy-it-program-announcement-dismissed"
 
 export default function AnnouncementBar() {
   const [visible, setVisible] = useState(false)
@@ -26,7 +26,7 @@ export default function AnnouncementBar() {
 
   return (
     <Link
-      href="/destinations/vietnam"
+      href="/career-academy/it-infrastructure-engineer-program-dubai"
       className="relative flex items-center justify-center bg-gradient-to-r from-[#C9A84C] via-[#E8C96A] to-[#C9A84C] bg-[length:200%_auto] animate-shimmer text-[#1B2A4A] group"
     >
       <div className="max-w-7xl mx-auto px-10 py-3 flex items-center justify-center gap-2.5 text-center">
@@ -37,7 +37,7 @@ export default function AnnouncementBar() {
         <Sparkles size={16} className="shrink-0" />
         <p className="text-xs sm:text-sm font-bold flex flex-wrap items-center justify-center gap-x-1.5 gap-y-1">
           <span className="uppercase tracking-wide">Just Launched:</span>
-          <span>MBBS in Vietnam — starting from ₹31 lakhs!</span>
+          <span>100% Job-Assured IT Program — Study in Dubai, Get Placed in the GCC!</span>
           <span className="inline-flex items-center gap-1 underline underline-offset-2 group-hover:gap-1.5 transition-all">
             Learn more <ArrowRight size={13} />
           </span>

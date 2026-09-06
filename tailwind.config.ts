@@ -22,9 +22,14 @@ export default {
           "0%": { backgroundPosition: "0% center" },
           "100%": { backgroundPosition: "200% center" },
         },
+        fadeInUp: {
+          "0%": { opacity: "0", transform: "translateY(20px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
       },
       animation: {
         shimmer: "shimmer 4s linear infinite",
+        "fade-in-up": "fadeInUp 0.8s ease-out both",
       },
     },
   },

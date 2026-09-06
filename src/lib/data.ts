@@ -1,4 +1,4 @@
-import type { Destination, ProcessStep, Testimonial, BlogPost, Stat, Founder } from "@/types"
+import type { Destination, ProcessStep, Testimonial, BlogPost, Stat, Founder, CareerProgram } from "@/types"
 
 export const SITE = {
   name: "Versa Global",
@@ -11,6 +11,7 @@ export const NAV_LINKS = [
   { label: "Home", href: "/" },
   { label: "Destinations", href: "/#destinations" },
   { label: "Courses", href: "/courses" },
+  { label: "Career Academy", href: "/career-academy" },
   { label: "Digital Office", href: "/digital-office" },
   { label: "Process", href: "/#process" },
   { label: "About", href: "/#about" },
@@ -236,6 +237,208 @@ export const TESTIMONIALS: Testimonial[] = [
     quote:
       "I had no idea Germany was free for international students until Versa Global explained it. Saved my family lakhs.",
     rating: 5,
+  },
+]
+
+export const CAREER_PROGRAMS: CareerProgram[] = [
+  {
+    slug: "it-infrastructure-engineer-program-dubai",
+    title: "IT Infrastructure Engineer Program — Dubai, Online & Hybrid",
+    shortName: "IT Infrastructure Engineer Program",
+    tagline: "100% Job Assurance in GCC Countries — A Job That's Earned, Not Granted",
+    associationPartner: "MACOB IT Solutions, Dubai — Corporate Training Division",
+    focus: "IT Desktop Level 1 / Level 2, Basic Cloud Administration — specialising in Windows Server, Microsoft Azure and Office 365",
+    durationHours: "250 Hrs",
+    durationMonths: "4.5 – 6 Months",
+    modes: ["Online", "Hybrid", "Classroom in Dubai"],
+    targetAudience: "Degree / Diploma holders",
+    prerequisites: "Basic familiarity with computer operation",
+    learningObjectives: [
+      "Specialise in Microsoft Windows Server, Microsoft Azure Cloud and Office 365",
+      "Build practical, employer-ready infrastructure and cloud administration skills",
+    ],
+    modules: [
+      {
+        title: "Module 1 — Hardware & Networking",
+        topics: [
+          "IBM PC Installation and Configuration",
+          "Hardware Maintenance and Troubleshooting",
+          "Booting Issues, Partitions & OS Installations",
+          "Software Installations",
+          "Network Fundamentals",
+          "Routers / Switch / Firewall Familiarization",
+          "Cable Crimping and Basic Connectivity",
+          "Basic LAN Infrastructure Setup",
+        ],
+      },
+      {
+        title: "Module 2 — Windows Server 2022",
+        topics: [
+          "Installation, Upgrading and Migration",
+          "Storage Services, Storage Migration and Software-Defined Storage",
+          "Hyper-V Virtualization",
+          "Installation & Configuration of AD, DHCP, DNS, FTP, IIS, DFS",
+          "Implementing Network Load Balancing",
+          "AD, Disaster Recovery, Backup & Troubleshooting",
+          "RAID Implementation",
+          "Creating and Managing Deployments",
+          "Performance Monitoring, Tuning & Load Mitigation",
+        ],
+      },
+      {
+        title: "Module 3 — Cisco Certified Network Associate (CCNA)",
+        topics: [
+          "IP Addressing, Subnetting & VLSM",
+          "Router & Switch Connectivity, Modes and Configurations",
+          "Routing — Static and Dynamic",
+          "NAT / PAT and ACL",
+          "Switch Configurations",
+          "VLAN, Trunk & VTP",
+          "Inter-VLAN Routing",
+          "MAC Binding and Port Security",
+        ],
+      },
+      {
+        title: "Module 4 — Microsoft Azure Administrator",
+        topics: [
+          "Manage Azure Identities and Governance",
+          "Implement and Manage Storage, Azure Files and Blob Storage",
+          "Deploy and Manage Azure Compute Resources, Virtual Machines and Containers",
+          "Implement and Manage Virtual Networking, Secure Access and Load Balancing",
+          "Monitor and Maintain Azure Resources",
+          "Manage Microsoft Entra Users, Groups and Access to Azure Resources",
+          "Create and Configure Azure App Service",
+          "Automate Deployment via ARM Templates / Bicep",
+          "Implement Backup and Recovery, Azure Site Recovery and Failover",
+          "Configure and Interpret Reports and Alerts for Backups",
+        ],
+      },
+      {
+        title: "Module 5 — Microsoft Office 365 Administration",
+        topics: [
+          "Deploy and Manage a Microsoft 365 Tenant",
+          "Implement and Manage Microsoft Entra Identity",
+          "Manage Security and Threats using Microsoft Defender",
+          "Manage Compliance using Microsoft Purview",
+          "Manage Users, Groups, Roles and Role Groups",
+          "Implement and Manage Authentication Methods",
+          "Migration of Emails from SharePoint / Zoho / Exchange to Office 365",
+        ],
+      },
+    ],
+    industryExposure: [
+      { title: "Client Site Visits & AMC Audit", description: "Shadow live annual-maintenance audits at client premises in Dubai." },
+      { title: "Real-Time Project Participation", description: "Work on active infrastructure and cloud engagements alongside MACOB IT Solutions' team." },
+      { title: "Azure & Office 365 Implementation", description: "Hands-on participation in live tenant deployments, not simulations." },
+      { title: "Data Center Visit — Dubai NOC", description: "Guided tour of a live regional Network Operations Center." },
+    ],
+    careerReadinessSteps: [
+      "CV Clinic",
+      "Job Guidance Workshop",
+      "LinkedIn Workshop",
+      "ATS Workshop",
+      "Technical Interview Prep",
+      "HR Questions Prep",
+      "Mock Interviews",
+    ],
+    careerOutcomes: [
+      "IT Administrator",
+      "IT Level 1 / Level 2 Administrator",
+      "IT System / Network Administrator",
+      "IT Coordinator",
+      "Microsoft Cloud Administrator",
+      "Microsoft Messaging Administrator",
+    ],
+    trainingMaterials: [
+      "Classroom theoretical training",
+      "Practical, hands-on sessions with real servers",
+      "Classroom digital notes and reference links / materials",
+      "Access to latest servers, switches, routers, storage & firewalls",
+      "Remote server and cloud lab environments",
+    ],
+    assessmentPlan: [
+      "Quizzes: ongoing classroom interaction",
+      "Assignments: periodic take-home assignments",
+      "Final Project: 3 capstone projects",
+      "Participation: real live customers, Data Center visits and AMC visits",
+    ],
+    fee: { amount: 23500, currency: "AED", paymentMode: "Single Payment", durationRange: "4.5 – 6 Months" },
+    certificationExams: [
+      { name: "MCSE Azure — MS104", code: "MS104", fee: 1300, currency: "AED" },
+      { name: "Office 365 — MS101", code: "MS101", fee: 1300, currency: "AED" },
+      { name: "CCNA Routing & Switching", code: "CCNA", fee: 3900, currency: "AED" },
+    ],
+    schedule: {
+      fullTime: [
+        "Morning batch: 10:00 AM – 6:00 PM (flexible)",
+        "Minimum 50 training hours per month",
+        "Weekly client site visits (flexible)",
+        "25 hours dedicated to interview preparation",
+      ],
+      partTime: [
+        "Customised time slots aligned to your work schedule",
+        "Same curriculum depth and hands-on access as full-time learners",
+      ],
+    },
+    instructorProfile: {
+      summary: "Certified trainers with 10+ years of hands-on industry experience. Multiple trainers deliver the bundle-pack sessions, each specialising in their respective module.",
+      certifications: ["MCSE", "CCNA", "Azure", "Office 365", "VMware", "CEH", "Linux"],
+    },
+    studentsPlaced: "60+",
+    jobAssuranceStatement:
+      "Every candidate receives dedicated job-assurance support until placed. This is not a guarantee handed out for free — it is the outcome of the discipline, skills and real-world exposure built into every stage of the program: live infrastructure practice, client site visits, real-time projects, a full career-readiness track and rigorous mock interviews. Learners who complete the program requirements and engage fully with the placement process are supported until they are placed in a GCC country.",
+    location: "Dubai, UAE (classroom & hands-on labs) — with online and hybrid options for students studying from India",
+    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80&auto=format&fit=crop",
+    heroImage: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1600&q=80&auto=format&fit=crop",
+    faqs: [
+      {
+        question: "What is the fee for the IT Infrastructure Engineer Program and what does it include?",
+        answer:
+          "The program fee is AED 23,500, payable as a single payment, and includes 250 hours of training over 4.5–6 months, full access to the 5-module curriculum, hands-on lab and client-site exposure, and the complete 7-step career-readiness and 100% job-assurance track. This excludes living expenses in Dubai and visa fees, and excludes the separate certification exam fees (MCSE Azure MS104 — AED 1,300, Office 365 MS101 — AED 1,300, and CCNA Routing & Switching — AED 3,900), which are paid directly as per the official Microsoft and Cisco exam schedules.",
+      },
+      {
+        question: "Is visa support provided for students coming to Dubai for this program?",
+        answer:
+          "Yes. Versa Global provides visa support for students who choose the Dubai classroom or hybrid track, guiding you through the documentation needed to study in the UAE. Living expenses and the visa fee itself are not included in the AED 23,500 program fee and should be budgeted for separately.",
+      },
+      {
+        question: "Can I complete this program online from India without moving to Dubai?",
+        answer:
+          "Yes. The IT Infrastructure Engineer Program runs in a 3-in-1 format — online, hybrid, or full classroom in Dubai — so you can study entirely online from India, combine remote study with periodic Dubai sessions on the hybrid track, or relocate to Dubai for full in-person classroom training and client site visits. All three tracks cover the same 250-hour curriculum and carry the same 100% job assurance.",
+      },
+      {
+        question: "What does 100% job assurance actually mean in this program?",
+        answer:
+          "100% job assurance means every candidate who completes the program requirements and fully engages with the placement process receives dedicated job-assurance support until they are placed in a GCC country — it is not a job handed out without effort. It is backed by live infrastructure practice, real client site visits, real-time projects with MACOB IT Solutions, a complete 7-stage career-readiness track (CV clinic through mock interviews), and rigorous technical and HR interview preparation. 60+ students have been successfully placed in GCC countries through this pathway.",
+      },
+      {
+        question: "How long does the IT Infrastructure Engineer Program take to complete?",
+        answer:
+          "The program runs 250 training hours over 4.5 to 6 months, depending on whether you're on the full-time track (minimum 50 training hours per month, morning batch 10 AM–6 PM) or the part-time track, which uses customised time slots aligned to your work schedule while covering the same curriculum depth.",
+      },
+      {
+        question: "What certifications and career roles does this program prepare me for?",
+        answer:
+          "The curriculum prepares you for Microsoft's MCSE Azure (MS104) and Office 365 (MS101) certifications plus Cisco's CCNA Routing & Switching certification (exam fees payable separately). Graduates typically move into roles such as IT Administrator, IT Level 1/2 Administrator, IT System/Network Administrator, IT Coordinator, Microsoft Cloud Administrator, and Microsoft Messaging Administrator across GCC employers.",
+      },
+      {
+        question: "Do I need prior IT experience to join this program?",
+        answer:
+          "No formal IT background is required — the program is designed for degree or diploma holders with basic familiarity with computer operation. Training starts from hardware and networking fundamentals in Module 1 before progressing to Windows Server, CCNA, Azure, and Office 365 administration.",
+      },
+    ],
+    metaDescription:
+      "100% job-assured IT Infrastructure Engineer Program by Versa Global, in association with MACOB IT Solutions, Dubai. Windows Server, Azure, Office 365 & CCNA training — online, hybrid or classroom in Dubai. AED 23,500. 60+ students placed in GCC countries.",
+    keywords: [
+      "assured job in GCC countries",
+      "study in Dubai IT course",
+      "IT infrastructure engineer program Dubai",
+      "100% job assurance IT course",
+      "Windows Server Azure Office 365 CCNA training",
+      "IT course with visa support Dubai",
+      "career and skills academy Versa Global",
+      "IT jobs in GCC after training",
+    ],
   },
 ]
 
@@ -549,6 +752,110 @@ Whichever you choose, the path to practicing in India afterward is identical: gr
 ## How Versa Global Helps You Decide
 
 Because we work with both destinations directly rather than pushing one over the other, our free consultation is a genuine comparison — we&apos;ll walk you through current costs, intake dates, and university options at both, matched to your NEET score, budget, and timeline, so you&apos;re choosing based on your actual situation rather than whichever destination a consultancy happens to specialize in.`,
+  },
+  {
+    slug: "it-job-assurance-program-dubai-gcc",
+    title: "100% Job-Assured IT Infrastructure Engineer Program: Study in Dubai, Get Placed Across the GCC",
+    category: "Career Academy",
+    date: "September 2026",
+    excerpt:
+      "Versa Global&apos;s Career & Skills Academy now offers a 100% job-assured IT Infrastructure Engineer Program in association with MACOB IT Solutions, Dubai — online, hybrid, or full classroom in the UAE.",
+    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&q=80&auto=format&fit=crop",
+    body: `Versa Global is best known as a study abroad agency, but our Career & Skills Academy exists for a different kind of student — one who wants a job in the Gulf, not a degree from it. Our newest program, the IT Infrastructure Engineer Program, is built in association with MACOB IT Solutions, Dubai, and comes with 100% job assurance across GCC countries. 60+ students have already been placed through it.
+
+## What Is the IT Infrastructure Engineer Program?
+
+It&apos;s a 250-hour, 4.5-6 month career transformation program covering Windows Server 2022, Microsoft Azure Administration, Microsoft Office 365 Administration, and Cisco&apos;s CCNA — the exact stack that GCC employers hire IT Level 1/2 administrators, system/network administrators, and cloud administrators for. Training runs in three formats: fully online, hybrid, or full classroom in Dubai, so you can study from India or relocate for hands-on, in-person training with visa support provided for the Dubai track.
+
+## What Does "100% Job Assurance" Actually Mean Here?
+
+It means every candidate who completes the program requirements and engages fully with our placement process receives dedicated job-assurance support until they are placed in a GCC country — not a job handed out for free. It&apos;s backed by real infrastructure practice on live servers and routers, client site visits and AMC audit shadowing, real-time project participation on active MACOB IT Solutions engagements, a guided Dubai NOC data center visit, and a structured 7-stage career-readiness track — CV clinic, job guidance workshop, LinkedIn workshop, ATS workshop, technical interview prep, HR questions prep, and mock interviews. 60+ students have gone through this exact pipeline and been placed.
+
+## How Much Does It Cost?
+
+The program fee is AED 23,500, paid as a single payment, covering the full 250-hour curriculum and the complete job-assurance and placement track. This excludes living expenses in Dubai and visa fees, which vary by individual circumstances, and excludes certification exam fees — MCSE Azure (MS104) and Office 365 (MS101) at AED 1,300 each, and CCNA Routing & Switching at AED 3,900 — which are paid separately per the official Microsoft and Cisco exam schedules.
+
+## Who Should Apply?
+
+The program is built for degree or diploma holders with basic familiarity with computer operation — no prior IT work experience is required. Training starts from hardware and networking fundamentals before progressing through Windows Server, CCNA, Azure, and Office 365, so students entering with zero infrastructure background and students looking to formalize existing skills both fit the intake profile.
+
+## How Versa Global and MACOB IT Solutions Work Together
+
+Versa Global handles counselling, enrollment, and the visa-support process for students choosing the Dubai or hybrid track, while MACOB IT Solutions, Dubai — a working corporate IT services provider, not just a training center — delivers the curriculum, the real client site exposure, and the eventual GCC placement network. That combination is what makes the job assurance credible: students train on infrastructure MACOB actually manages for real clients, not simulated lab environments alone.
+
+Explore the full program — curriculum, fee breakdown, class schedule, and every FAQ — on our [Career Academy page](/career-academy/it-infrastructure-engineer-program-dubai), or book a free consultation to see if this pathway fits your goals.`,
+  },
+  {
+    slug: "study-in-dubai-guide-indian-students",
+    title: "Study in Dubai as an Indian Student: Visa Support, Costs & What Daily Life Is Actually Like",
+    category: "Career Academy",
+    date: "September 2026",
+    excerpt:
+      "What it&apos;s actually like to move to Dubai for career-focused IT training — visa support, living costs, and how the classroom and hybrid tracks work for Indian students.",
+    image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&q=80&auto=format&fit=crop",
+    body: `Every year, more Indian students choose Dubai not for a university degree, but for hands-on, job-focused technical training that leads directly into the GCC job market. If you&apos;re considering our IT Infrastructure Engineer Program&apos;s classroom or hybrid track, here&apos;s the honest, practical picture of what moving to Dubai for it actually involves.
+
+## Do I Need a Visa to Study in Dubai?
+
+Yes — Indian nationals require a UAE visa to study or train in Dubai. Versa Global provides visa support to students enrolling in the classroom or hybrid track of the IT Infrastructure Engineer Program, guiding you through the documentation process. The visa fee itself is not included in the AED 23,500 program fee and should be budgeted for separately, alongside your living expenses.
+
+## What Does It Cost to Live in Dubai While Training?
+
+Living costs in Dubai depend heavily on your accommodation choice — shared accommodation is significantly more affordable than a private apartment, and areas like Deira, Al Nahda, and International City are popular with students and young professionals for cost reasons. Budget realistically for rent, food, local transport (Dubai&apos;s metro and bus network is extensive and affordable), and personal expenses on top of the program fee — these are excluded from the AED 23,500 and vary by lifestyle and accommodation choice.
+
+## What Is the Difference Between the Online, Hybrid and Classroom Tracks?
+
+The fully online track lets you complete all 250 hours of training remotely from India, with live sessions and remote lab access to servers and cloud environments. The hybrid track blends remote study with periodic in-person sessions and site visits in Dubai. The full classroom track means relocating to Dubai for the entire 4.5-6 month program, with direct access to real servers, routers, switches, and MACOB IT Solutions&apos; live client site visits and Dubai NOC data center tour. All three tracks cover an identical curriculum and carry the same 100% job assurance — the choice comes down to your budget, visa timeline, and how much you value in-person hands-on access.
+
+## What Is a Typical Full-Time Training Day Like?
+
+Full-time students train in a morning batch from 10:00 AM to 6:00 PM (flexible), completing a minimum of 50 training hours per month, with weekly client site visits worked in flexibly around the schedule and 25 dedicated hours for interview preparation across the program. Part-time students get customised time slots that fit around existing work commitments, covering the same curriculum depth and hands-on access.
+
+## Can I Work While Training in Dubai?
+
+The IT Infrastructure Engineer Program is a full training commitment designed to prepare you for direct GCC employment after completion, not a part-time study arrangement alongside independent work — your visa category and permitted activities during the training period should be confirmed directly with our counsellors based on your specific circumstances before you commit to the classroom track.
+
+## How Versa Global Supports You Before You Land
+
+Beyond visa support, our counsellors walk you through what to expect in Dubai — accommodation guidance, an honest cost breakdown for your specific budget, and connecting you with the MACOB IT Solutions training team ahead of your start date, so your first week in Dubai is spent settling into training, not figuring out logistics from scratch.
+
+If you&apos;re weighing the Dubai classroom track against studying online from India, book a free consultation and we&apos;ll walk through the real costs and trade-offs for your specific situation.`,
+  },
+  {
+    slug: "it-jobs-gcc-countries-demand-2026",
+    title: "IT Jobs in GCC Countries: Which Roles Are in Demand and How Employers Actually Hire",
+    category: "Career Academy",
+    date: "September 2026",
+    excerpt:
+      "Windows Server, Azure and network administration roles are in steady demand across the UAE, Saudi Arabia and the wider GCC. Here&apos;s what employers actually look for.",
+    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&q=80&auto=format&fit=crop",
+    body: `The GCC&apos;s ongoing digital infrastructure buildout — across the UAE, Saudi Arabia, Qatar, and the wider region — has kept steady demand for IT infrastructure and cloud administration talent, even as the broader tech hiring market has cooled elsewhere. Here&apos;s what that demand actually looks like and what employers hire for.
+
+## Which IT Roles Are Most in Demand Across the GCC?
+
+IT Administrators, IT Level 1/2 Support Administrators, System and Network Administrators, and Microsoft Cloud and Messaging Administrators remain consistently in demand across GCC employers, because every organization running Windows Server infrastructure, Microsoft 365 tenants, and cloud workloads on Azure needs people who can manage, secure, and troubleshoot them day to day. These are foundational, always-needed roles rather than trend-driven ones, which is part of why they offer a reliable entry point for career-changers and new graduates alike.
+
+## Do Employers Require Certifications, or Just Experience?
+
+Both, generally. GCC employers hiring for infrastructure and cloud administration roles typically look for a combination of practical hands-on experience — actual server, network, and cloud administration work, not just theory — and recognized certifications like Microsoft&apos;s MCSE Azure and Office 365 credentials plus Cisco&apos;s CCNA. Candidates who can show both a portfolio of real infrastructure work and the matching certification tend to move through hiring processes faster, because the certification verifies baseline competence while the experience demonstrates you can apply it under real conditions.
+
+## Why Real Client Site Experience Matters More Than Classroom-Only Training
+
+A significant share of GCC IT hiring managers specifically ask about hands-on experience with live systems during interviews, because simulated lab environments don&apos;t fully prepare candidates for the pressure and unpredictability of production infrastructure. This is exactly why Versa Global&apos;s IT Infrastructure Engineer Program is built around real client site visits, AMC audit shadowing, and active project participation with MACOB IT Solutions&apos; actual Dubai clients, rather than classroom simulations alone.
+
+## What Salary Range Can Entry-Level IT Infrastructure Roles Expect in the GCC?
+
+Entry-level IT Administrator and Level 1/2 Support roles in the UAE and wider GCC vary by employer size, industry, and emirate, and exact figures shift with market conditions — so rather than quoting a number that may already be outdated, our placement team gives every candidate a realistic, current salary expectation for their specific certifications and target role during the job-assurance process, based on the roles our current employer network is actively hiring for.
+
+## How Does Versa Global&apos;s Placement Process Actually Work?
+
+Once you complete the IT Infrastructure Engineer Program&apos;s curriculum and career-readiness track — CV clinic, LinkedIn workshop, ATS workshop, technical interview prep, HR questions prep, and mock interviews — our placement support connects you with GCC employers actively hiring for the roles you&apos;re certified in, and stays engaged with you until you&apos;re placed. This is what our 100% job assurance actually refers to: sustained placement support tied to genuine completion of the training and readiness process, not a one-time job posting forwarded after graduation.
+
+## Is Now a Good Time to Train for GCC IT Roles?
+
+The GCC&apos;s continued investment in digital government services, cloud migration, and enterprise IT modernization across the UAE and Saudi Arabia in particular means foundational infrastructure and cloud administration skills stay in steady demand — these are operational roles tied to running existing and growing IT estates, not roles exposed to the volatility of newer tech trends. For candidates without a GCC-specific network already, a structured program with built-in employer placement — rather than an independent job search from outside the region — remains the more reliable path in.
+
+Ready to see if this pathway fits your background? Explore the full [IT Infrastructure Engineer Program](/career-academy/it-infrastructure-engineer-program-dubai) or book a free consultation with our Career Academy counsellors.`,
   },
 ]
 
