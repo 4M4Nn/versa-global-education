@@ -1,14 +1,14 @@
-import { SITE, DESTINATIONS, PROCESS_STEPS, FOUNDERS, STATS, SCHEMES, FAQS, OFFER } from "@/lib/data"
+import { SITE, DESTINATIONS, PROCESS_STEPS, FOUNDERS, STATS, SCHEMES, FAQS, CAREER_PROGRAMS, OFFER } from "@/lib/data"
 
 export interface ChatReply {
   text: string
   quickReplies?: string[]
 }
 
-export const CHAT_QUICK_START = ["Study destinations", "Visa process", "Education loans", "Book free evaluation"]
+export const CHAT_QUICK_START = ["Study destinations", "Career Academy", "Visa process", "Education loans", "Book free evaluation"]
 
 export const GREETING: ChatReply = {
-  text: `Hi! I'm the Versa Global Assistant 🎓 Ask me about study destinations, visas, education loans, or how to get started — or tap a quick option below.`,
+  text: `Hi! I'm the Versa Global Assistant 🎓 Ask me about study destinations, visas, education loans, our Dubai IT Career Academy, or how to get started — or tap a quick option below.`,
   quickReplies: CHAT_QUICK_START,
 }
 
@@ -57,6 +57,14 @@ export function getBotReply(rawInput: string): ChatReply {
   if (destination) {
     return {
       text: `${destination.flag} ${destination.name} — ${destination.tagline}\n\nPopular programs: ${destination.programs.join(", ")}\nScholarships: ${destination.scholarships}\nIntake: ${destination.intake}\nVisa: ${destination.visa}\n\n${destination.description.replace(/&apos;/g, "'")}`,
+      quickReplies: ["Book free evaluation", "Study destinations"],
+    }
+  }
+
+  if (/career academy|it infrastructure|job guarant|job assur|macob|gcc job|dubai|windows server|azure admin|ccna/.test(input)) {
+    const program = CAREER_PROGRAMS[0]
+    return {
+      text: `${program.tagline}\n\n${program.title}, in association with ${program.associationPartner}. ${program.durationHours} over ${program.durationMonths} — online, hybrid, or classroom in Dubai.\n\nFee: ${program.fee.currency} ${program.fee.amount.toLocaleString()} (${program.fee.paymentMode}), with all certification exam fees included.\n\n${program.studentsPlaced} students already placed across the GCC. ${program.jobAssuranceStatement}`,
       quickReplies: ["Book free evaluation", "Study destinations"],
     }
   }
