@@ -857,6 +857,148 @@ The GCC&apos;s continued investment in digital government services, cloud migrat
 
 Ready to see if this pathway fits your background? Explore the full [IT Infrastructure Engineer Program](/career-academy/it-infrastructure-engineer-program-dubai) or book a free consultation with our Career Academy counsellors.`,
   },
+  {
+    slug: "it-infrastructure-program-100-percent-job-guarantee-dubai",
+    title: "100% Job Guarantee IT Program in Dubai: How Versa Global's IT Infrastructure Engineer Program Actually Delivers It",
+    category: "Career Academy",
+    date: "September 2026",
+    excerpt:
+      "A 100% job guarantee IT program in Dubai only means something if the placement pipeline behind it is real. Here&apos;s exactly how Versa Global&apos;s IT Infrastructure Engineer Program backs its guarantee.",
+    image: "https://images.unsplash.com/photo-1512632578888-169bbbc64f33?w=600&q=80&auto=format&fit=crop",
+    body: `Search "100% job guarantee IT course" and you&apos;ll find dozens of programs making the same claim. Versa Global&apos;s Career & Skills Academy makes it too — for our IT Infrastructure Engineer Program, delivered in association with MACOB IT Solutions, Dubai — but the honest question every serious applicant should ask is: what actually backs that guarantee? Here&apos;s the full picture, so you can evaluate it properly.
+
+## What Does "100% Job Guarantee" Mean in This Program?
+
+It means every student who completes the program&apos;s 250-hour curriculum and the accompanying career-readiness track receives dedicated, ongoing placement support until they are hired in a GCC IT role — support that doesn&apos;t stop after one interview or one application cycle. It is not a job handed out automatically on enrollment, and it is not a guarantee of a specific salary or employer; it is a guarantee of sustained, structured placement effort tied to genuine completion of the training. 60+ students have already been placed through this exact process.
+
+## Which Employers Actually Hire Through This Program?
+
+Placements run through MACOB IT Solutions&apos; live employer network across the UAE and wider GCC — organizations that need IT Administrators, IT Level 1/2 Support staff, System and Network Administrators, and Microsoft Cloud and Messaging Administrators to run their Windows Server, Microsoft 365, and Azure environments. Because MACOB is a working corporate IT services provider with existing GCC clients, the roles you&apos;re placed into come out of real, ongoing employer relationships rather than a cold job board.
+
+## Why Should a 100% Job Guarantee Be Trusted Here Specifically?
+
+Because the guarantee is backed by things a training-only provider can&apos;t offer: real infrastructure practice on live servers and routers (not simulated labs), client site visits and AMC audit shadowing with MACOB&apos;s actual customers, a guided Dubai NOC data center visit, and a 7-stage career-readiness track — CV clinic, job guidance workshop, LinkedIn workshop, ATS workshop, technical interview prep, HR questions prep, and mock interviews — before you&apos;re ever put in front of an employer. Certification exams for MCSE Azure (MS104), Office 365 (MS101), and CCNA Routing & Switching are included in the program fee, so you walk into interviews with verifiable credentials, not just a training certificate.
+
+## What Does the Program Cost, and What's Included?
+
+The full program is AED 23,500, paid once, covering the 250-hour curriculum across Windows Server 2022, Microsoft Azure Administration, Office 365 Administration, and CCNA, all three certification exam fees (a combined AED 6,500 value), the complete career-readiness track, and job-guarantee placement support until you&apos;re hired. Living costs and visa fees for students choosing the Dubai classroom or hybrid track are excluded and vary by individual circumstances.
+
+## Who Qualifies for the Job Guarantee?
+
+Degree or diploma holders with basic computer literacy qualify — no prior IT work experience is required, since training starts from hardware and networking fundamentals before progressing to server, cloud, and network administration. The guarantee applies to students who complete the curriculum and actively engage with the placement process (attending workshops, mock interviews, and employer introductions); it is not available to students who enroll but do not complete the training.
+
+## How Do I Get Started?
+
+Enrollment starts with a free consultation where our Career Academy counsellors assess your background and walk you through the online, hybrid, and Dubai classroom tracks — all three carry an identical curriculum and the same 100% job guarantee. Explore the full curriculum, fee breakdown, and every FAQ on the [Career Academy program page](/career-academy/it-infrastructure-engineer-program-dubai), or book a free call to see if this pathway fits you.`,
+  },
+  {
+    slug: "study-in-australia-visa-guide-2026",
+    title: "Australia Student Visa (Subclass 500) Guide 2026: Costs, Timeline & Post-Study Work Rights",
+    category: "Australia",
+    date: "September 2026",
+    excerpt:
+      "Everything Indian students need to know about Australia&apos;s Subclass 500 student visa — the Genuine Student requirement, financial evidence, timelines, and post-study work rights.",
+    image: "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=600&q=80&auto=format&fit=crop",
+    body: `Australia remains one of the most consistently popular destinations for Indian students, home to 8 Group of Eight universities ranked in the global top 100 and post-study work rights that stretch 2-4 years depending on your qualification and location. Here&apos;s what the Subclass 500 Student Visa process actually involves.
+
+## What Is the Genuine Student (GS) Requirement?
+
+Since 2024, Australia replaced the older Genuine Temporary Entrant test with the Genuine Student (GS) requirement, which assesses whether your study plans, career goals, and personal circumstances genuinely support a temporary stay to study in Australia. You&apos;ll need to write a personal statement addressing your reasons for choosing your course and institution, your understanding of the visa conditions, and your intended activities after your studies. Versa Global&apos;s counsellors help you prepare a GS statement that genuinely reflects your profile rather than a generic template, since assessors specifically look for personalized, consistent answers.
+
+## What Financial Evidence Do I Need?
+
+You must show sufficient funds to cover your first year&apos;s tuition, travel costs, and living expenses for yourself (and any accompanying family) at the amount set by the Department of Home Affairs, which is revised periodically. Acceptable evidence includes bank statements, education loan sanction letters, or a combination of both, and the funds must be genuinely available and traceable — not a last-minute deposit. Our team reviews your financial documentation before submission to avoid the most common cause of refusals: inconsistent or insufficiently seasoned funds.
+
+## How Long Does the Australian Visa Process Take?
+
+Processing times vary by visa office and time of year but generally range from a few weeks to a couple of months once your Confirmation of Enrolment (CoE) and complete documentation are lodged. Applying well ahead of the February or July intake — ideally as soon as you receive your CoE — gives buffer room for any additional document requests from the Department of Home Affairs.
+
+## What Are Australia's Post-Study Work Rights?
+
+Graduates can apply for a Temporary Graduate visa (subclass 485) after completing their course, with the permitted stay length depending on your qualification level and the location of your institution — regional campuses often carry longer post-study work entitlements than metro campuses, which is a factor worth weighing when choosing between universities.
+
+## Is IELTS Compulsory for Every Australian University?
+
+Most universities require IELTS 6.0-6.5 overall for undergraduate and postgraduate programs, though English-medium academic backgrounds and some university-specific waivers can reduce or remove this requirement depending on the institution. Our counsellors check your specific university and program for waiver eligibility before you commit to a test.
+
+## What Does It Cost to Study in Australia?
+
+Tuition varies by university and program, and living costs depend heavily on the city — Sydney and Melbourne run higher than regional centres. Scholarships like Australia Awards and Endeavour can offset costs significantly for eligible students, and Versa Global&apos;s 20+ bank and NBFC partnerships help structure education loans around your specific budget.
+
+Ready to evaluate your Australia options? Book a free profile evaluation with Versa Global&apos;s Australia specialists.`,
+  },
+  {
+    slug: "usa-f1-student-visa-guide-2026",
+    title: "USA F-1 Student Visa Guide 2026: SEVIS, I-20, DS-160 & the Visa Interview",
+    category: "United States",
+    date: "September 2026",
+    excerpt:
+      "A step-by-step look at the US F-1 student visa process — SEVIS fee, Form I-20, DS-160, the visa interview, and OPT work rights after graduation.",
+    image: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=600&q=80&auto=format&fit=crop",
+    body: `The United States is home to 50+ of the world&apos;s top 100 universities, and the F-1 Student Visa remains the pathway for Indian students pursuing that education. The process has more distinct steps than most other destinations, so here&apos;s how it actually flows in order.
+
+## What Is Form I-20 and How Do I Get One?
+
+Once you&apos;re admitted to a Student and Exchange Visitor Program (SEVP)-certified US institution, the university issues Form I-20, a certificate of eligibility that confirms your enrollment and the program details. You cannot apply for an F-1 visa without it, so everything else in the process starts only after your I-20 arrives.
+
+## What Is the SEVIS Fee, and When Do I Pay It?
+
+Before scheduling your visa interview, you must pay the SEVIS I-901 fee, which registers you in the Student and Exchange Visitor Information System. Keep the payment receipt — you&apos;ll need to present it at your visa interview along with your I-20, and immigration officers do check that the SEVIS record is active and matches your documents.
+
+## How Do I Complete the DS-160 and Book My Interview?
+
+The DS-160 is the online nonimmigrant visa application form, completed before you can schedule your interview at the nearest US Embassy or Consulate. You&apos;ll need your I-20 number, passport details, and a recent photograph meeting US visa specifications. Once submitted, you pay the visa application fee and book your interview slot — during peak intake season (spring for a fall start), slots fill up fast, so we recommend completing this the moment your I-20 arrives.
+
+## What Actually Happens at the F-1 Visa Interview?
+
+The consular officer&apos;s primary job is assessing whether you intend to return to India after your studies and whether you can genuinely afford your program. Expect direct questions about your chosen course, why that specific university, your academic background, your funding source, and your post-graduation plans. Confident, consistent, specific answers matter far more than rehearsed scripts — Versa Global runs mock interview sessions with every US-bound student before their actual appointment.
+
+## What Financial Documents Do I Need to Show?
+
+You need to demonstrate funds covering your full first-year tuition and living costs, typically through bank statements, an education loan sanction letter, or a combination, along with an affidavit of support if a sponsor is involved. Consistency between your I-20&apos;s stated costs and your financial documents is essential — mismatches are a common reason for refusal.
+
+## Can I Work in the US During or After My Studies?
+
+F-1 students can work on-campus up to 20 hours/week during term, and many students qualify for Curricular Practical Training (CPT) for course-related internships. After graduation, Optional Practical Training (OPT) allows up to 12 months of work authorization in your field, extendable to 24 additional months for STEM-designated degrees — a total of up to 36 months for eligible STEM graduates.
+
+Book a free profile evaluation and let Versa Global&apos;s US counsellors walk you through your I-20 timeline, SEVIS payment, and interview preparation.`,
+  },
+  {
+    slug: "study-in-new-zealand-guide-2026",
+    title: "Study in New Zealand 2026: Visa, Costs & Post-Study Work Rights Guide",
+    category: "New Zealand",
+    date: "September 2026",
+    excerpt:
+      "What Indian students should know before choosing New Zealand — student visa requirements, realistic costs, and post-study work rights across Auckland, Wellington, and beyond.",
+    image: "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?w=600&q=80&auto=format&fit=crop",
+    body: `New Zealand rarely gets the attention the UK, Canada, or Australia do, but it consistently delivers practical, industry-aligned education alongside a quality of life that&apos;s hard to match — which is exactly why Versa Global treats it as a serious option, not an afterthought.
+
+## What Do I Need for a New Zealand Student Visa?
+
+You&apos;ll need an Offer of Place from a New Zealand institution, evidence of sufficient funds to cover tuition and living costs for your intended study period, a return air ticket or funds to purchase one, and health and travel insurance where required. Immigration New Zealand also expects a genuine intention to study, similar in spirit to requirements in other major destinations — your application should clearly reflect why this specific course and institution fit your academic and career goals.
+
+## How Much Does It Cost to Study in New Zealand?
+
+Tuition and living costs vary by city and institution, with Auckland and Wellington generally running higher than smaller centres like Dunedin or Hamilton. New Zealand Excellence Awards and NZ Aid scholarships can meaningfully offset tuition for eligible Indian students, and our team helps structure an education loan through our 20+ bank and NBFC partners for the remaining cost.
+
+## When Are the Intakes, and How Far Ahead Should I Apply?
+
+New Zealand&apos;s main intakes are February and July, matching Australia&apos;s academic calendar. We recommend starting your application at least 8-10 months ahead of your target intake to allow time for offer letters, visa processing, and financial documentation, especially given New Zealand&apos;s smaller number of visa processing centres compared to bigger destinations.
+
+## What Are New Zealand's Post-Study Work Rights?
+
+Eligible graduates can apply for a Post Study Work Visa, allowing you to work in New Zealand after completing your qualification — a meaningful pathway toward gaining local experience and, for many graduates, eventually pursuing residency pathways. Exact entitlements depend on your qualification level and the institution you graduate from, so we confirm your specific eligibility before you select a course.
+
+## Which Courses Is New Zealand Actually Strong In?
+
+Agriculture, engineering, business, tourism, and film & media are particular strengths, reflecting the country&apos;s economy and its globally recognized film industry. New Zealand&apos;s universities emphasize practical, applied learning over purely theoretical coursework, which suits students who want their degree to translate directly into workplace skills.
+
+## Is New Zealand a Good Fit for Students Who Want a Quieter Environment?
+
+Yes — New Zealand&apos;s smaller cities and lower population density genuinely change the day-to-day experience compared to studying in a large UK or Australian metro, offering a calmer pace of life without giving up access to well-ranked universities and English-taught, internationally recognized degrees.
+
+Curious if New Zealand fits your goals and budget better than the more obvious destinations? Book a free consultation with Versa Global.`,
+  },
 ]
 
 export const FAQS = [
@@ -924,6 +1066,56 @@ export const FAQS = [
     question: "How long does an MBBS program in Vietnam take?",
     answer:
       "The MBBS program in Vietnam is typically 6 years total, combining 5 years of academic study with a 1-year clinical internship — comparable in length to MBBS programs in India and most other MBBS-abroad destinations.",
+  },
+  {
+    question: "Is the 100% job guarantee on the Dubai IT Infrastructure Engineer Program real?",
+    answer:
+      "Yes — it&apos;s dedicated placement support that continues until you&apos;re hired in a GCC IT role, backed by MACOB IT Solutions&apos; live employer network, real client site exposure, and a structured 7-stage career-readiness track. It applies to students who complete the full curriculum and actively engage with the placement process; 60+ students have been placed through it so far.",
+  },
+  {
+    question: "What if I don&apos;t get placed after completing the IT Infrastructure Engineer Program?",
+    answer:
+      "Placement support continues past graduation for as long as it takes, provided you completed the training requirements and stay engaged with the process — attending workshops, mock interviews, and employer introductions. It&apos;s a sustained placement commitment, not a one-time job posting forwarded after your certificate is issued.",
+  },
+  {
+    question: "Do I need prior IT experience for the Dubai IT Infrastructure Engineer Program?",
+    answer:
+      "No. The program is open to degree or diploma holders with basic computer literacy — training starts from hardware and networking fundamentals before progressing through Windows Server, CCNA, Azure, and Office 365, so no prior infrastructure or networking background is required.",
+  },
+  {
+    question: "What is the Genuine Student (GS) requirement for an Australian student visa?",
+    answer:
+      "It&apos;s the assessment Australia uses (replacing the earlier Genuine Temporary Entrant test since 2024) to check that your study plans, course choice, and post-study intentions are genuine. It&apos;s satisfied through a personal statement, which our counsellors help you prepare so it genuinely reflects your own profile rather than a generic template.",
+  },
+  {
+    question: "What are Australia's post-study work rights?",
+    answer:
+      "Graduates can apply for a Temporary Graduate visa (subclass 485), with the length of stay depending on your qualification level and whether you studied at a regional or metro campus — regional campuses often carry longer post-study work entitlements.",
+  },
+  {
+    question: "What is OPT, and how long can I work in the US after graduating?",
+    answer:
+      "Optional Practical Training (OPT) lets F-1 graduates work in their field for up to 12 months after completing their degree, extendable by 24 additional months for STEM-designated programs — up to 36 months total for eligible STEM graduates.",
+  },
+  {
+    question: "What is the SEVIS fee for a US student visa?",
+    answer:
+      "It&apos;s the I-901 SEVIS registration fee, paid after you receive your Form I-20 and before you schedule your F-1 visa interview. Keep the payment receipt — you&apos;ll need to show it at your interview alongside your I-20.",
+  },
+  {
+    question: "What are New Zealand's post-study work rights?",
+    answer:
+      "Eligible graduates can apply for a Post Study Work Visa to work in New Zealand after completing their qualification. Exact entitlements depend on your qualification level and institution, so we confirm your specific eligibility before you choose a course.",
+  },
+  {
+    question: "How does Versa Global's education loan support actually work?",
+    answer:
+      "We work directly with 20+ banks and NBFCs, handling your loan documentation — collateral paperwork, income proof, and sanction letters — end-to-end, and help you compare offers to find competitive interest rates and faster approvals rather than having you shop around lenders on your own.",
+  },
+  {
+    question: "Can international students in Australia, the US, or New Zealand get scholarships?",
+    answer:
+      "Yes — Australia offers Australia Awards and Endeavour scholarships, the US offers Fulbright and Hubert Humphrey among others, and New Zealand offers NZ Excellence Awards and NZ Aid. Eligibility depends on your academic profile and chosen program; our counsellors identify which scholarships you genuinely qualify for during your free profile evaluation.",
   },
 ]
 
