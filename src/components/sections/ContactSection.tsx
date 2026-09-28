@@ -50,6 +50,7 @@ export default function ContactSection() {
               {[
                 { Icon: Phone, label: "Phone", value: SITE.phone, href: `tel:${SITE.phone}` },
                 { Icon: Mail, label: "Email", value: SITE.email, href: `mailto:${SITE.email}` },
+                { Icon: Mail, label: "Business enquiries", value: SITE.businessEmail, href: `mailto:${SITE.businessEmail}` },
                 { Icon: MapPin, label: "Address", value: SITE.address, href: undefined },
               ].map(({ Icon, label, value, href }) => (
                 <li key={label} className="flex items-start gap-4">

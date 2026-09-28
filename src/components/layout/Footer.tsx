@@ -61,6 +61,11 @@ export default function Footer() {
                 <Mail size={16} className="shrink-0 text-[#C9A84C]" />{SITE.email}
               </a>
             </li>
+            <li>
+              <a href={`mailto:${SITE.businessEmail}`} className="flex items-center gap-2.5 text-sm text-blue-200 hover:text-white transition-colors">
+                <Mail size={16} className="shrink-0 text-[#C9A84C]" />{SITE.businessEmail}
+              </a>
+            </li>
           </ul>
         </div>
       </div>
