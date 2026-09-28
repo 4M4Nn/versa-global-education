@@ -445,6 +445,119 @@ export const CAREER_PROGRAMS: CareerProgram[] = [
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "study-in-south-korea-guide-indian-students-2026",
+    title: "Study in South Korea 2026: D-2 Visa, GKS Scholarship & Costs for Indian Students",
+    category: "South Korea",
+    date: "September 2026",
+    publishedAt: "2026-09-29",
+    excerpt:
+      "A practical guide for Indian students considering South Korea — the D-2 student visa, the Global Korea Scholarship, English-taught programs, intakes, part-time work, and staying on after graduation.",
+    image: "https://images.unsplash.com/photo-1601621915196-2621bfb0cd6e?w=600&q=80&auto=format&fit=crop",
+    body: `South Korea is one of the strongest value-for-money study destinations for Indian students in 2026: globally ranked technology and engineering universities, a growing number of English-taught programs, and the fully funded Global Korea Scholarship (GKS) — at a total cost that is often well below the UK, USA, or Australia. It is a destination most consultancies skip, which is exactly why Versa Global counsels students on it.
+
+## Which Visa Do I Need to Study in South Korea?
+
+Degree students (bachelor's, master's, and PhD) apply for the D-2 student visa after receiving an admission letter and a Certificate of Admission from a Korean university. Students joining a Korean language program first — common for those who want to study later in Korean — use the D-4 visa. You will typically need your admission documents, proof of funds, academic records, and a valid passport, submitted through the Korean embassy or consulate that covers your state.
+
+## What Is the Global Korea Scholarship (GKS)?
+
+GKS is the Korean government's flagship scholarship for international students, run by the National Institute for International Education (NIIED). For selected students it generally covers tuition, a monthly living allowance, round-trip airfare, and a Korean language course before the degree begins. Selection is competitive and runs through two tracks — the embassy track and the university track — so the application strategy matters. Many Korean universities also offer their own tuition waivers for international students with strong grades.
+
+## Do I Need to Know Korean?
+
+Not for every program. Leading universities offer English-taught degrees, particularly in engineering, computer science, business, and international studies. However, basic Korean makes daily life, part-time work, and job hunting far easier, and a TOPIK (Test of Proficiency in Korean) score can strengthen both scholarship and job applications. We usually advise students to begin Korean alongside their application, not after arrival.
+
+## When Are the Intakes?
+
+South Korea has two main intakes: March (spring) and September (fall). March is the larger intake. Because GKS and many university deadlines close several months ahead, we recommend starting the process 9–12 months before your target semester.
+
+## Can I Work Part-Time While Studying?
+
+Yes, with permission. International students on a D-2 visa can work part-time after obtaining approval through their university and immigration office, within weekly hour limits that depend on your study level and Korean-language proficiency. Part-time income helps with living costs but should not be counted on to pay tuition — your financial plan needs to stand on its own.
+
+## Can I Stay and Work in South Korea After Graduating?
+
+Graduates can apply for the D-10 job-seeker visa to look for work in Korea after completing their degree, and move to an employment visa once hired. Korea's electronics, semiconductor, automotive, gaming, and biotech industries actively hire engineering and IT graduates, especially those with some Korean-language ability.
+
+## How Does Versa Global Help?
+
+We shortlist universities that match your profile and budget, assess whether you are a realistic GKS candidate and which track suits you, prepare your study plan and personal statement, arrange education-loan support through our 20+ bank and NBFC partners, and guide your D-2 visa documentation end-to-end. Book a free profile evaluation to find out whether South Korea is the right fit for you.`,
+  },
+  {
+    slug: "education-loan-for-study-abroad-guide-2026",
+    title: "Education Loan for Study Abroad 2026: Secured vs Unsecured, Documents & How to Compare",
+    category: "Education Loans",
+    date: "September 2026",
+    publishedAt: "2026-09-29",
+    excerpt:
+      "How study abroad education loans actually work for Indian students — collateral vs non-collateral loans, what lenders check, the documents you need, and how to compare offers beyond the interest rate.",
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&q=80&auto=format&fit=crop",
+    body: `Most Indian students fund study abroad with an education loan from a bank or NBFC. The two main choices are a secured loan (backed by property or deposits as collateral), which usually carries a lower interest rate, and an unsecured loan, which needs no collateral but depends heavily on your university, course, and co-applicant's income. The right choice depends on your family's assets, the loan amount, and how fast you need the sanction letter for your visa.
+
+## What Is the Difference Between Secured and Unsecured Education Loans?
+
+A secured loan is backed by collateral such as a house, flat, land, or fixed deposits. Because the lender's risk is lower, secured loans generally offer lower interest rates and higher loan amounts. An unsecured loan needs no collateral; instead, lenders look closely at the ranking of your university, the employability of your course, and the income and credit history of your co-applicant. Unsecured loans are usually faster to sanction but more expensive.
+
+## What Do Lenders Check Before Approving a Loan?
+
+Lenders typically assess your admission letter and the university's standing, the course and its job prospects, your academic record, your co-applicant's income and CIBIL (credit) score, and — for secured loans — the value and legal clarity of the collateral. A weak co-applicant credit score is one of the most common reasons for delays, so we check this at the start rather than after an application is rejected.
+
+## Which Documents Do I Need?
+
+Expect to provide: your admission or offer letter, academic mark sheets and certificates, test scores (IELTS, TOEFL, GRE, GMAT as applicable), passport, a cost-of-study breakdown, KYC documents for you and your co-applicant, the co-applicant's income proof (salary slips, ITRs, or business financials), bank statements, and — for secured loans — property papers, valuation, and legal-verification documents. Versa Global prepares and reviews this entire set before it reaches the lender.
+
+## How Should I Compare Loan Offers?
+
+Look beyond the headline interest rate. Compare the processing fee, whether the rate is fixed or floating, the moratorium period (the time after your course before full repayment starts), whether interest must be paid during the course, prepayment charges, the margin money you must contribute, and how quickly the lender can issue a sanction letter for your visa file. A slightly lower rate with a slow sanction can cost you an intake.
+
+## When Should I Apply for an Education Loan?
+
+Start the conversation as soon as you have a shortlist of universities, and apply formally once you hold an admission or conditional offer. Many visa processes require proof of funds, so a sanction letter needs to be in hand before your visa application — which is why we build the loan timeline into your overall application plan from day one.
+
+## Are There Tax Benefits on Education Loan Interest?
+
+Indian income-tax law has provided a deduction on the interest paid on education loans for higher studies, available to the person repaying the loan under the applicable tax regime. Rules and regimes change, so confirm the current provision with a tax advisor before relying on it in your repayment plan.
+
+## How Does Versa Global Help With Education Loans?
+
+We work directly with 20+ banks and NBFCs, match you with lenders suited to your collateral situation and university, handle documentation end-to-end, and help you compare offers side by side — so you are not shopping around lenders on your own while also managing applications and visa deadlines. Book a free consultation to get a realistic loan plan for your destination.`,
+  },
+  {
+    slug: "how-to-write-sop-for-student-visa",
+    title: "How to Write a Statement of Purpose (SOP) That Gets You Admitted — and Approved for a Visa",
+    category: "Applications",
+    date: "September 2026",
+    publishedAt: "2026-09-29",
+    excerpt:
+      "Your SOP is read twice — by the university and, increasingly, by visa officers. Here's how to structure it, what to include, and the mistakes that get applications rejected.",
+    image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600&q=80&auto=format&fit=crop",
+    body: `A strong Statement of Purpose (SOP) explains, in your own words, why you chose this specific course, at this specific university, in this specific country — and how it connects your past studies or work to a realistic career plan. Admissions teams use it to judge fit; visa officers in countries like Canada, the UK, and Australia increasingly use similar statements to judge whether you are a genuine student. A generic or copied SOP is one of the most avoidable reasons for rejection.
+
+## What Should an SOP Include?
+
+A clear academic and professional background, the specific reason you want this course (and what in your experience led you to it), why this university — referencing actual modules, faculty areas, facilities, or industry links — why this country rather than India or elsewhere, your short-term and long-term career goals, and how your finances and plans make the move realistic. Every claim should be something you can explain in a visa interview.
+
+## How Long Should an SOP Be?
+
+Follow the university's instructions first — some specify a word or character limit, and exceeding it looks careless. Where no limit is given, around 800–1,000 words is typical for postgraduate applications. Clear and specific beats long and general every time.
+
+## What Is the Difference Between an SOP for Admission and for a Visa?
+
+An admission SOP focuses on academic fit and motivation. A visa-oriented statement — such as Australia's Genuine Student responses or the study plan Canada expects — must also show that your study plan is logical, that you can fund it, and that your intentions are consistent with the visa's rules. Gaps in education or work, a change of field, or a course at a lower level than your previous degree all need an honest, specific explanation.
+
+## What Are the Most Common SOP Mistakes?
+
+Copying templates or using AI-generated text without personalising it, opening with a childhood story unrelated to the course, listing achievements without explaining what they led to, praising the university in general terms that could apply anywhere, vague career goals like "work at a top company", ignoring study gaps, and inconsistencies between the SOP, your CV, and your documents. Visa officers compare these side by side.
+
+## Can I Use AI Tools to Write My SOP?
+
+You can use tools to check grammar or organise your thoughts, but the content, experiences, and reasoning must be yours. Many universities run similarity and AI-writing checks, and a statement that sounds generic undermines the very thing it is meant to prove — that this plan is genuinely yours.
+
+## How Does Versa Global Help With SOPs?
+
+Our counsellors interview you first, then help you structure and refine your own story — course fit, university research, career logic, and explanations for any gaps — and cross-check it against your documents and the specific country's visa expectations. We never hand out a template. Book a free profile evaluation to start your application the right way.`,
+  },
+  {
     slug: "most-trusted-study-abroad-agency",
     title: "What Makes Versa Global the Most Trusted Study Abroad Agency for Indian Students",
     category: "Versa Global",
@@ -1117,6 +1230,36 @@ export const FAQS = [
     question: "Can international students in Australia, the US, or New Zealand get scholarships?",
     answer:
       "Yes — Australia offers Australia Awards and Endeavour scholarships, the US offers Fulbright and Hubert Humphrey among others, and New Zealand offers NZ Excellence Awards and NZ Aid. Eligibility depends on your academic profile and chosen program; our counsellors identify which scholarships you genuinely qualify for during your free profile evaluation.",
+  },
+  {
+    question: "Which visa do Indian students need to study in South Korea?",
+    answer:
+      "Degree students apply for the D-2 student visa after receiving an admission letter and Certificate of Admission from a Korean university. Students starting with a Korean language program use the D-4 visa. South Korea's main intakes are March and September.",
+  },
+  {
+    question: "What does the Global Korea Scholarship (GKS) cover?",
+    answer:
+      "For selected students, GKS generally covers tuition, a monthly living allowance, round-trip airfare, and a Korean language course before the degree. Selection is competitive through the embassy and university tracks, and our counsellors assess whether you are a realistic candidate.",
+  },
+  {
+    question: "Should I take a secured or unsecured education loan for study abroad?",
+    answer:
+      "A secured loan (backed by property or deposits) usually offers a lower interest rate and higher amount. An unsecured loan needs no collateral but depends on your university, course, and co-applicant's income and credit score, and typically costs more. We help you compare both with our 20+ bank and NBFC partners.",
+  },
+  {
+    question: "What documents are needed for a study abroad education loan?",
+    answer:
+      "Typically your admission letter, academic records, test scores, passport, cost-of-study breakdown, KYC for you and your co-applicant, the co-applicant's income proof and bank statements, and property or deposit documents for a secured loan. Versa Global prepares and reviews the full set before submission.",
+  },
+  {
+    question: "How long should a Statement of Purpose (SOP) be?",
+    answer:
+      "Follow the university's stated limit first. Where none is given, around 800–1,000 words is typical for postgraduate applications. A specific, honest SOP that explains your course choice, university fit, and career plan matters far more than length.",
+  },
+  {
+    question: "Does Versa Global write my SOP for me?",
+    answer:
+      "We don't hand out templates. Our counsellors interview you, then help you structure and refine your own story and cross-check it against your documents and the destination's visa expectations, so the statement is genuinely yours and holds up in a visa interview.",
   },
 ]
 

@@ -1,29 +1,26 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useSyncExternalStore } from "react"
 import { AnimatePresence } from "framer-motion"
 import IntroAnimation from "./IntroAnimation"
 
+const INTRO_KEY = "global-intro-seen"
+
+const subscribe = () => () => {}
+const getIntroPending = () => !sessionStorage.getItem(INTRO_KEY)
+const getServerIntroPending = () => false
+
 export default function IntroWrapper() {
-  const [showIntro, setShowIntro] = useState(false)
-  const [mounted, setMounted] = useState(false)
-
-  useEffect(() => {
-    setMounted(true)
-    if (!sessionStorage.getItem("global-intro-seen")) {
-      setShowIntro(true)
-    }
-  }, [])
-
-  if (!mounted) return null
+  const introPending = useSyncExternalStore(subscribe, getIntroPending, getServerIntroPending)
+  const [dismissed, setDismissed] = useState(false)
 
   return (
     <AnimatePresence>
-      {showIntro && (
+      {introPending && !dismissed && (
         <IntroAnimation
           onComplete={() => {
-            sessionStorage.setItem("global-intro-seen", "1")
-            setShowIntro(false)
+            sessionStorage.setItem(INTRO_KEY, "1")
+            setDismissed(true)
           }}
         />
       )}

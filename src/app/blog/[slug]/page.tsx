@@ -55,6 +55,15 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: post.title,
     description: post.excerpt.replace(/&apos;/g, "'"),
     alternates: { canonical: `/blog/${post.slug}` },
+    openGraph: {
+      type: "article",
+      title: post.title,
+      description: post.excerpt.replace(/&apos;/g, "'"),
+      url: `/blog/${post.slug}`,
+      ...(post.publishedAt ? { publishedTime: post.publishedAt } : {}),
+      section: post.category,
+      images: [{ url: post.image, alt: post.title }],
+    },
   }
 }
 
@@ -80,6 +89,36 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         }
       : null
 
+  const postUrl = `https://www.versaglobal.in/blog/${post.slug}`
+  const articleJsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      headline: post.title,
+      description: post.excerpt.replace(/&apos;/g, "'"),
+      image: post.image,
+      ...(post.publishedAt ? { datePublished: post.publishedAt, dateModified: post.publishedAt } : {}),
+      author: { "@type": "Organization", name: SITE.name, url: "https://www.versaglobal.in" },
+      publisher: {
+        "@type": "Organization",
+        name: SITE.name,
+        logo: { "@type": "ImageObject", url: "https://www.versaglobal.in/versa-global-logo.jpg" },
+      },
+      mainEntityOfPage: postUrl,
+      articleSection: post.category,
+      inLanguage: "en-IN",
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.versaglobal.in" },
+        { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.versaglobal.in/blog" },
+        { "@type": "ListItem", position: 3, name: post.title, item: postUrl },
+      ],
+    },
+  ]
+
   const speakableJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebPage",
@@ -101,12 +140,15 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableJsonLd) }}
       />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
 
       <section className="bg-[#1B2A4A] text-white py-16 px-4">
         <div className="max-w-3xl mx-auto">
           <span className="text-[#C9A84C] text-xs font-bold uppercase tracking-widest">{post.category}</span>
           <h1 className="font-playfair text-3xl md:text-4xl font-bold mt-3 mb-4">{post.title}</h1>
-          <p className="text-blue-200 text-sm">{post.date}</p>
+          <p className="text-blue-200 text-sm">
+            {post.publishedAt ? <time dateTime={post.publishedAt}>{post.date}</time> : post.date}
+          </p>
         </div>
       </section>
 

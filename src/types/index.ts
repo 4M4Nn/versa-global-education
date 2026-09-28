@@ -33,6 +33,8 @@ export interface BlogPost {
   image: string
   category: string
   body: string
+  /** ISO date (YYYY-MM-DD) for sitemap and BlogPosting schema */
+  publishedAt?: string
 }
 
 export interface Stat {

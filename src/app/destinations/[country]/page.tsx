@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import { notFound } from "next/navigation"
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, CheckCircle2, GraduationCap, Plane, Award } from "lucide-react"
+import { CheckCircle2, GraduationCap, Plane, Award } from "lucide-react"
 import { DESTINATIONS, SITE } from "@/lib/data"
 
 export async function generateStaticParams() {

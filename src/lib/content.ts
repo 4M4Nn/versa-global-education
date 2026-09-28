@@ -42,6 +42,7 @@ function getAgentBlogPosts(): BlogPost[] {
           ? new Date(fm.publishedAt).toLocaleDateString("en-US", { month: "long", year: "numeric" })
           : new Date().toLocaleDateString("en-US", { month: "long", year: "numeric" }),
         body: content.trim(),
+        publishedAt: fm.publishedAt ? new Date(fm.publishedAt).toISOString().slice(0, 10) : undefined,
         status: fm.status,
       } as BlogPost & { status?: string }
     })

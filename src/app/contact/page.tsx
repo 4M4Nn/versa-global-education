@@ -1,6 +1,5 @@
 import type { Metadata } from "next"
 import ContactSection from "@/components/sections/ContactSection"
-import { SITE } from "@/lib/data"
 
 export const metadata: Metadata = {
   title: "Contact Us — Free Study Abroad Consultation",
