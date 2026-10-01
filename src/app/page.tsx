@@ -4,6 +4,7 @@ import HeroSection from "@/components/sections/HeroSection"
 import DestinationsSection from "@/components/sections/DestinationsSection"
 import CareerAcademyTeaser from "@/components/sections/CareerAcademyTeaser"
 import MbbsTeaser from "@/components/sections/MbbsTeaser"
+import PlacementsShowcase from "@/components/sections/PlacementsShowcase"
 import DigitalOfficeTeaser from "@/components/sections/DigitalOfficeTeaser"
 import ProcessSection from "@/components/sections/ProcessSection"
 import FoundersSection from "@/components/sections/FoundersSection"
@@ -35,6 +36,7 @@ export default function HomePage() {
       />
       <AnnouncementBar />
       <HeroSection />
+      <PlacementsShowcase notice />
       <CareerAcademyTeaser />
       <MbbsTeaser />
       <DestinationsSection />

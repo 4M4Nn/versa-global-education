@@ -1,6 +1,7 @@
 import { CAREER_PROGRAMS, DESTINATIONS, FAQS, SITE } from "@/lib/data"
 import { getAllBlogPosts } from "@/lib/content"
 import { MBBS_HUB, MBBS_HUB_FAQS, MBBS_COUNTRIES } from "@/lib/mbbs"
+import { PLACEMENTS, PLACED_STUDENTS } from "@/lib/placements"
 import { DESTINATION_FAQS, FAQ_CATEGORIES } from "@/lib/faqs-october-2026"
 
 const BASE = "https://www.versaglobal.in"
@@ -39,6 +40,10 @@ export function GET() {
       "",
       ...p.faqs.flatMap((f) => [`### ${clean(f.question)}`, clean(f.answer), ""]),
     ]),
+    "",
+    "## Recent placements",
+    PLACEMENTS.intro,
+    `Placed students and roles: ${PLACED_STUDENTS.map((s) => `${s.name} (${s.role})`).join(", ")}.`,
     "",
     "## Key pages",
     `- [Courses](${BASE}/courses)`,

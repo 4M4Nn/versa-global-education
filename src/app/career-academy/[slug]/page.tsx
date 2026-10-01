@@ -19,6 +19,7 @@ import {
 } from "lucide-react"
 import { SITE, CAREER_PROGRAMS } from "@/lib/data"
 import { getAllBlogPosts } from "@/lib/content"
+import PlacementsShowcase from "@/components/sections/PlacementsShowcase"
 
 export async function generateStaticParams() {
   return CAREER_PROGRAMS.map((p) => ({ slug: p.slug }))
@@ -269,6 +270,8 @@ export default async function CareerProgramPage({ params }: { params: Promise<{ 
           </div>
         </div>
       </section>
+
+      <PlacementsShowcase />
 
       {/* Training & Assessment */}
       <section className="py-16 px-4 bg-[#F8F9FA]">

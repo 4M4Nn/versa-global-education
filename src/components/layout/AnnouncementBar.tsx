@@ -5,7 +5,7 @@ import Link from "next/link"
 import { X, ArrowRight, Sparkles } from "lucide-react"
 import { ANNOUNCEMENTS } from "@/lib/data"
 
-const DISMISS_KEY = "vg-announcements-oct-2026-dismissed"
+const DISMISS_KEY = "vg-announcements-oct-2026-placements-dismissed"
 const ROTATE_MS = 6000
 
 export default function AnnouncementBar() {

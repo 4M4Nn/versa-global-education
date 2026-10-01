@@ -22,6 +22,14 @@ export default {
           "0%": { backgroundPosition: "0% center" },
           "100%": { backgroundPosition: "200% center" },
         },
+        marquee: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+        marqueeReverse: {
+          "0%": { transform: "translateX(-50%)" },
+          "100%": { transform: "translateX(0)" },
+        },
         fadeInUp: {
           "0%": { opacity: "0", transform: "translateY(20px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
@@ -30,6 +38,8 @@ export default {
       animation: {
         shimmer: "shimmer 4s linear infinite",
         "fade-in-up": "fadeInUp 0.8s ease-out both",
+        marquee: "marquee 45s linear infinite",
+        "marquee-reverse": "marqueeReverse 60s linear infinite",
       },
     },
   },

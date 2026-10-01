@@ -42,6 +42,11 @@ export const FOOTER_LINKS = [
 
 export const ANNOUNCEMENTS = [
   {
+    label: "New Placements",
+    message: "Congratulations to Our Latest Students Placed in IT Roles in Dubai — See the Posters",
+    href: "/#placements",
+  },
+  {
     label: "Career Academy",
     message: "100% Job-Assured IT Program in Dubai — 60+ Students Already Placed in the GCC!",
     href: "/career-academy/it-infrastructure-engineer-program-dubai",
