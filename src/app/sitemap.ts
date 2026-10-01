@@ -1,6 +1,7 @@
 import { MetadataRoute } from "next"
 import { DESTINATIONS, CAREER_PROGRAMS } from "@/lib/data"
 import { getAllBlogPosts } from "@/lib/content"
+import { MBBS_COUNTRIES } from "@/lib/mbbs"
 
 const BASE = "https://www.versaglobal.in"
 
@@ -26,8 +27,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }))
 
+  const mbbsPages = MBBS_COUNTRIES.map((c) => ({
+    url: `${BASE}/mbbs-abroad/${c.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.9,
+  }))
+
   return [
     { url: BASE, lastModified: new Date(), changeFrequency: "weekly", priority: 1 },
+    { url: `${BASE}/mbbs-abroad`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE}/destinations`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE}/courses`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE}/career-academy`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
@@ -35,9 +44,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/process`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.7 },
     { url: `${BASE}/about`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.7 },
     { url: `${BASE}/blog`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
-    { url: `${BASE}/faq`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
+    { url: `${BASE}/faq`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/schemes`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
     { url: `${BASE}/contact`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.5 },
+    ...mbbsPages,
     ...destinations,
     ...careerPrograms,
     ...posts,

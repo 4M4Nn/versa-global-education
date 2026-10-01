@@ -18,6 +18,7 @@ import {
   Users,
 } from "lucide-react"
 import { SITE, CAREER_PROGRAMS } from "@/lib/data"
+import { getAllBlogPosts } from "@/lib/content"
 
 export async function generateStaticParams() {
   return CAREER_PROGRAMS.map((p) => ({ slug: p.slug }))
@@ -90,12 +91,27 @@ export default async function CareerProgramPage({ params }: { params: Promise<{ 
     speakable: { "@type": "SpeakableSpecification", cssSelector: [".speakable-answer", ".speakable-summary"] },
   }
 
+  const howToJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: `How to enrol in the ${program.shortName}`,
+    step: program.enrolmentSteps.map((step, i) => ({
+      "@type": "HowToStep",
+      position: i + 1,
+      name: step.title,
+      text: step.description,
+    })),
+  }
+
+  const guides = getAllBlogPosts().filter((post) => post.category === "Career Academy")
+
   return (
     <div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />
 
       {/* Hero */}
       <section className="relative py-20 md:py-28 px-4 overflow-hidden">
@@ -356,10 +372,24 @@ export default async function CareerProgramPage({ params }: { params: Promise<{ 
             carry the identical curriculum and job assurance.
           </p>
           <div className="grid md:grid-cols-3 gap-5 mb-10">
-            {program.modes.map((mode) => (
-              <div key={mode} className="bg-white rounded-xl border border-gray-100 shadow-sm p-6 text-center">
-                <Laptop size={20} className="mx-auto text-[#C9A84C] mb-3" />
-                <p className="font-semibold text-[#1B2A4A]">{mode}</p>
+            {program.tracks.map((track) => (
+              <div key={track.mode} className="bg-white rounded-xl border border-gray-100 shadow-sm p-6">
+                <Laptop size={20} className="text-[#C9A84C] mb-3" />
+                <h3 className="font-playfair text-lg font-bold text-[#1B2A4A] mb-3">{track.mode}</h3>
+                <dl className="space-y-3 text-sm">
+                  <div>
+                    <dt className="text-xs font-semibold uppercase tracking-wide text-[#6B7280]">Best for</dt>
+                    <dd className="text-[#374151]">{track.bestFor}</dd>
+                  </div>
+                  <div>
+                    <dt className="text-xs font-semibold uppercase tracking-wide text-[#6B7280]">How it works</dt>
+                    <dd className="text-[#374151]">{track.howItWorks}</dd>
+                  </div>
+                  <div>
+                    <dt className="text-xs font-semibold uppercase tracking-wide text-[#6B7280]">Visa</dt>
+                    <dd className="text-[#374151]">{track.visa}</dd>
+                  </div>
+                </dl>
               </div>
             ))}
           </div>
@@ -393,6 +423,25 @@ export default async function CareerProgramPage({ params }: { params: Promise<{ 
               from the program fee and should be budgeted for separately.
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* How to enrol */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="font-playfair text-2xl md:text-3xl font-bold text-[#1B2A4A] mb-3">How to Enrol — From First Call to GCC Placement</h2>
+          <p className="text-[#6B7280] mb-9 max-w-2xl">Six steps, starting with a free consultation.</p>
+          <ol className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {program.enrolmentSteps.map((step, i) => (
+              <li key={step.title} className="bg-[#F8F9FA] rounded-xl p-6">
+                <span className="w-9 h-9 rounded-full bg-[#C9A84C] text-[#1B2A4A] font-bold flex items-center justify-center text-sm mb-4">
+                  {i + 1}
+                </span>
+                <h3 className="font-semibold text-[#1B2A4A] mb-2">{step.title}</h3>
+                <p className="text-sm text-[#6B7280] leading-relaxed">{step.description}</p>
+              </li>
+            ))}
+          </ol>
         </div>
       </section>
 
@@ -434,6 +483,25 @@ export default async function CareerProgramPage({ params }: { params: Promise<{ 
           </div>
         </div>
       </section>
+
+      {/* Guides */}
+      {guides.length > 0 && (
+        <section className="py-16 px-4 bg-white">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="font-playfair text-2xl md:text-3xl font-bold text-[#1B2A4A] mb-8">Dubai & GCC IT Career Guides</h2>
+            <div className="grid sm:grid-cols-2 gap-5">
+              {guides.map((post) => (
+                <Link key={post.slug} href={`/blog/${post.slug}`} className="group flex gap-4 bg-[#F8F9FA] rounded-xl p-4 hover:bg-[#EEF2FF] transition-colors">
+                  <div className="relative w-24 h-20 shrink-0 rounded-lg overflow-hidden">
+                    <Image src={post.image} alt={post.title} fill className="object-cover" />
+                  </div>
+                  <h3 className="font-playfair font-bold text-[#1B2A4A] text-sm self-center group-hover:text-[#C9A84C] transition-colors">{post.title}</h3>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* CTA */}
       <section className="py-16 px-4 bg-[#1B2A4A] text-white text-center">

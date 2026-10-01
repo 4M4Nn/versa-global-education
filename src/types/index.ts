@@ -90,6 +90,56 @@ export interface CareerProgram {
   image: string
   heroImage: string
   faqs: CareerProgramFaq[]
+  tracks: CareerProgramTrack[]
+  enrolmentSteps: { title: string; description: string }[]
+  metaDescription: string
+  keywords: string[]
+}
+
+export type FaqCategory =
+  | "Getting Started"
+  | "Applications & Tests"
+  | "Visas & Work Rights"
+  | "Costs, Loans & Scholarships"
+  | "MBBS Abroad"
+  | "Dubai IT Program"
+
+export interface Faq {
+  question: string
+  answer: string
+  category: FaqCategory
+}
+
+export interface CareerProgramTrack {
+  mode: string
+  bestFor: string
+  howItWorks: string
+  visa: string
+}
+
+export interface MbbsCountry {
+  slug: string
+  destinationId: string
+  name: string
+  flag: string
+  heroImage: string
+  headline: string
+  summary: string
+  cost: string
+  costNote: string
+  duration: string
+  structure: string
+  intake: string
+  visa: string
+  medium: string
+  entranceExam: string
+  timeline: string
+  highlights: string[]
+  considerations: string[]
+  costBreakdown: { item: string; detail: string }[]
+  faqs: CareerProgramFaq[]
+  blogSlugs: string[]
+  metaTitle: string
   metaDescription: string
   keywords: string[]
 }

@@ -41,21 +41,21 @@ export default function Navbar() {
                 <Image src="/versa-global-logo.jpg" alt="Versa Global" width={1254} height={1254} className="h-14 w-14 object-contain" priority />
               </Link>
 
-              <div className="hidden md:flex items-center gap-6">
+              <div className="hidden lg:flex items-center gap-4 xl:gap-6">
                 {NAV_LINKS.map((link) => (
-                  <Link key={link.href} href={link.href} className="text-navy text-sm font-medium hover:text-gold transition-colors">
+                  <Link key={link.href} href={link.href} className="text-navy text-sm font-medium whitespace-nowrap hover:text-gold transition-colors">
                     {link.label}
                   </Link>
                 ))}
               </div>
 
-              <div className="hidden md:flex items-center gap-3">
-                <Link href="/#contact" className="bg-navy text-white text-sm font-medium px-5 py-2 rounded-md hover:opacity-90 transition-opacity">
+              <div className="hidden lg:flex items-center gap-3">
+                <Link href="/#contact" className="bg-navy text-white text-sm font-medium whitespace-nowrap px-5 py-2 rounded-md hover:opacity-90 transition-opacity">
                   Free Consultation
                 </Link>
               </div>
 
-              <button className="md:hidden p-2.5 rounded-lg text-navy hover:bg-gray-100 transition-colors" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
+              <button className="lg:hidden p-2.5 rounded-lg text-navy hover:bg-gray-100 transition-colors" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
                 {isOpen ? <X size={24} /> : <Menu size={24} />}
               </button>
             </div>
@@ -64,7 +64,7 @@ export default function Navbar() {
       </header>
 
       {/* Full-screen mobile overlay */}
-      <div className={`fixed inset-0 z-40 bg-white md:hidden flex flex-col transition-all duration-300 ${isOpen ? "opacity-100 pointer-events-auto translate-x-0" : "opacity-0 pointer-events-none translate-x-full"}`}>
+      <div className={`fixed inset-0 z-[60] bg-white lg:hidden flex flex-col transition-all duration-300 ${isOpen ? "opacity-100 pointer-events-auto translate-x-0" : "opacity-0 pointer-events-none translate-x-full"}`}>
         <div className="flex items-center justify-between px-5 h-16 border-b border-gray-100 shrink-0">
           <Link href="/" onClick={() => setIsOpen(false)} className="flex items-center gap-2">
             <Image src="/versa-global-logo.jpg" alt="Versa Global" width={1254} height={1254} className="h-14 w-14 object-contain" />

@@ -1,4 +1,6 @@
-import type { Destination, ProcessStep, Testimonial, BlogPost, Stat, Founder, CareerProgram } from "@/types"
+import type { Destination, ProcessStep, Testimonial, BlogPost, Stat, Founder, CareerProgram, Faq } from "@/types"
+import { OCTOBER_2026_POSTS } from "@/lib/blog-october-2026"
+import { OCTOBER_2026_FAQS } from "@/lib/faqs-october-2026"
 
 export const SITE = {
   name: "Versa Global",
@@ -11,14 +13,52 @@ export const SITE = {
 export const NAV_LINKS = [
   { label: "Home", href: "/" },
   { label: "Destinations", href: "/#destinations" },
+  { label: "MBBS Abroad", href: "/mbbs-abroad" },
+  { label: "Dubai IT Program", href: "/career-academy/it-infrastructure-engineer-program-dubai" },
   { label: "Courses", href: "/courses" },
-  { label: "Career Academy", href: "/career-academy" },
   { label: "Digital Office", href: "/digital-office" },
-  { label: "Process", href: "/#process" },
-  { label: "About", href: "/#about" },
   { label: "Blog", href: "/blog" },
   { label: "FAQ", href: "/faq" },
   { label: "Contact", href: "/#contact" },
+]
+
+export const FOOTER_LINKS = [
+  { label: "Home", href: "/" },
+  { label: "Study Destinations", href: "/destinations" },
+  { label: "MBBS Abroad", href: "/mbbs-abroad" },
+  { label: "MBBS in Vietnam", href: "/mbbs-abroad/vietnam" },
+  { label: "MBBS in Georgia", href: "/mbbs-abroad/georgia" },
+  { label: "Dubai IT Program", href: "/career-academy/it-infrastructure-engineer-program-dubai" },
+  { label: "Career Academy", href: "/career-academy" },
+  { label: "Courses", href: "/courses" },
+  { label: "Digital Office", href: "/digital-office" },
+  { label: "Education Loans", href: "/schemes" },
+  { label: "Our Process", href: "/process" },
+  { label: "About", href: "/about" },
+  { label: "Blog", href: "/blog" },
+  { label: "FAQ", href: "/faq" },
+  { label: "Contact", href: "/contact" },
+]
+
+export const ANNOUNCEMENTS = [
+  {
+    label: "Career Academy",
+    message: "100% Job-Assured IT Program in Dubai — 60+ Students Already Placed in the GCC!",
+    href: "/career-academy/it-infrastructure-engineer-program-dubai",
+  },
+  {
+    label: "MBBS Abroad",
+    message: "NEET-Qualified? Study MBBS in Vietnam From ₹31 Lakhs for the Full Program, Hostel Included",
+    href: "/mbbs-abroad",
+  },
+]
+
+export const BLOG_TOPIC_LINKS = [
+  { label: "MBBS Abroad", href: "/mbbs-abroad" },
+  { label: "Dubai IT Program", href: "/career-academy/it-infrastructure-engineer-program-dubai" },
+  { label: "Study Destinations", href: "/destinations" },
+  { label: "Education Loans", href: "/schemes" },
+  { label: "All FAQs", href: "/faq" },
 ]
 
 export const DESTINATIONS: Destination[] = [
@@ -427,6 +467,91 @@ export const CAREER_PROGRAMS: CareerProgram[] = [
         answer:
           "No formal IT background is required — the program is designed for degree or diploma holders with basic familiarity with computer operation. Training starts from hardware and networking fundamentals in Module 1 before progressing to Windows Server, CCNA, Azure, and Office 365 administration.",
       },
+      {
+        question: "Who delivers the training and who are the trainers?",
+        answer:
+          "The program is delivered by Versa Global in association with MACOB IT Solutions, Dubai — Corporate Training Division. Sessions are led by certified trainers with 10+ years of hands-on industry experience, with multiple trainers each specialising in their own module. Trainer certifications include MCSE, CCNA, Azure, Office 365, VMware, CEH and Linux.",
+      },
+      {
+        question: "Should I choose the online, hybrid or Dubai classroom track?",
+        answer:
+          "Choose online if you want to train from India without relocating — you get live sessions and remote access to server and cloud labs. Choose hybrid if you want remote study combined with periodic in-person sessions and site visits in Dubai. Choose the Dubai classroom if you want the full in-person experience with direct access to real servers, routers and switches, client site visits and the Dubai NOC data centre visit. The curriculum and the 100% job assurance are identical on all three.",
+      },
+      {
+        question: "Is there a part-time option for working professionals?",
+        answer:
+          "Yes. Part-time learners get customised time slots aligned to their work schedule, with the same curriculum depth and hands-on access as full-time learners. Full-time learners train in a morning batch from 10:00 AM to 6:00 PM (flexible), with a minimum of 50 training hours per month.",
+      },
+      {
+        question: "What real-world exposure do students get during the program?",
+        answer:
+          "Students take part in client site visits and AMC audits at client premises in Dubai, real-time projects on MACOB IT Solutions' active infrastructure and cloud engagements, live Azure and Office 365 tenant implementations, and a guided visit to a Dubai NOC data centre.",
+      },
+      {
+        question: "How are students assessed?",
+        answer:
+          "Assessment combines ongoing classroom quizzes, periodic take-home assignments, three capstone projects and participation in live customer work, data centre visits and AMC visits.",
+      },
+      {
+        question: "What does the placement preparation include?",
+        answer:
+          "A 7-stage career-readiness track: CV clinic, job guidance workshop, LinkedIn workshop, ATS workshop, technical interview preparation, HR questions preparation and mock interviews. Full-time learners get 25 hours dedicated to interview preparation.",
+      },
+      {
+        question: "How many students have been placed through this program?",
+        answer: "60+ students have been placed in GCC countries through this program so far.",
+      },
+      {
+        question: "How do I enrol in the IT Infrastructure Engineer Program?",
+        answer:
+          "Start with a free consultation by phone or WhatsApp. Our Career Academy counsellors assess your background, help you choose between the online, hybrid and Dubai classroom tracks, and guide you through enrolment — including visa support if you choose a Dubai track.",
+      },
+    ],
+    tracks: [
+      {
+        mode: "Online",
+        bestFor: "Students and working professionals who want to train from India without relocating",
+        howItWorks: "All 250 hours delivered remotely through live sessions, with remote access to server and cloud lab environments",
+        visa: "No UAE visa needed",
+      },
+      {
+        mode: "Hybrid",
+        bestFor: "Learners who want in-person exposure without moving for the full program",
+        howItWorks: "Remote study combined with periodic in-person sessions and client site visits in Dubai",
+        visa: "UAE visa needed for the Dubai sessions — visa support provided",
+      },
+      {
+        mode: "Classroom in Dubai",
+        bestFor: "Learners who want the full hands-on experience, in the Gulf from day one",
+        howItWorks: "Relocate to Dubai for the 4.5–6 month program, with direct access to real servers, routers and switches, client site visits and a Dubai NOC data centre visit",
+        visa: "UAE visa needed — visa support provided",
+      },
+    ],
+    enrolmentSteps: [
+      {
+        title: "Book a free consultation",
+        description: "Call or WhatsApp Versa Global. A Career Academy counsellor reviews your qualification, background and goals.",
+      },
+      {
+        title: "Choose your track",
+        description: "Pick online, hybrid or the Dubai classroom, and full-time or part-time, based on your budget and schedule.",
+      },
+      {
+        title: "Enrol and confirm your seat",
+        description: "Complete enrolment and pay the AED 23,500 program fee, which includes all three certification exams.",
+      },
+      {
+        title: "Visa support for Dubai tracks",
+        description: "If you chose the hybrid or classroom track, we guide you through the UAE visa documentation.",
+      },
+      {
+        title: "Train across five modules",
+        description: "250 hours covering hardware and networking, Windows Server 2022, CCNA, Azure and Office 365, with live client exposure.",
+      },
+      {
+        title: "Career readiness and placement",
+        description: "Complete the 7-stage career-readiness track and receive dedicated placement support until you are placed in a GCC country.",
+      },
     ],
     metaDescription:
       "100% job-assured IT Infrastructure Engineer Program by Versa Global, in association with MACOB IT Solutions, Dubai. Windows Server, Azure, Office 365 & CCNA training — online, hybrid or classroom in Dubai. AED 23,500, all certification exam fees included. 60+ students placed in GCC countries.",
@@ -439,11 +564,16 @@ export const CAREER_PROGRAMS: CareerProgram[] = [
       "IT course with visa support Dubai",
       "career and skills academy Versa Global",
       "IT jobs in GCC after training",
+      "IT jobs in Dubai for freshers",
+      "job assured IT course in Dubai for Indians",
+      "CCNA Azure course with placement in UAE",
+      "IT course in Dubai from Kerala",
     ],
   },
 ]
 
 export const BLOG_POSTS: BlogPost[] = [
+  ...OCTOBER_2026_POSTS,
   {
     slug: "study-in-south-korea-guide-indian-students-2026",
     title: "Study in South Korea 2026: D-2 Visa, GKS Scholarship & Costs for Indian Students",
@@ -1115,152 +1245,182 @@ Curious if New Zealand fits your goals and budget better than the more obvious d
   },
 ]
 
-export const FAQS = [
+export const FAQS: Faq[] = [
   {
+    category: "Getting Started",
     question: "How long does the study abroad application process take?",
     answer:
       "Typically 6-12 months from initial consultation to visa approval. We recommend starting at least 12 months before your intended intake date to maximize university options and scholarship opportunities.",
   },
   {
+    category: "Visas & Work Rights",
     question: "How long does the visa process take once my documents are ready?",
     answer:
       "It takes about 1 to 1.5 months, if all the documents are in place. Delays usually happen only when documentation is incomplete, so our team reviews everything upfront to keep you on schedule.",
   },
   {
+    category: "Applications & Tests",
     question: "Is IELTS or TOEFL compulsory for every university?",
     answer:
       "Not always. There are universities that may waive off the IELTS/TOEFL requirement depending on your academic background and prior medium of instruction. Please discuss this with our consultants during your profile evaluation.",
   },
   {
+    category: "Applications & Tests",
     question: "What are the English language requirements for studying abroad?",
     answer:
       "Most universities require IELTS 6.0-7.0 or TOEFL 80-100. Requirements vary by university and program, and some universities waive this requirement altogether. We provide IELTS preparation guidance and can recommend partner coaching centres.",
   },
   {
+    category: "Costs, Loans & Scholarships",
     question: "How much does it cost to study abroad?",
     answer:
       "Costs vary significantly by destination. Germany public universities have zero tuition. Canada costs CAD 15,000-35,000/year. UK costs GBP 12,000-25,000/year. We help you identify scholarships to reduce costs.",
   },
   {
+    category: "Visas & Work Rights",
     question: "What is Versa Global&apos;s visa success rate?",
     answer:
       "We maintain a 95%+ visa success rate across all destinations. Our team reviews every document before submission and has deep knowledge of each country&apos;s immigration requirements.",
   },
   {
+    category: "Getting Started",
     question: "Do you offer post-arrival support?",
     answer:
       "Yes. Our pre-departure and post-arrival support includes accommodation search, airport pickup coordination, bank account opening guidance, SIM card setup, and connecting you with our alumni network in your destination.",
   },
   {
+    category: "Visas & Work Rights",
     question: "Can I work while studying abroad?",
     answer:
       "Yes — most destinations allow part-time work. UK allows 20 hours/week during term. Canada allows 20 hours/week off-campus. Australia allows 48 hours per fortnight. Germany allows 120 full days or 240 half days per year.",
   },
   {
+    category: "MBBS Abroad",
     question: "How much does MBBS in Vietnam cost?",
     answer:
       "MBBS in Vietnam through Versa Global starts from ₹31 lakhs for the full 6-year program (tuition, hostel, and administration fees), significantly lower than most private medical colleges in India and competitive with other popular MBBS-abroad destinations.",
   },
   {
+    category: "MBBS Abroad",
     question: "Is NEET required for MBBS in Vietnam?",
     answer:
       "Yes. A qualifying NEET score is mandatory for any Indian student pursuing MBBS abroad, including Vietnam, in order to be eligible to practice in India after graduation. This applies regardless of destination country.",
   },
   {
+    category: "MBBS Abroad",
     question: "Are Vietnam medical degrees recognized in India?",
     answer:
       "Yes — we place students only at NMC (National Medical Commission) recognized universities in Vietnam. Graduates are eligible to sit the FMGE (Foreign Medical Graduate Examination) to practice in India, the same requirement that applies to graduates from any recognized foreign medical university.",
   },
   {
+    category: "MBBS Abroad",
     question: "Where should I study MBBS after NEET?",
     answer:
       "It depends on your budget and priorities. Vietnam and Georgia are Versa Global&apos;s two primary MBBS destinations — Vietnam currently starts from ₹31 lakhs for the full program, while Georgia typically runs $40,000-50,000 total. Both are NMC-recognized with FMGE-eligible degrees. We help you compare both based on your specific budget and timeline in a free consultation.",
   },
   {
+    category: "MBBS Abroad",
     question: "How long does an MBBS program in Vietnam take?",
     answer:
       "The MBBS program in Vietnam is typically 6 years total, combining 5 years of academic study with a 1-year clinical internship — comparable in length to MBBS programs in India and most other MBBS-abroad destinations.",
   },
   {
+    category: "Dubai IT Program",
     question: "Is the 100% job guarantee on the Dubai IT Infrastructure Engineer Program real?",
     answer:
       "Yes — it&apos;s dedicated placement support that continues until you&apos;re hired in a GCC IT role, backed by MACOB IT Solutions&apos; live employer network, real client site exposure, and a structured 7-stage career-readiness track. It applies to students who complete the full curriculum and actively engage with the placement process; 60+ students have been placed through it so far.",
   },
   {
+    category: "Dubai IT Program",
     question: "What if I don&apos;t get placed after completing the IT Infrastructure Engineer Program?",
     answer:
       "Placement support continues past graduation for as long as it takes, provided you completed the training requirements and stay engaged with the process — attending workshops, mock interviews, and employer introductions. It&apos;s a sustained placement commitment, not a one-time job posting forwarded after your certificate is issued.",
   },
   {
+    category: "Dubai IT Program",
     question: "Do I need prior IT experience for the Dubai IT Infrastructure Engineer Program?",
     answer:
       "No. The program is open to degree or diploma holders with basic computer literacy — training starts from hardware and networking fundamentals before progressing through Windows Server, CCNA, Azure, and Office 365, so no prior infrastructure or networking background is required.",
   },
   {
+    category: "Visas & Work Rights",
     question: "What is the Genuine Student (GS) requirement for an Australian student visa?",
     answer:
       "It&apos;s the assessment Australia uses (replacing the earlier Genuine Temporary Entrant test since 2024) to check that your study plans, course choice, and post-study intentions are genuine. It&apos;s satisfied through a personal statement, which our counsellors help you prepare so it genuinely reflects your own profile rather than a generic template.",
   },
   {
+    category: "Visas & Work Rights",
     question: "What are Australia's post-study work rights?",
     answer:
       "Graduates can apply for a Temporary Graduate visa (subclass 485), with the length of stay depending on your qualification level and whether you studied at a regional or metro campus — regional campuses often carry longer post-study work entitlements.",
   },
   {
+    category: "Visas & Work Rights",
     question: "What is OPT, and how long can I work in the US after graduating?",
     answer:
       "Optional Practical Training (OPT) lets F-1 graduates work in their field for up to 12 months after completing their degree, extendable by 24 additional months for STEM-designated programs — up to 36 months total for eligible STEM graduates.",
   },
   {
+    category: "Visas & Work Rights",
     question: "What is the SEVIS fee for a US student visa?",
     answer:
       "It&apos;s the I-901 SEVIS registration fee, paid after you receive your Form I-20 and before you schedule your F-1 visa interview. Keep the payment receipt — you&apos;ll need to show it at your interview alongside your I-20.",
   },
   {
+    category: "Visas & Work Rights",
     question: "What are New Zealand's post-study work rights?",
     answer:
       "Eligible graduates can apply for a Post Study Work Visa to work in New Zealand after completing their qualification. Exact entitlements depend on your qualification level and institution, so we confirm your specific eligibility before you choose a course.",
   },
   {
+    category: "Costs, Loans & Scholarships",
     question: "How does Versa Global's education loan support actually work?",
     answer:
       "We work directly with 20+ banks and NBFCs, handling your loan documentation — collateral paperwork, income proof, and sanction letters — end-to-end, and help you compare offers to find competitive interest rates and faster approvals rather than having you shop around lenders on your own.",
   },
   {
+    category: "Costs, Loans & Scholarships",
     question: "Can international students in Australia, the US, or New Zealand get scholarships?",
     answer:
       "Yes — Australia offers Australia Awards and Endeavour scholarships, the US offers Fulbright and Hubert Humphrey among others, and New Zealand offers NZ Excellence Awards and NZ Aid. Eligibility depends on your academic profile and chosen program; our counsellors identify which scholarships you genuinely qualify for during your free profile evaluation.",
   },
   {
+    category: "Visas & Work Rights",
     question: "Which visa do Indian students need to study in South Korea?",
     answer:
       "Degree students apply for the D-2 student visa after receiving an admission letter and Certificate of Admission from a Korean university. Students starting with a Korean language program use the D-4 visa. South Korea's main intakes are March and September.",
   },
   {
+    category: "Costs, Loans & Scholarships",
     question: "What does the Global Korea Scholarship (GKS) cover?",
     answer:
       "For selected students, GKS generally covers tuition, a monthly living allowance, round-trip airfare, and a Korean language course before the degree. Selection is competitive through the embassy and university tracks, and our counsellors assess whether you are a realistic candidate.",
   },
   {
+    category: "Costs, Loans & Scholarships",
     question: "Should I take a secured or unsecured education loan for study abroad?",
     answer:
       "A secured loan (backed by property or deposits) usually offers a lower interest rate and higher amount. An unsecured loan needs no collateral but depends on your university, course, and co-applicant's income and credit score, and typically costs more. We help you compare both with our 20+ bank and NBFC partners.",
   },
   {
+    category: "Costs, Loans & Scholarships",
     question: "What documents are needed for a study abroad education loan?",
     answer:
       "Typically your admission letter, academic records, test scores, passport, cost-of-study breakdown, KYC for you and your co-applicant, the co-applicant's income proof and bank statements, and property or deposit documents for a secured loan. Versa Global prepares and reviews the full set before submission.",
   },
   {
+    category: "Applications & Tests",
     question: "How long should a Statement of Purpose (SOP) be?",
     answer:
       "Follow the university's stated limit first. Where none is given, around 800–1,000 words is typical for postgraduate applications. A specific, honest SOP that explains your course choice, university fit, and career plan matters far more than length.",
   },
   {
+    category: "Applications & Tests",
     question: "Does Versa Global write my SOP for me?",
     answer:
       "We don't hand out templates. Our counsellors interview you, then help you structure and refine your own story and cross-check it against your documents and the destination's visa expectations, so the statement is genuinely yours and holds up in a visa interview.",
   },
+  ...OCTOBER_2026_FAQS,
 ]
 
 export const SCHEMES = [

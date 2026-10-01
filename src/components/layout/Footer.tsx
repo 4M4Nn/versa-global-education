@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Phone, Mail, MapPin } from "lucide-react"
-import { SITE, NAV_LINKS, DESTINATIONS } from "@/lib/data"
+import { SITE, FOOTER_LINKS, DESTINATIONS } from "@/lib/data"
 
 export default function Footer() {
   return (
@@ -12,7 +12,7 @@ export default function Footer() {
             <p className="text-xs tracking-widest uppercase text-blue-200">Study Abroad Consultancy</p>
           </div>
           <p className="text-sm text-blue-200 leading-relaxed mb-5">
-            The most trusted study abroad agency for Indian students. 60+ countries. 95% visa success rate.
+            The most trusted study abroad agency for Indian students. 60+ countries. 95% visa success rate. MBBS abroad in Vietnam and Georgia, and job-assured IT training in Dubai.
           </p>
           <div className="flex items-center gap-2">
             {["f", "in", "yt"].map((s) => (
@@ -23,8 +23,8 @@ export default function Footer() {
 
         <div>
           <h4 className="font-semibold text-sm uppercase tracking-wider mb-4 text-[#C9A84C]">Quick Links</h4>
-          <ul className="space-y-2">
-            {NAV_LINKS.map((link) => (
+          <ul className="grid grid-cols-2 gap-x-4 gap-y-2">
+            {FOOTER_LINKS.map((link) => (
               <li key={link.href}>
                 <Link href={link.href} className="text-sm text-blue-200 hover:text-white transition-colors">{link.label}</Link>
               </li>
@@ -35,7 +35,7 @@ export default function Footer() {
         <div>
           <h4 className="font-semibold text-sm uppercase tracking-wider mb-4 text-[#C9A84C]">Top Destinations</h4>
           <ul className="space-y-2">
-            {DESTINATIONS.slice(0, 6).map((d) => (
+            {DESTINATIONS.map((d) => (
               <li key={d.id}>
                 <Link href={`/destinations/${d.id}`} className="text-sm text-blue-200 hover:text-white transition-colors">
                   {d.flag} {d.name}

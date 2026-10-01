@@ -1,14 +1,15 @@
 import { SITE, DESTINATIONS, PROCESS_STEPS, FOUNDERS, STATS, SCHEMES, FAQS, CAREER_PROGRAMS, OFFER } from "@/lib/data"
+import { MBBS_HUB, MBBS_COUNTRIES } from "@/lib/mbbs"
 
 export interface ChatReply {
   text: string
   quickReplies?: string[]
 }
 
-export const CHAT_QUICK_START = ["Study destinations", "Career Academy", "Visa process", "Education loans", "Book free evaluation"]
+export const CHAT_QUICK_START = ["Study destinations", "MBBS abroad", "Career Academy", "Visa process", "Education loans", "Book free evaluation"]
 
 export const GREETING: ChatReply = {
-  text: `Hi! I'm the Versa Global Assistant 🎓 Ask me about study destinations, visas, education loans, our Dubai IT Career Academy, or how to get started — or tap a quick option below.`,
+  text: `Hi! I'm the Versa Global Assistant 🎓 Ask me about study destinations, MBBS abroad, visas, education loans, our Dubai IT Career Academy, or how to get started — or tap a quick option below.`,
   quickReplies: CHAT_QUICK_START,
 }
 
@@ -52,6 +53,16 @@ export function getBotReply(rawInput: string): ChatReply {
 
   if (!input) return GREETING
   if (/^(hi|hello|hey|namaste|hii+)\b/.test(input)) return GREETING
+
+  if (/mbbs|neet|fmge|medical (seat|college|degree)|become a doctor/.test(input)) {
+    const list = MBBS_COUNTRIES.map(
+      (c) => `${c.flag} MBBS in ${c.name}: ${c.cost} (${c.costNote}). Intakes: ${c.intake}.`
+    ).join("\n")
+    return {
+      text: `${MBBS_HUB.summary}\n\n${list}\n\nEligibility: a qualifying NEET result, 10+2 with PCB and English, and at least 50% in PCB. See versaglobal.in/mbbs-abroad for the full guide.`,
+      quickReplies: ["Book free evaluation", "Education loans"],
+    }
+  }
 
   const destination = findDestinationMatch(input)
   if (destination) {
