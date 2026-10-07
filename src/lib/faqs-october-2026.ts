@@ -1,4 +1,5 @@
 import type { CareerProgramFaq, Faq, FaqCategory } from "@/types"
+import { NEW_DESTINATION_FAQS, NEW_DESTINATION_BLOG_CATEGORIES } from "@/lib/destinations-extra"
 
 export const FAQ_CATEGORIES: { name: FaqCategory; blurb: string }[] = [
   { name: "Getting Started", blurb: "How the process works and what Versa Global does for you." },
@@ -374,6 +375,7 @@ export const DESTINATION_FAQS: Record<string, CareerProgramFaq[]> = {
       answer: "September and January.",
     },
   ],
+  ...NEW_DESTINATION_FAQS,
 }
 
 /** Blog categories that count as "related guides" for each destination page. */
@@ -388,4 +390,5 @@ export const DESTINATION_BLOG_CATEGORIES: Record<string, string[]> = {
   georgia: ["Georgia", "MBBS Abroad"],
   "south-korea": ["South Korea"],
   vietnam: ["Vietnam", "MBBS Abroad"],
+  ...NEW_DESTINATION_BLOG_CATEGORIES,
 }

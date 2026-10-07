@@ -106,7 +106,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const post = getAllBlogPosts().find((p) => p.slug === slug)
   if (!post) return { title: "Post Not Found" }
   return {
-    title: post.title,
+    title: post.title.length > 55 ? { absolute: post.title } : post.title,
     description: post.excerpt.replace(/&apos;/g, "'"),
     alternates: { canonical: `/blog/${post.slug}` },
     openGraph: {
@@ -252,7 +252,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         </div>
 
         <div className="mt-12 p-8 bg-[#EEF2FF] rounded-2xl border border-[#C9A84C]/20">
-          <h3 className="font-playfair text-xl font-bold text-[#1B2A4A] mb-3">{cta.heading}</h3>
+          <h2 className="font-playfair text-xl font-bold text-[#1B2A4A] mb-3">{cta.heading}</h2>
           <p className="text-[#6B7280] text-sm mb-5">{cta.text}</p>
           <div className="flex flex-wrap gap-3">
             <Link href={cta.href} className="bg-[#C9A84C] text-[#1B2A4A] font-bold px-6 py-2.5 rounded-lg hover:bg-[#E8C96A] transition-colors flex items-center gap-2 text-sm">

@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const program = CAREER_PROGRAMS.find((p) => p.slug === slug)
   if (!program) return { title: "Program Not Found" }
   return {
-    title: `${program.title} | AED ${program.fee.amount.toLocaleString()} | 100% Job Assurance`,
+    title: { absolute: `${program.shortName} in Dubai — 100% Job Assurance, ${program.fee.currency} ${program.fee.amount.toLocaleString("en-US")}` },
     description: program.metaDescription,
     alternates: { canonical: `/career-academy/${program.slug}` },
     keywords: program.keywords,

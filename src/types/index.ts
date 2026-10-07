@@ -143,3 +143,33 @@ export interface MbbsCountry {
   metaDescription: string
   keywords: string[]
 }
+
+export interface DestinationGuide {
+  region: "Most Popular" | "Europe" | "Asia-Pacific" | "MBBS Destinations"
+  overview: string
+  quickFacts: { label: string; value: string }[]
+  whyStudy: string[]
+  topUniversities: string[]
+  popularCities: string[]
+  requirements: string[]
+}
+
+export interface StudyCourse {
+  slug: string
+  name: string
+  shortName: string
+  image: string
+  summary: string
+  duration: string
+  degrees: string[]
+  eligibility: string[]
+  tests: string[]
+  bestCountries: { id: string; why: string }[]
+  specialisations: string[]
+  careers: string[]
+  costNote: string
+  faqs: CareerProgramFaq[]
+  keywords: string[]
+  metaTitle: string
+  metaDescription: string
+}

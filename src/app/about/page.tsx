@@ -17,7 +17,7 @@ export default function AboutPage() {
       <section className="bg-[#1B2A4A] text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-[#C9A84C] text-xs font-semibold tracking-widest uppercase mb-4">About Versa Global</p>
-          <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-5">We Help Students<br />Reach the World</h1>
+          <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-5">About Versa Global — Study Abroad Consultants in Kochi</h1>
           <p className="text-blue-200 text-lg max-w-2xl mx-auto">Studying abroad is one of the most important decisions a student and their family will make. At Versa Global, we bring more than expertise to this journey — we bring firsthand experience.</p>
         </div>
       </section>

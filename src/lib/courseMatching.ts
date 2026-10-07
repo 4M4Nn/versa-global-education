@@ -1,5 +1,6 @@
 import { DESTINATIONS } from "@/lib/data"
 import type { Destination } from "@/types"
+import { NEW_DESTINATION_BUDGET_BANDS } from "@/lib/destinations-extra"
 
 export interface CourseCategory {
   id: string
@@ -13,25 +14,25 @@ export const COURSE_CATEGORIES: CourseCategory[] = [
     id: "business",
     name: "Business & Management",
     description: "MBA, business administration, management, and trade programs.",
-    keywords: ["business", "mba", "management", "trade"],
+    keywords: ["business", "mba", "management", "trade", "finance", "international relations"],
   },
   {
     id: "engineering-tech",
     name: "Engineering & Technology",
     description: "Engineering, computer science, IT, software, and applied sciences.",
-    keywords: ["engineering", "computer science", "it & software", "technology", "natural sciences"],
+    keywords: ["engineering", "computer science", "it & software", "technology", "natural sciences", "robotics", "sustainability"],
   },
   {
     id: "medicine-health",
     name: "Medicine & Healthcare",
     description: "MBBS, medicine, nursing, dentistry, pharma, and healthcare programs.",
-    keywords: ["medicine", "mbbs", "healthcare", "nursing", "dentistry", "pharma"],
+    keywords: ["medicine", "mbbs", "healthcare", "nursing", "dentistry", "pharma", "life sciences"],
   },
   {
     id: "arts-design-hospitality",
     name: "Arts, Design & Hospitality",
     description: "Arts, design, film & media, hospitality, and tourism programs.",
-    keywords: ["arts", "design", "film & media", "hospitality", "tourism"],
+    keywords: ["arts", "design", "film & media", "hospitality", "tourism", "fashion", "media", "architecture", "studies"],
   },
   {
     id: "data-research-sciences",
@@ -76,6 +77,7 @@ const DESTINATION_BUDGET_BAND: Record<string, BudgetBand> = {
   uk: "premium",
   usa: "premium",
   australia: "premium",
+  ...NEW_DESTINATION_BUDGET_BANDS,
 }
 
 export function getBudgetBand(destinationId: string): BudgetBand {

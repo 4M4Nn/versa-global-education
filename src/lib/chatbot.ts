@@ -24,6 +24,9 @@ function findDestinationMatch(input: string) {
     nz: "New Zealand",
     korea: "South Korea",
     "south korea": "South Korea",
+    uae: "United Arab Emirates",
+    holland: "Netherlands",
+    dutch: "Netherlands",
   }
   for (const [alias, name] of Object.entries(aliases)) {
     if (input.includes(alias)) {

@@ -9,7 +9,7 @@ const BASE = "https://www.versaglobal.in"
 const clean = (text: string) => text.replace(/&apos;/g, "'")
 
 export const metadata: Metadata = {
-  title: "Study Abroad Blog — MBBS Abroad, Dubai IT Careers, Visa & Scholarship Guides",
+  title: "Study Abroad Blog — MBBS, Dubai IT, Visa & Scholarship Guides",
   description:
     "Practical guides from Versa Global: MBBS abroad after NEET, FMGE, the job-assured Dubai IT program, UK, Canada, Australia and Germany visas, English tests, scholarships and education loans.",
   alternates: { canonical: "/blog" },
@@ -49,7 +49,7 @@ export default function BlogPage() {
       <section className="bg-[#1B2A4A] text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-[#C9A84C] text-xs font-semibold tracking-widest uppercase mb-4">Resources</p>
-          <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-5">Study Abroad Guides</h1>
+          <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-5">Study Abroad Guides &amp; Blog</h1>
           <p className="text-blue-200 text-lg">Expert advice for students navigating universities, visas, and financing options abroad.</p>
           <div className="flex flex-wrap justify-center gap-2 mt-8">
             {BLOG_TOPIC_LINKS.map((topic) => (

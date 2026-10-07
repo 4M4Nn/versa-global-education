@@ -2,6 +2,7 @@ import { MetadataRoute } from "next"
 import { DESTINATIONS, CAREER_PROGRAMS } from "@/lib/data"
 import { getAllBlogPosts } from "@/lib/content"
 import { MBBS_COUNTRIES } from "@/lib/mbbs"
+import { STUDY_COURSES } from "@/lib/study-courses"
 
 const BASE = "https://www.versaglobal.in"
 
@@ -10,7 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${BASE}/destinations/${d.id}`,
     lastModified: new Date(),
     changeFrequency: "monthly" as const,
-    priority: 0.7,
+    priority: 0.8,
   }))
 
   const posts = getAllBlogPosts().map((p) => ({
@@ -34,6 +35,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }))
 
+  const coursePages = STUDY_COURSES.map((c) => ({
+    url: `${BASE}/courses/${c.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
+  }))
+
   return [
     { url: BASE, lastModified: new Date(), changeFrequency: "weekly", priority: 1 },
     { url: `${BASE}/mbbs-abroad`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
@@ -48,6 +56,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/schemes`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
     { url: `${BASE}/contact`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.5 },
     ...mbbsPages,
+    ...coursePages,
     ...destinations,
     ...careerPrograms,
     ...posts,

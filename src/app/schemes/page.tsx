@@ -15,7 +15,7 @@ export default function SchemesPage() {
       <section className="bg-[#1B2A4A] text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-[#C9A84C] text-xs font-semibold tracking-widest uppercase mb-4">Education Loan Support</p>
-          <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-5">We Handle Your Loan Process, End to End</h1>
+          <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-5">Education Loans for Study Abroad — Handled End to End</h1>
           <p className="text-blue-200 text-lg">Tie-ups with 20+ banks and NBFCs mean faster approvals and the right loan structure for your profile.</p>
         </div>
       </section>

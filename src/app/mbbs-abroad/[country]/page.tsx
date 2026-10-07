@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ country: 
   const country = MBBS_COUNTRIES.find((c) => c.slug === slug)
   if (!country) return { title: "Page Not Found" }
   return {
-    title: country.metaTitle,
+    title: { absolute: country.metaTitle },
     description: country.metaDescription,
     alternates: { canonical: `/mbbs-abroad/${country.slug}` },
     keywords: country.keywords,

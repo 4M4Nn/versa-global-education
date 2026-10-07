@@ -10,11 +10,11 @@ export default function DestinationsSection() {
         <div className="text-center mb-14">
           <p className="text-[#C9A84C] text-xs font-semibold tracking-widest uppercase mb-3">60+ Study Destinations Worldwide</p>
           <h2 className="font-playfair text-3xl md:text-4xl font-bold text-[#1B2A4A]">We Help You Find the Right Place to Learn, Grow, and Succeed</h2>
-          <p className="text-[#6B7280] mt-4 max-w-2xl mx-auto">From world-class universities in the UK, Canada, Australia and the USA, to affordable options like Germany, Georgia, Vietnam and South Korea — we match you to the destination that fits your goals, not the other way around.</p>
+          <p className="text-[#6B7280] mt-4 max-w-2xl mx-auto">From world-class universities in the UK, Canada, Australia and the USA, to affordable options like Germany, France, Italy, Poland, Georgia and Vietnam — we match you to the destination that fits your goals, not the other way around.</p>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {DESTINATIONS.map((dest) => (
+          {DESTINATIONS.slice(0, 12).map((dest) => (
             <Link
               key={dest.id}
               href={`/destinations/${dest.id}`}
@@ -37,6 +37,15 @@ export default function DestinationsSection() {
               </div>
             </Link>
           ))}
+        </div>
+
+        <div className="text-center mt-10">
+          <Link
+            href="/destinations"
+            className="inline-flex items-center gap-2 bg-[#1B2A4A] text-white font-semibold px-7 py-3.5 rounded-lg hover:bg-[#0F1A2E] transition-colors"
+          >
+            Explore all {DESTINATIONS.length} destinations <ArrowRight size={16} />
+          </Link>
         </div>
       </div>
     </section>

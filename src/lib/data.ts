@@ -1,6 +1,7 @@
 import type { Destination, ProcessStep, Testimonial, BlogPost, Stat, Founder, CareerProgram, Faq } from "@/types"
 import { OCTOBER_2026_POSTS } from "@/lib/blog-october-2026"
 import { OCTOBER_2026_FAQS } from "@/lib/faqs-october-2026"
+import { NEW_DESTINATIONS } from "@/lib/destinations-extra"
 
 export const SITE = {
   name: "Versa Global",
@@ -12,7 +13,7 @@ export const SITE = {
 
 export const NAV_LINKS = [
   { label: "Home", href: "/" },
-  { label: "Destinations", href: "/#destinations" },
+  { label: "Destinations", href: "/destinations" },
   { label: "MBBS Abroad", href: "/mbbs-abroad" },
   { label: "Dubai IT Program", href: "/career-academy/it-infrastructure-engineer-program-dubai" },
   { label: "Courses", href: "/courses" },
@@ -31,6 +32,8 @@ export const FOOTER_LINKS = [
   { label: "Dubai IT Program", href: "/career-academy/it-infrastructure-engineer-program-dubai" },
   { label: "Career Academy", href: "/career-academy" },
   { label: "Courses", href: "/courses" },
+  { label: "MS in Computer Science", href: "/courses/ms-in-computer-science-abroad" },
+  { label: "MBA Abroad", href: "/courses/mba-abroad" },
   { label: "Digital Office", href: "/digital-office" },
   { label: "Education Loans", href: "/schemes" },
   { label: "Our Process", href: "/process" },
@@ -197,6 +200,7 @@ export const DESTINATIONS: Destination[] = [
     description:
       "Low tuition and living costs, English-taught programs, and rising demand for skilled graduates in one of Asia&apos;s fastest-growing economies. MBBS in Vietnam now starts from ₹31 lakhs — NMC-recognized, FMGE-eligible.",
   },
+  ...NEW_DESTINATIONS,
 ]
 
 export const PROCESS_STEPS: ProcessStep[] = [
@@ -1297,7 +1301,7 @@ export const FAQS: Faq[] = [
     category: "Visas & Work Rights",
     question: "Can I work while studying abroad?",
     answer:
-      "Yes — most destinations allow part-time work. UK allows 20 hours/week during term. Canada allows 20 hours/week off-campus. Australia allows 48 hours per fortnight. Germany allows 120 full days or 240 half days per year.",
+      "Yes — most destinations allow part-time work. The UK allows 20 hours a week during term for degree students, Canada 24 hours a week off campus, Australia 48 hours per fortnight, Ireland 20 hours a week in term, and Germany 140 full days or 280 half days a year. Rules change, so we confirm the current limits for your destination.",
   },
   {
     category: "MBBS Abroad",

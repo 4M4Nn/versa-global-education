@@ -22,7 +22,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 className="font-semibold text-sm uppercase tracking-wider mb-4 text-[#C9A84C]">Quick Links</h4>
+          <h2 className="font-semibold text-sm uppercase tracking-wider mb-4 text-[#C9A84C]">Quick Links</h2>
           <ul className="grid grid-cols-2 gap-x-4 gap-y-2">
             {FOOTER_LINKS.map((link) => (
               <li key={link.href}>
@@ -33,20 +33,25 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 className="font-semibold text-sm uppercase tracking-wider mb-4 text-[#C9A84C]">Top Destinations</h4>
+          <h2 className="font-semibold text-sm uppercase tracking-wider mb-4 text-[#C9A84C]">Top Destinations</h2>
           <ul className="space-y-2">
-            {DESTINATIONS.map((d) => (
+            {DESTINATIONS.slice(0, 10).map((d) => (
               <li key={d.id}>
                 <Link href={`/destinations/${d.id}`} className="text-sm text-blue-200 hover:text-white transition-colors">
                   {d.flag} {d.name}
                 </Link>
               </li>
             ))}
+            <li>
+              <Link href="/destinations" className="text-sm font-semibold text-[#C9A84C] hover:text-white transition-colors">
+                All {DESTINATIONS.length} destinations →
+              </Link>
+            </li>
           </ul>
         </div>
 
         <div>
-          <h4 className="font-semibold text-sm uppercase tracking-wider mb-4 text-[#C9A84C]">Contact</h4>
+          <h2 className="font-semibold text-sm uppercase tracking-wider mb-4 text-[#C9A84C]">Contact</h2>
           <ul className="space-y-3">
             <li className="flex items-start gap-2.5 text-sm text-blue-200">
               <MapPin size={16} className="mt-0.5 shrink-0 text-[#C9A84C]" />{SITE.address}

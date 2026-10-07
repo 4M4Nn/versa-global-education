@@ -2,6 +2,8 @@ import { CAREER_PROGRAMS, DESTINATIONS, FAQS, SITE } from "@/lib/data"
 import { getAllBlogPosts } from "@/lib/content"
 import { MBBS_HUB, MBBS_HUB_FAQS, MBBS_COUNTRIES } from "@/lib/mbbs"
 import { PLACEMENTS, PLACED_STUDENTS } from "@/lib/placements"
+import { DESTINATION_GUIDES } from "@/lib/destinations-extra"
+import { STUDY_COURSES } from "@/lib/study-courses"
 import { DESTINATION_FAQS, FAQ_CATEGORIES } from "@/lib/faqs-october-2026"
 
 const BASE = "https://www.versaglobal.in"
@@ -31,8 +33,13 @@ export function GET() {
     "## Study destinations",
     ...DESTINATIONS.map(
       (d) =>
-        `- [${d.name}](${BASE}/destinations/${d.id}): ${clean(d.description)} Intakes: ${d.intake}. Visa: ${d.visa}. Scholarships: ${d.scholarships}.`
+        `- [${d.name}](${BASE}/destinations/${d.id}): ${clean(d.description)} Intakes: ${d.intake}. Visa: ${d.visa}. Scholarships: ${d.scholarships}.${
+          DESTINATION_GUIDES[d.id] ? " " + DESTINATION_GUIDES[d.id].quickFacts.map((f) => `${f.label}: ${f.value}.`).join(" ") : ""
+        }`
     ),
+    "",
+    "## Courses",
+    ...STUDY_COURSES.map((c) => `- [${c.name}](${BASE}/courses/${c.slug}): ${c.summary} Duration: ${c.duration}.`),
     "",
     "## Career & Skills Academy",
     ...CAREER_PROGRAMS.flatMap((p) => [
