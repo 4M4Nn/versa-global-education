@@ -1,5 +1,6 @@
 import type { Destination, ProcessStep, Testimonial, BlogPost, Stat, Founder, CareerProgram, Faq } from "@/types"
 import { OCTOBER_2026_POSTS } from "@/lib/blog-october-2026"
+import { COUNTRY_GUIDE_POSTS } from "@/lib/blog-countries-2026"
 import { OCTOBER_2026_FAQS } from "@/lib/faqs-october-2026"
 import { NEW_DESTINATIONS } from "@/lib/destinations-extra"
 
@@ -582,6 +583,7 @@ export const CAREER_PROGRAMS: CareerProgram[] = [
 ]
 
 export const BLOG_POSTS: BlogPost[] = [
+  ...COUNTRY_GUIDE_POSTS,
   ...OCTOBER_2026_POSTS,
   {
     slug: "study-in-south-korea-guide-indian-students-2026",

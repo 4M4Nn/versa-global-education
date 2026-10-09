@@ -780,7 +780,7 @@ export const NEW_DESTINATION_BLOG_CATEGORIES: Record<string, string[]> = {
   france: ["France"],
   netherlands: ["Netherlands"],
   singapore: ["Singapore"],
-  uae: ["Career Academy"],
+  uae: ["UAE", "Career Academy"],
   italy: ["Italy"],
   poland: ["Poland"],
   sweden: ["Sweden"],
