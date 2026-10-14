@@ -35,6 +35,10 @@ export interface BlogPost {
   body: string
   /** ISO date (YYYY-MM-DD) for sitemap and BlogPosting schema */
   publishedAt?: string
+  /** Links the post to a /courses/[slug] page, where it is listed as a guide */
+  courseSlug?: string
+  /** Target search keywords, emitted in page metadata */
+  keywords?: string[]
 }
 
 export interface Stat {

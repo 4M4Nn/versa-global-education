@@ -5,6 +5,7 @@ import Link from "next/link"
 import { ArrowRight, Briefcase, CheckCircle2, Clock, GraduationCap, MessageCircle, PenLine } from "lucide-react"
 import { DESTINATIONS, SITE } from "@/lib/data"
 import { STUDY_COURSES } from "@/lib/study-courses"
+import { getAllBlogPosts } from "@/lib/content"
 import FaqList, { faqPageJsonLd } from "@/components/ui/FaqList"
 
 const BASE = "https://www.versaglobal.in"
@@ -41,6 +42,7 @@ export default async function StudyCoursePage({ params }: { params: Promise<{ sl
     .map((bc) => ({ ...bc, dest: DESTINATIONS.find((d) => d.id === bc.id) }))
     .filter((bc) => bc.dest !== undefined)
   const others = STUDY_COURSES.filter((c) => c.slug !== course.slug).slice(0, 6)
+  const guides = getAllBlogPosts().filter((p) => p.courseSlug === course.slug)
 
   const waMessage = `Hi Versa Global, I'm interested in ${course.name}. Can you guide me?`
   const waUrl = `https://wa.me/91${SITE.phone.replace(/\D/g, "").slice(-10)}?text=${encodeURIComponent(waMessage)}`
@@ -209,8 +211,27 @@ export default async function StudyCoursePage({ params }: { params: Promise<{ sl
         </div>
       </section>
 
+      {/* Guides */}
+      {guides.length > 0 && (
+        <section className="py-16 px-4 bg-white">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="font-playfair text-2xl md:text-3xl font-bold text-[#1B2A4A] mb-8">{course.shortName} Guides</h2>
+            <div className="grid sm:grid-cols-2 gap-5">
+              {guides.map((post) => (
+                <Link key={post.slug} href={`/blog/${post.slug}`} className="group flex gap-4 bg-[#F8F9FA] rounded-xl p-4 hover:bg-[#EEF2FF] transition-colors">
+                  <div className="relative w-24 h-20 shrink-0 rounded-lg overflow-hidden">
+                    <Image src={post.image} alt={post.title} fill className="object-cover" />
+                  </div>
+                  <h3 className="font-playfair font-bold text-[#1B2A4A] text-sm self-center group-hover:text-[#C9A84C] transition-colors">{post.title}</h3>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Other courses */}
-      <section className="py-16 px-4 bg-white">
+      <section className="py-16 px-4 bg-[#F8F9FA]">
         <div className="max-w-5xl mx-auto">
           <h2 className="font-playfair text-2xl md:text-3xl font-bold text-[#1B2A4A] mb-6">Explore Other Courses</h2>
           <div className="flex flex-wrap gap-3">

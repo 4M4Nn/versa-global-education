@@ -9,6 +9,7 @@ import SmoothScrollProvider from "@/components/layout/SmoothScrollProvider"
 import IntroWrapper from "@/components/ui/IntroWrapper"
 import ChatWidget from "@/components/chatbot/ChatWidget"
 import { SITE } from "@/lib/data"
+import { OCTOBER_2026_SITE_KEYWORDS } from "@/lib/blog-keywords"
 
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair", display: "swap" })
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" })
@@ -73,6 +74,7 @@ export const metadata: Metadata = {
     "data science masters abroad",
     "nursing abroad",
     "scholarships for Indian students to study abroad",
+    ...OCTOBER_2026_SITE_KEYWORDS,
   ],
   openGraph: { type: "website", locale: "en_IN", siteName: SITE.name },
   robots: { index: true, follow: true },

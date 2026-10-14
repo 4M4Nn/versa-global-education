@@ -109,6 +109,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: post.title.length > 55 ? { absolute: post.title } : post.title,
     description: post.excerpt.replace(/&apos;/g, "'"),
     alternates: { canonical: `/blog/${post.slug}` },
+    ...(post.keywords ? { keywords: post.keywords } : {}),
     openGraph: {
       type: "article",
       title: post.title,
@@ -165,6 +166,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       },
       mainEntityOfPage: postUrl,
       articleSection: post.category,
+      ...(post.keywords ? { keywords: post.keywords.join(", ") } : {}),
       inLanguage: "en-IN",
     },
     {

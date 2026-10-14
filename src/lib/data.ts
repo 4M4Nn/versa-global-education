@@ -1,6 +1,8 @@
 import type { Destination, ProcessStep, Testimonial, BlogPost, Stat, Founder, CareerProgram, Faq } from "@/types"
 import { OCTOBER_2026_POSTS } from "@/lib/blog-october-2026"
 import { COUNTRY_GUIDE_POSTS } from "@/lib/blog-countries-2026"
+import { COURSE_AND_WEEKLY_POSTS } from "@/lib/blog-courses-2026"
+import { BLOG_KEYWORDS } from "@/lib/blog-keywords"
 import { OCTOBER_2026_FAQS } from "@/lib/faqs-october-2026"
 import { NEW_DESTINATIONS } from "@/lib/destinations-extra"
 
@@ -582,8 +584,11 @@ export const CAREER_PROGRAMS: CareerProgram[] = [
   },
 ]
 
+const withKeywords = (posts: BlogPost[]) => posts.map((p) => (BLOG_KEYWORDS[p.slug] ? { ...p, keywords: BLOG_KEYWORDS[p.slug] } : p))
+
 export const BLOG_POSTS: BlogPost[] = [
-  ...COUNTRY_GUIDE_POSTS,
+  ...withKeywords(COURSE_AND_WEEKLY_POSTS),
+  ...withKeywords(COUNTRY_GUIDE_POSTS),
   ...OCTOBER_2026_POSTS,
   {
     slug: "study-in-south-korea-guide-indian-students-2026",
