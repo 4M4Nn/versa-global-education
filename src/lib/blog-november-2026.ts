@@ -248,4 +248,304 @@ A UK, Canadian or Australian master's costs substantially more, takes one to two
 
 Talk to a Versa Global counsellor. We assess your current technical background, explain which delivery mode suits your situation, and guide you through the enrolment process. See the [Career Academy page](/career-academy) or the [IT Infrastructure Engineer Program](/career-academy/it-infrastructure-engineer-program-dubai).`,
   },
+  {
+    slug: "mbbs-in-georgia-2026-guide-universities-fees-admission-indian-students",
+    title: "MBBS in Georgia 2026: Universities, Fees, NEET Eligibility and Admission Guide for Indian Students",
+    category: "MBBS Abroad",
+    date: "November 2026",
+    publishedAt: "2026-11-12",
+    excerpt:
+      "A complete 2026 guide to MBBS in Georgia for Indian students — top universities, total fees in rupees, NEET requirements, the D3 visa, September and February intakes, and the FMGE pathway home.",
+    image: img("1565008447742-97f6f38c985c"),
+    keywords: [
+      "MBBS in Georgia",
+      "MBBS in Georgia fees",
+      "MBBS in Georgia for Indian students",
+      "MBBS in Georgia 2026",
+      "MBBS in Georgia universities",
+      "Georgia MBBS NMC approved",
+      "study medicine in Georgia",
+      "MBBS abroad for Indian students",
+    ],
+    body: `MBBS in Georgia has been one of the most consistent options for NEET-qualified Indian students over the past decade. The country has a long track record of Indian medical graduates, English-medium instruction from the first year, and a total program cost of $40,000–50,000 (roughly ₹33–42 lakhs) — well below private MBBS seats in India. This guide covers everything an Indian student needs to know before applying for MBBS in Georgia in 2026.
+
+## Why Do Indian Students Choose Georgia for MBBS?
+
+Georgia&apos;s medical universities have been training Indian students since the early 2000s, and that history matters: universities understand what Indian students need, Indian student communities are established in Tbilisi and Batumi, and the alumni network you can call on for FMGE preparation advice is real. The other practical factors are:
+
+- **English-medium from day one** — no separate language semester before you start the medical curriculum
+- **No capitation fee** — university fees are published, fixed and paid directly to the institution
+- **NMC-compliant programs** — the universities Versa Global places students in meet the National Medical Commission&apos;s Foreign Medical Graduate Licentiate Regulations, 2021
+- **Two intakes per year** — September and February, so a missed September round does not mean waiting a full year
+- **European lifestyle and climate** — Georgia is in the Caucasus, geographically and culturally distinct from South or East Asia
+
+## What Is the Total Cost of MBBS in Georgia?
+
+The 6-year program at Georgian medical universities typically costs $40,000–50,000 in tuition across the full course. In rupees at current exchange rates, that is roughly ₹33–42 lakhs for tuition. Budget separately for:
+
+- Hostel: $1,500–3,000 a year depending on the university and city (Tbilisi is higher than Batumi or Kutaisi)
+- Food and daily living: Georgia is affordable by European standards; most students budget $300–500 a month
+- Flights: Two to three return trips to India over six years
+- Visa renewals and administrative fees
+- FMGE preparation in the final year: coaching and study materials
+
+A total budget of $55,000–70,000 (tuition + hostel + living) is realistic for the full six years. There is no capitation fee and no separate donation.
+
+## Top Universities for MBBS in Georgia
+
+Georgian universities recognised for Indian medical graduates include:
+
+**Tbilisi State Medical University** — Georgia&apos;s oldest and largest medical university, founded in 1918, with an established international department and a large Indian student community.
+
+**David Tvildiani Medical University (DTMU)** — a private medical university in Tbilisi with English-medium programs, a clinical hospital on campus, and an active international student office.
+
+**Ivane Javakhishvili Tbilisi State University** — Georgia&apos;s principal research university, with a faculty of medicine offering both medical degrees and research pathways.
+
+**Batumi Shota Rustaveli State University** — in the coastal city of Batumi on the Black Sea, popular with students who prefer a smaller city.
+
+**Caucasus International University** — a Tbilisi-based private university with English-medium MBBS programs and strong industry links.
+
+Versa Global places students only at institutions whose programs meet NMC&apos;s 2021 regulations. We confirm each university&apos;s current status before recommending it — rules are updated and a program that was compliant in a prior year may not be today.
+
+## NEET and Eligibility Requirements
+
+**NEET is mandatory.** Any consultancy telling you that Georgia waives the NEET requirement for Indian students is wrong — and following that advice could cost you the right to practise in India after graduating.
+
+The eligibility checklist for MBBS in Georgia:
+
+- A qualifying NEET result (you must qualify, not necessarily rank in the top percentile)
+- Class 12 (10+2) with Physics, Chemistry, Biology and English
+- At least 50% aggregate in PCB (45% for OBC, SC and ST as per NMC norms)
+- Minimum age of 17 by 31 December of the admission year
+- A valid Indian passport (apply early — passport delays are the most common cause of a missed intake)
+
+Georgian universities do not hold a separate entrance examination for Indian applicants. The admission decision is based on your NEET scorecard, Class 12 marks, and supporting documents.
+
+## How Long Is the MBBS Course in Georgia?
+
+Six years in total. The typical structure is five years of academic study followed by a mandatory 12-month clinical internship at the same university or its affiliated hospitals. NMC requires at least 54 months of study plus 12 months of internship at the same institution — the programs Versa Global places students in meet this requirement.
+
+## When Are the Intakes?
+
+**September** is the main intake. Applications and document processing should begin at least three to four months in advance — ideally May or June for a September start.
+
+**February** is the second intake, offered by most Georgian universities. It is useful for students who decide late, need more time for documents, or missed the September round.
+
+## Which Visa Do I Need for MBBS in Georgia?
+
+Indian students study in Georgia on a **D3 student visa**, applied for after the university issues the admission or enrolment letter. The typical visa documentation package includes:
+
+- University admission/enrolment letter
+- Completed visa application form
+- Passport photographs
+- Proof of funds for the first year
+- Police clearance certificate
+- Medical fitness certificate
+
+The D3 visa is applied for at the Georgian Embassy in New Delhi. Processing typically takes one to two weeks; Versa Global prepares the complete file.
+
+## What Happens After You Graduate?
+
+After completing the MBBS degree and the 12-month internship in Georgia, Indian graduates follow the same route as any other foreign medical graduate returning to India:
+
+1. **Clear FMGE (or NExT)** — the Foreign Medical Graduate Examination, conducted by NBEMS twice a year. This is a 300-question MCQ with a pass mark of 150. NExT is planned to replace FMGE under the NMC Act — confirm the current position as you approach your final year.
+2. **Complete a 12-month CRMI** — Compulsory Rotating Medical Internship in India, after clearing the licensing exam.
+3. **Register and practise** — once the internship is complete, you can obtain permanent registration with a State Medical Council and practise as a doctor.
+
+FMGE pass rates have historically been below 25% per sitting. Clinical teaching quality and your own preparation matter. We advise students to begin structured FMGE preparation well before graduation, not in the final month.
+
+## How Does Versa Global Handle the Admission?
+
+We check your NEET scorecard, 10+2 marks and budget, shortlist one or two universities, manage the application and admission letter, prepare your D3 visa file, and brief you before departure. We stay in touch throughout the program and help you plan FMGE preparation early.
+
+To start: see the [MBBS in Georgia page](/mbbs-abroad/georgia), the [full MBBS guide](/mbbs-abroad), or book a free counselling call.`,
+  },
+  {
+    slug: "new-zealand-pr-through-studies-2026-skilled-migrant-pathway-indian-students",
+    title: "New Zealand PR Through Studies in 2026: Post-Study Work Visa, Skilled Migrant Category and the Pathway for Indian Students",
+    category: "New Zealand",
+    date: "November 2026",
+    publishedAt: "2026-11-14",
+    excerpt:
+      "How Indian students can use a New Zealand qualification to build towards permanent residency — the Post Study Work Visa, the Accredited Employer Work Visa, and the Skilled Migrant Category explained.",
+    image: img("1469854523086-cc02fe5d8800"),
+    keywords: [
+      "New Zealand PR through studies",
+      "New Zealand skilled migrant pathway",
+      "New Zealand permanent residency for Indian students",
+      "New Zealand post study work visa",
+      "study in New Zealand and get PR",
+      "New Zealand SMC resident visa",
+      "AEWV New Zealand",
+    ],
+    body: `New Zealand is one of the quieter pathways to permanent residency for Indian students — less discussed than Canada, but with a route that works well for graduates in the right occupation. This guide explains the complete pathway from a New Zealand student visa to permanent residency through the Skilled Migrant Category (SMC), and what Indian students should understand before choosing New Zealand specifically for a PR outcome.
+
+## Can I Get New Zealand PR After Studying There?
+
+Yes — if you graduate, find a skilled job, gain New Zealand work experience, and meet the points threshold for the Skilled Migrant Category resident visa. The pathway is:
+
+**Student Visa → Post Study Work Visa (PSWV) → Accredited Employer Work Visa (AEWV) → Skilled Migrant Category (SMC) Resident Visa**
+
+None of these steps is automatic, but the route is real and well-used by Indian graduates in IT, engineering, healthcare, education and trades.
+
+## Step 1: The Student Visa and Your Degree
+
+New Zealand has eight public universities, all internationally ranked. The main intakes are February and July. Programs most relevant for the PR pathway — where graduate demand is consistently high — include:
+
+- Information technology, software engineering, data science
+- Nursing, healthcare, pharmacy
+- Engineering (civil, mechanical, electrical)
+- Education and teaching
+- Construction management and trades
+
+During your studies, most full-time student visa holders can work part-time.
+
+## Step 2: Post Study Work Visa (PSWV)
+
+After graduating from an eligible New Zealand qualification at level 7 or above (bachelor&apos;s degree or higher), most graduates can apply for an open Post Study Work Visa — any employer, any role — and it is the critical bridge between study and skilled employment.
+
+The length of the PSWV depends on your qualification level and where in New Zealand you studied:
+
+- Bachelor&apos;s degree (3 years): typically up to 3 years PSWV
+- Postgraduate diploma or master&apos;s (1 year): typically 1–3 years depending on whether study was in Auckland or a regional location
+- Study in a regional New Zealand location may attract a longer PSWV — Immigration New Zealand actively encourages graduates to settle outside Auckland
+
+The PSWV is what creates the window for you to build New Zealand work experience, and New Zealand work experience in a skilled role is one of the most powerful factors in your SMC application.
+
+## Step 3: Accredited Employer Work Visa (AEWV)
+
+Once your PSWV expires — or if you want employer-sponsored stability — you can move to an AEWV, which requires a job offer from an employer accredited with Immigration New Zealand. Time on an AEWV counts as New Zealand skilled work experience for your SMC points.
+
+## Step 4: Skilled Migrant Category (SMC) Resident Visa
+
+The Skilled Migrant Category is New Zealand&apos;s principal points-based residence pathway. Key factors that earn points:
+
+- **Skilled employment in New Zealand** — a current skilled job in a role at ANZSCO Skill Level 1, 2 or 3 (this is the core factor)
+- **Your qualification level** — a bachelor&apos;s degree or higher from a recognised institution
+- **New Zealand qualification** — a degree earned in New Zealand attracts additional points
+- **Work experience** — years of skilled work in New Zealand or globally
+- **Age** — the SMC favours applicants between 20 and 55
+- **Green List occupation** — working in a New Zealand shortage role can provide a direct, faster residence pathway
+
+**The Green List:** Immigration New Zealand&apos;s Green List identifies occupations in shortage. Many healthcare roles (nurses, doctors, pharmacists), some engineering and IT roles, and various trades are on it. Graduates in a Green List Tier 1 occupation can often apply for residence directly without working through the full SMC points calculation — this is the fastest path.
+
+## How Long Does the Whole Pathway Take?
+
+- 3 years of study (or 1–2 years for a postgraduate degree)
+- 1–3 years on PSWV and AEWV building skilled work experience
+- SMC application processing: currently 6–18 months
+
+Total: 5–8 years from student to resident is realistic for most occupations, though graduates in a Green List role move considerably faster.
+
+## New Zealand vs Canada for PR via Studies
+
+Both are viable PR pathways but they work differently. Canada has more frequent PR draws and a larger Indian community; New Zealand has a lower population, faster integration, and a Green List that includes many healthcare and trade occupations where Canadian PR competition is very high. New Zealand suits students in healthcare, certain trades and engineering especially well.
+
+## What Should You Study for the Best NZ PR Prospects?
+
+Before choosing a program, check whether your target occupation is on Immigration New Zealand&apos;s Green List. If it is, the residence pathway is faster. If it is not, confirm the role is at ANZSCO Skill Level 1, 2 or 3 — only skilled employment counts toward SMC.
+
+Fields with consistently strong prospects in New Zealand in 2026: nursing and midwifery, civil and structural engineering, software development, IT management, early childhood education, and construction management.
+
+## How Does Versa Global Help?
+
+We assess your academic background, target occupation and PR goals, and map them to a New Zealand program and intake that sets you up for the PSWV and the SMC pathway. See the [New Zealand destination guide](/destinations/new-zealand) or talk to a counsellor directly.`,
+  },
+  {
+    slug: "dubai-it-career-2026-azure-ccna-certification-indian-freshers-gcc-jobs",
+    title: "Dubai IT Career in 2026: How Indian Freshers Get Azure and CCNA Certified and Land GCC Jobs in 4–6 Months",
+    category: "Career Academy",
+    date: "November 2026",
+    publishedAt: "2026-11-16",
+    excerpt:
+      "A complete guide to the Versa Global IT Infrastructure Engineer Program in Dubai — who it is for, what Azure, Office 365 and CCNA certifications cover, how the job placement works, and how it compares to a master&apos;s abroad.",
+    image: img("1553484771-047a44eab818"),
+    keywords: [
+      "Dubai IT jobs for freshers India",
+      "Azure certification Dubai program",
+      "CCNA certification Dubai",
+      "GCC IT jobs Indian graduates",
+      "IT infrastructure engineer program Dubai",
+      "IT career Dubai from India 2026",
+      "Dubai IT program cost",
+      "MCSE Azure course Dubai",
+    ],
+    body: `Getting an IT job in Dubai from India used to mean applying for years and waiting for a random opening. The Versa Global IT Infrastructure Engineer Program — delivered with MACOB IT Solutions Dubai — changes that calculation: a structured 250-hour program, three globally recognised certification exams included in the fee, and a placement process that has already put 60+ graduates into GCC IT roles.
+
+## What Is the IT Infrastructure Engineer Program?
+
+A job-assured IT certification and placement program jointly delivered by Versa Global and MACOB IT Solutions Dubai, purpose-built for one outcome: a certified, employed IT professional in the Gulf.
+
+- Duration: 250 hours over 4.5 to 6 months
+- Fee: AED 23,500 (all three certification exam fees included)
+- Delivery: Online, Hybrid, or Dubai Classroom
+- Placement: 100% job assurance — stated in the enrollment agreement
+
+## What Do You Learn?
+
+**Windows Server Administration** — Active Directory, Group Policy, DNS and DHCP, user and machine management, enterprise storage, backup and recovery.
+
+**Microsoft Azure Cloud (MCSE Azure)** — Azure subscriptions, resource groups, virtual machines, Azure Active Directory, role-based access control, Azure Storage, networking in Azure, monitoring and compliance.
+
+**Office 365 Business Applications** — Exchange Online, SharePoint, Teams, Intune device management, Microsoft 365 security and compliance. Almost every Dubai business runs Microsoft 365; these are what an IT Coordinator or Level 1/2 Administrator does daily.
+
+**Cisco CCNA Routing &amp; Switching** — OSI model, subnetting, VLANs, inter-VLAN routing, OSPF, ACLs, WAN technologies, network security fundamentals.
+
+## What Certifications Are Included?
+
+Three certification exams — with exam fees included in AED 23,500:
+
+1. **MCSE Azure** — Microsoft Certified Solutions Expert for Azure cloud infrastructure
+2. **Office 365** — Microsoft certification for Microsoft 365 administration
+3. **CCNA Routing &amp; Switching** — Cisco Certified Network Associate
+
+These three exams at standard rates cost approximately AED 6,500. Graduates leave with three internationally recognised certifications.
+
+## Who Should Enrol?
+
+**Fresh graduates** — engineering, BCA, BSc IT, B.Tech CS, or any bachelor&apos;s — who want a direct path to a GCC IT role without the cost and two-year commitment of a master&apos;s abroad.
+
+**Working professionals** in India or the GCC who want to certify their skills and move into Cloud Administrator or higher-responsibility roles.
+
+**Career changers** who want a structured, time-bound way to pivot into IT with placement support.
+
+No prior certification is required. Basic computer literacy and English comprehension are the practical prerequisites.
+
+## Online, Hybrid or Dubai Classroom?
+
+**Online**: Complete the full program from India. Sit certification exams at an authorised testing centre in India, then join the GCC placement process.
+
+**Hybrid**: Complete the academic portion online, then travel to Dubai for final labs, employer introductions and in-person placement interviews.
+
+**Dubai Classroom**: All 250 hours in person at MACOB&apos;s Dubai facility. Fastest placement connections.
+
+All three modes cover the same curriculum and carry the same placement assurance.
+
+## What Roles Do Graduates Get?
+
+Graduates from completed batches have been placed in:
+
+- **IT Administrator** — Windows Server, Active Directory, hardware, helpdesk escalation
+- **IT Level 1 / Level 2 Administrator** — tiered support and system administration
+- **Microsoft Cloud Administrator** — managing Azure subscriptions, virtual machines, policies and users
+- **Network Administrator** — managing LAN/WAN, VLAN, routing with CCNA-level skills
+- **IT Coordinator** — coordinating IT operations for a business or department
+
+More than 60 graduates have been placed in GCC roles since the program began, with employers across the UAE and Gulf.
+
+## Dubai IT Program vs Master&apos;s Abroad
+
+| Factor | Dubai IT Program | Master&apos;s Abroad (UK/Canada/Australia) |
+|--------|-----------------|-------------------------------------------|
+| Total cost | AED 23,500 (~₹5.3 lakhs) | ₹25–80 lakhs all-in |
+| Duration | 4.5–6 months | 1–2 years |
+| Outcome | GCC IT job with 3 certifications | Academic degree, then job search |
+| Best for | GCC IT career, fastest path | Broader career, PR pathway |
+
+For students whose goal is specifically a GCC IT career within the year, the program is faster and dramatically lower cost. For students who want a European or North American career or plan to use their qualification toward a PR pathway, a master&apos;s abroad serves better.
+
+## How to Enrol
+
+Talk to a Versa Global counsellor. We assess your technical background, explain which delivery mode suits you, and walk you through the enrolment process. See the [Dubai IT Program page](/career-academy/it-infrastructure-engineer-program-dubai) or the [Career Academy overview](/career-academy).`,
+  },
 ]
