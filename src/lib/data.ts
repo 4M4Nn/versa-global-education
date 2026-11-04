@@ -11,7 +11,7 @@ import { NEW_DESTINATIONS } from "@/lib/destinations-extra"
 export const SITE = {
   name: "Versa Global",
   phone: "+91 9746433133",
-  email: "admissions@versaglobal.in",
+  email: "info@versagrowthventures.in",
   businessEmail: "info@versagrowthventures.in",
   address: "3rd Floor, Jogeo Building, Chembumukku, Kakkanad, Kochi, Kerala 682021",
 }
