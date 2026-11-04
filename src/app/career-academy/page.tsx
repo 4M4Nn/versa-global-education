@@ -47,9 +47,16 @@ export default function CareerAcademyPage() {
                 <Image src={program.image} alt={program.title} fill className="object-cover" />
               </div>
               <div className="p-6 md:p-8 flex-1">
-                <span className="inline-flex items-center gap-1.5 bg-[#C9A84C]/15 text-[#C9A84C] text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full mb-3">
-                  <BriefcaseBusiness size={12} /> 100% Job Assurance
-                </span>
+                <div className="flex flex-wrap gap-2 mb-3">
+                  <span className="inline-flex items-center gap-1.5 bg-[#C9A84C]/15 text-[#C9A84C] text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">
+                    <BriefcaseBusiness size={12} /> 100% Job Assurance
+                  </span>
+                  {program.offer && (
+                    <span className="inline-flex items-center gap-1 bg-green-100 text-green-700 text-xs font-black uppercase tracking-wide px-3 py-1 rounded-full">
+                      {program.offer.discount}
+                    </span>
+                  )}
+                </div>
                 <h2 className="font-playfair text-2xl font-bold text-[#1B2A4A] mb-2">{program.title}</h2>
                 <p className="text-[#6B7280] text-sm mb-4 max-w-2xl">{program.focus}</p>
 

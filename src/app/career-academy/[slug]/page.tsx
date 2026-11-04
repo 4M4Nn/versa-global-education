@@ -171,6 +171,31 @@ export default async function CareerProgramPage({ params }: { params: Promise<{ 
         </div>
       </section>
 
+      {/* Offer Banner */}
+      {program.offer && (
+        <section className="bg-green-600 text-white py-5 px-4">
+          <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="flex items-center gap-4">
+              <span className="bg-white text-green-700 text-xs font-black uppercase tracking-widest px-3 py-1.5 rounded-full shrink-0">
+                {program.offer.label}
+              </span>
+              <div>
+                <p className="font-bold text-lg leading-tight">{program.offer.discount} on This Program</p>
+                <p className="text-green-100 text-sm">{program.offer.description}</p>
+              </div>
+            </div>
+            <a
+              href={waUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="shrink-0 bg-white text-green-700 font-bold px-6 py-2.5 rounded-lg hover:bg-green-50 transition-colors text-sm"
+            >
+              Claim Offer on WhatsApp
+            </a>
+          </div>
+        </section>
+      )}
+
       {/* Program Overview */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
@@ -328,6 +353,11 @@ export default async function CareerProgramPage({ params }: { params: Promise<{ 
       <section className="py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
           <div className="bg-[#1B2A4A] text-white rounded-2xl p-8 text-center">
+            {program.offer && (
+              <div className="bg-green-500 text-white text-xs font-black uppercase tracking-widest px-4 py-2 rounded-lg mb-5 inline-block">
+                {program.offer.discount} — Limited Offer
+              </div>
+            )}
             <p className="text-[#C9A84C] text-xs font-semibold tracking-widest uppercase mb-3">Program Fee</p>
             <p className="font-playfair text-4xl md:text-5xl font-bold mb-2">
               {program.fee.currency} {program.fee.amount.toLocaleString()}

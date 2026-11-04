@@ -85,6 +85,7 @@ export interface CareerProgram {
   trainingMaterials: string[]
   assessmentPlan: string[]
   fee: { amount: number; currency: string; paymentMode: string; durationRange: string }
+  offer?: { label: string; discount: string; description: string }
   certificationExams: { name: string; code: string; fee: number; currency: string }[]
   schedule: { fullTime: string[]; partTime: string[] }
   instructorProfile: { summary: string; certifications: string[] }

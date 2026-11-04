@@ -50,6 +50,11 @@ export const FOOTER_LINKS = [
 
 export const ANNOUNCEMENTS = [
   {
+    label: "Limited Offer",
+    message: "Save ₹20,000 on the Dubai IT Infrastructure Engineer Program — Limited Enrolments!",
+    href: "/career-academy/it-infrastructure-engineer-program-dubai",
+  },
+  {
     label: "New Placements",
     message: "Congratulations to Our Latest Students Placed in IT Roles in Dubai — See the Posters",
     href: "/#placements",
@@ -418,6 +423,11 @@ export const CAREER_PROGRAMS: CareerProgram[] = [
       "Participation: real live customers, Data Center visits and AMC visits",
     ],
     fee: { amount: 23500, currency: "AED", paymentMode: "Single Payment", durationRange: "4.5 – 6 Months" },
+    offer: {
+      label: "Limited-Time Offer",
+      discount: "Save ₹20,000",
+      description: "Enrol now and receive ₹20,000 off the program fee. Limited seats at this price — full 100% job assurance included.",
+    },
     certificationExams: [
       { name: "MCSE Azure — MS104", code: "MS104", fee: 1300, currency: "AED" },
       { name: "Office 365 — MS101", code: "MS101", fee: 1300, currency: "AED" },
