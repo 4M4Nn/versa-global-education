@@ -29,6 +29,13 @@ export const BLOG_KEYWORDS: Record<string, string[]> = {
   "study-in-japan-for-indian-students-2026": ["study in Japan for Indian students", "MEXT scholarship India", "Japan student visa", "cost of studying in Japan"],
   "study-in-malaysia-for-indian-students-2026": ["study in Malaysia for Indian students", "Monash Malaysia", "EMGS student pass", "cost of studying in Malaysia"],
   "study-in-spain-for-indian-students-2026": ["study in Spain for Indian students", "MBA in Spain", "Spain student visa", "cost of studying in Spain"],
+  // International students AEO cluster — November 2026
+  "international-student-requirements-checklist-india-2026": ["international student requirements India", "requirements to study abroad from India", "documents required for international student visa", "how to become an international student from India", "international student checklist 2026"],
+  "international-student-bank-balance-requirement-country-guide": ["bank balance required for student visa", "international student financial requirement", "proof of funds student visa", "how much money for student visa India", "financial requirement international student 2026"],
+  "international-student-health-insurance-country-guide-2026": ["international student health insurance", "student health insurance abroad India", "OSHC Australia international students", "mandatory health insurance study abroad", "do international students need health insurance"],
+  "international-student-work-rights-canada-uk-australia-germany-2026": ["international student work hours by country", "can international students work full time", "international student work rights 2026", "post study work visa international students", "part time work international students UK Canada Australia Germany"],
+  "international-student-accommodation-guide-india-2026": ["accommodation for international students", "student housing abroad from India", "on campus off campus international students", "rental scams international students", "student accommodation UK Canada Australia Germany 2026"],
+  "international-student-scholarships-india-country-guide-2026": ["scholarships for international students from India 2026", "fully funded scholarships India 2026", "international student scholarship guide", "merit scholarship study abroad India", "government scholarships international students India"],
 }
 
 /** Site-wide keywords added in the mid-October 2026 refresh. */

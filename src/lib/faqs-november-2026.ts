@@ -98,6 +98,49 @@ export const NOVEMBER_2026_FAQS: Faq[] = [
     answer:
       "Yes. The program is designed for fresh graduates — engineering, BCA, BSc IT, B.Tech CS, B.Com or any bachelor&apos;s — with no prior certification. Basic computer literacy and English comprehension are the practical prerequisites. The curriculum builds from fundamentals through Windows Server, Microsoft Azure, Office 365 and CCNA, so prior IT experience is helpful but not required. More than 60 freshers have already been placed in GCC IT roles through the program.",
   },
+  // International Students — AEO cluster
+  {
+    category: "Getting Started",
+    question: "How long does it take to become an international student from India?",
+    answer:
+      "Realistically, 9–12 months from when you decide to apply to when you depart. The timeline breaks down as: 2–4 months to research, shortlist universities and prepare your application; 4–12 weeks for the university to review and issue an offer; 2–4 weeks to pay the deposit and receive your visa document (CAS for the UK, I-20 for the USA, COE for Australia); 3–8 weeks to prepare and submit the visa application; 2–10 weeks for visa processing. Starting earlier gives you better university choices, more scholarship opportunities and less stress. Versa Global counsellors can tell you which intakes are still achievable for your specific timeline.",
+  },
+  {
+    category: "Applications & Tests",
+    question: "What is the minimum GPA required to become an international student?",
+    answer:
+      "Requirements vary by country and university. For most universities in the UK, Canada and Australia, a bachelor&apos;s degree with 55–65% aggregate (or approximately 6.5–7.0/10 CGPA) is the minimum for a postgraduate application. Competitive programs at Russell Group, Group of Eight or QS top-100 universities typically want 65%+ (7.0–8.0/10). For undergraduate programs, 60%+ in 10+2 is a common threshold. Some countries, particularly Germany and the Netherlands, place more weight on your subject-specific grades than the overall aggregate.",
+  },
+  {
+    category: "Applications & Tests",
+    question: "Do international students need IELTS or TOEFL?",
+    answer:
+      "Yes — if your previous education was not conducted entirely in English. IELTS Academic is the most widely accepted (UK, Australia, Canada, Ireland, New Zealand, and many European universities). TOEFL iBT is preferred by US universities and accepted in most other countries. PTE Academic is widely accepted in the UK, Australia and Canada, with 48-hour results. Duolingo English Test is accepted at many universities in the USA and Canada but is not universally recognised. Minimum scores vary by university and program — typically IELTS 6.0–7.5 overall for a master&apos;s. If your bachelor&apos;s was delivered entirely in English-medium instruction, you may be eligible for a waiver — confirm directly with each university.",
+  },
+  {
+    category: "Visas & Work Rights",
+    question: "What is the minimum bank balance required for an international student visa?",
+    answer:
+      "The required amount varies by country. For a UK Student visa: tuition fees for year one plus £1,334/month for up to nine months (outside London) or £1,023/month in London, held in your account for 28 consecutive days. For Canada: full tuition plus CAD 10,000 per year for living costs, or a GIC of CAD 20,635. For Australia: AUD 24,505 per year for living costs plus full tuition. For Germany: €11,208 in a blocked account (Sperrkonto). For the USA: funds covering full first-year attendance costs as stated in your Form I-20, typically USD 40,000–90,000. Funds can be personal savings, family savings or a sanctioned education loan letter from a recognised bank.",
+  },
+  {
+    category: "Visas & Work Rights",
+    question: "Can international students work full-time?",
+    answer:
+      "During term time, most countries restrict international students to part-time work: 20 hours per week in the UK, 20 hours per week in Canada, 24 hours per week in Australia, and 120 full days per year in Germany. Full-time work is generally permitted during official university vacation periods. The USA is the most restrictive — F-1 students can only work on-campus during their first year, with off-campus work permitted through Curricular Practical Training (CPT) or Optional Practical Training (OPT) thereafter. Exceeding the permitted hours is a visa violation that can result in visa cancellation.",
+  },
+  {
+    category: "Visas & Work Rights",
+    question: "Can international students apply for permanent residency abroad?",
+    answer:
+      "Yes, in several countries. Canada is the strongest pathway: completing a degree at a Canadian Designated Learning Institution followed by a Post-Graduate Work Permit (PGWP) gives you Canadian work experience that qualifies for Express Entry (Federal Skilled Worker or Canadian Experience Class). Australia&apos;s Temporary Graduate visa (Subclass 485) provides 2–6 years of post-study work rights, and regional study adds extra time — both pathways feed into skilled migration. Germany allows graduates to apply for an 18-month job-seeker permit, then an EU Blue Card or residence permit for employment. The UK Graduate Route (18 months from January 2027) can lead to a Skilled Worker visa. The USA pathway through OPT/H-1B sponsorship exists but is competitive and lottery-based.",
+  },
+  {
+    category: "Costs, Loans & Scholarships",
+    question: "Do international students pay more tuition than local students?",
+    answer:
+      "In most English-speaking countries, yes — often significantly more. In the UK, home students pay up to £9,535/year while international students pay £15,000–£38,000/year depending on the course and university. In Canada, domestic undergraduate students pay CAD 7,000–10,000/year while international students pay CAD 25,000–55,000/year. In Australia, domestic students pay AUD 4,000–10,500/year (subsidised HECS) while international students pay AUD 20,000–45,000/year. Germany is the exception — public universities charge no tuition to either domestic or international students (you only pay the semester contribution of €250–400). Italy&apos;s public universities also charge income-linked fees, often low or zero for international students who qualify for DSU scholarships.",
+  },
   {
     category: "Dubai IT Program",
     question: "Is AED 23,500 for the Dubai IT program worth it compared to a master&apos;s abroad?",
