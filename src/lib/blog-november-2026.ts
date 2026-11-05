@@ -12,7 +12,7 @@ export const NOVEMBER_2026_POSTS: BlogPost[] = [
     publishedAt: "2026-11-01",
     excerpt:
       "The UK government has confirmed that the Graduate Route will reduce from two years to 18 months for most graduates applying from January 2027. Here is what that means for Indian students planning a UK degree.",
-    image: img("1513635269975-9bf119c22f27"),
+    image: img("1505761671935-60b3a7427bad"),
     body: `The UK government has confirmed that the Graduate Route — the post-study work visa that lets international graduates live and work freely in the UK after completing their degree — will reduce from two years to 18 months for most graduates applying from January 2027. For Indian students choosing a UK master's over other destinations, this is a direct factor in the decision and worth understanding before you apply.
 
 ## What Is the Graduate Route and What Is Changing?

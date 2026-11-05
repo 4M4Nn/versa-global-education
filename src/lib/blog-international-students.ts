@@ -12,7 +12,7 @@ export const INTERNATIONAL_STUDENTS_POSTS: BlogPost[] = [
     publishedAt: "2026-11-05",
     excerpt:
       "A complete, country-agnostic checklist of what every Indian student needs to become an international student — academic records, language tests, financial documents, visa paperwork and health requirements.",
-    image: img("1434030216411-0b793f4b6935"),
+    image: img("1522202176988-66273c2fd55f"),
     keywords: [
       "international student requirements India",
       "requirements to study abroad from India",
@@ -254,7 +254,7 @@ Indian health insurance plans (including travel insurance) generally provide lim
     publishedAt: "2026-11-05",
     excerpt:
       "How many hours can international students work in the UK, Canada, Australia, Germany, USA and Ireland? This guide gives you the exact limits, term-time vs holiday rules, and what happens if you breach them.",
-    image: img("1521737711867-e3b97375880d"),
+    image: img("1497366216548-37526070297c"),
     keywords: [
       "international student work hours by country",
       "can international students work full time",
@@ -330,7 +330,7 @@ Employers are increasingly required to verify work rights before hiring internat
     publishedAt: "2026-11-05",
     excerpt:
       "On-campus or off-campus? University halls, purpose-built student accommodation or a shared flat? How international students from India find housing in the UK, Canada, Australia, Germany and Ireland — and avoid the scams.",
-    image: img("1555854517-93e4a62cd1e6"),
+    image: img("1522708323590-d24dbb6b0267"),
     keywords: [
       "accommodation for international students",
       "student housing abroad from India",
@@ -412,7 +412,7 @@ Starting early is the single most effective way to get good accommodation at a r
     publishedAt: "2026-11-05",
     excerpt:
       "A complete guide to scholarships available for Indian students going abroad in 2026 — country-by-country, covering fully funded government scholarships, university merit awards, and sector-specific funding.",
-    image: img("1532012197267-da84d70a090d"),
+    image: img("1541339907198-e08756dedf3f"),
     keywords: [
       "scholarships for international students from India 2026",
       "fully funded scholarships India 2026",
