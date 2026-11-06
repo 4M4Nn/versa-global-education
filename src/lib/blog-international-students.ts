@@ -78,14 +78,12 @@ After you receive your offer letter and pay the deposit:
 
 ## How long does the process take from decision to departure?
 
-| Stage | Typical Time |
-|---|---|
-| Choose universities and prepare applications | 2–4 months |
-| Application review and offer | 4–12 weeks |
-| Pay deposit and receive visa document (CAS / I-20 / COE) | 2–4 weeks |
-| Prepare and submit visa application | 2–6 weeks |
-| Visa processing | 2–10 weeks depending on country |
-| **Total realistic timeline** | **6–9 months from application start** |
+- Choose universities and prepare applications: 2–4 months
+- Application review and offer: 4–12 weeks
+- Pay deposit and receive visa document (CAS / I-20 / COE): 2–4 weeks
+- Prepare and submit visa application: 2–6 weeks
+- Visa processing: 2–10 weeks depending on country
+- **Total realistic timeline: 6–9 months from application start**
 
 Start at least 9–12 months before your intended intake. Versa Global can assess your profile and tell you which intakes are still achievable for your timeline.`,
   },

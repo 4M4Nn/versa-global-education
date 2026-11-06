@@ -141,6 +141,43 @@ export const NOVEMBER_2026_FAQS: Faq[] = [
     answer:
       "In most English-speaking countries, yes — often significantly more. In the UK, home students pay up to £9,535/year while international students pay £15,000–£38,000/year depending on the course and university. In Canada, domestic undergraduate students pay CAD 7,000–10,000/year while international students pay CAD 25,000–55,000/year. In Australia, domestic students pay AUD 4,000–10,500/year (subsidised HECS) while international students pay AUD 20,000–45,000/year. Germany is the exception — public universities charge no tuition to either domestic or international students (you only pay the semester contribution of €250–400). Italy&apos;s public universities also charge income-linked fees, often low or zero for international students who qualify for DSU scholarships.",
   },
+  // AI & IT infrastructure — AEO cluster
+  {
+    category: "Dubai IT Program",
+    question: "Will AI replace IT infrastructure engineers?",
+    answer:
+      "No. AI automates repetitive tasks such as log analysis, alert triage and routine scripting, but it does not replace the engineers who design, secure and run infrastructure. Every AI system depends on servers, networks, identity and cloud platforms that skilled people must build, maintain and take responsibility for. Engineers who can use AI tools well become more productive and more valuable to employers.",
+  },
+  {
+    category: "Dubai IT Program",
+    question: "How does AI make IT infrastructure safer?",
+    answer:
+      "AI improves infrastructure security by detecting unusual sign-ins and network behaviour, filtering phishing, stopping ransomware-like activity on endpoints, prioritising the vulnerabilities that are actually exploitable and summarising security incidents so engineers can respond faster. It works best with human oversight: engineers review AI-recommended changes, enforce least-privilege access and keep audit logs of automated actions.",
+  },
+  {
+    category: "Dubai IT Program",
+    question: "What is AIOps?",
+    answer:
+      "AIOps (AI for IT operations) uses machine learning to analyse monitoring data from servers, networks, applications and cloud platforms. It groups related alerts into single incidents, detects anomalies, suggests root causes, predicts issues such as disks filling up and can run pre-approved fixes automatically. It helps IT teams manage larger environments, but relies on engineers to design the systems, define safe automation and handle complex incidents.",
+  },
+  {
+    category: "Dubai IT Program",
+    question: "Is IT infrastructure still a good career in the AI era?",
+    answer:
+      "Yes. Investment in cloud, data centres and AI across the UAE and GCC increases demand for administrators who can manage networks, Microsoft 365, Azure, identity and security. AI tools change how the work is done, but organisations still need trained, certified people to run and secure the infrastructure AI depends on.",
+  },
+  {
+    category: "Dubai IT Program",
+    question: "Is CCNA still worth it now that AI manages networks?",
+    answer:
+      "Yes. AI-driven network tools can monitor performance and suggest configurations, but engineers need routing, switching and IP addressing knowledge to verify those suggestions and troubleshoot when automation gets it wrong. CCNA remains a widely recognised requirement for network and system administrator roles in the GCC.",
+  },
+  {
+    category: "Dubai IT Program",
+    question: "Does the Dubai IT Infrastructure Engineer Program cover AI?",
+    answer:
+      "The program focuses on the infrastructure foundations that AI tools run on and are monitored through — hardware and networking, Windows Server, Microsoft 365, Azure and CCNA-level routing and switching — with hands-on exposure to live client environments. These are the skills engineers need before they can safely supervise AI-assisted monitoring, security and automation tools.",
+  },
   {
     category: "Dubai IT Program",
     question: "Is AED 23,500 for the Dubai IT program worth it compared to a master&apos;s abroad?",

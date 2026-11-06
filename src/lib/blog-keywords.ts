@@ -36,6 +36,15 @@ export const BLOG_KEYWORDS: Record<string, string[]> = {
   "international-student-work-rights-canada-uk-australia-germany-2026": ["international student work hours by country", "can international students work full time", "international student work rights 2026", "post study work visa international students", "part time work international students UK Canada Australia Germany"],
   "international-student-accommodation-guide-india-2026": ["accommodation for international students", "student housing abroad from India", "on campus off campus international students", "rental scams international students", "student accommodation UK Canada Australia Germany 2026"],
   "international-student-scholarships-india-country-guide-2026": ["scholarships for international students from India 2026", "fully funded scholarships India 2026", "international student scholarship guide", "merit scholarship study abroad India", "government scholarships international students India"],
+  // AI & IT infrastructure cluster — November 2026
+  "will-ai-replace-it-infrastructure-engineers": ["will AI replace IT jobs", "will AI replace system administrators", "AI and IT infrastructure jobs", "future of IT infrastructure engineers"],
+  "how-ai-makes-it-infrastructure-safer": ["AI in cybersecurity", "how AI improves IT security", "AI threat detection", "is AI safe for IT infrastructure"],
+  "aiops-explained-ai-for-it-operations": ["what is AIOps", "AI for IT operations", "AIOps tools", "predictive IT maintenance"],
+  "ai-skills-it-infrastructure-engineers-need-2026": ["AI skills for IT professionals", "IT infrastructure skills 2026", "AI tools for IT administrators"],
+  "microsoft-ai-tools-for-it-administrators": ["Microsoft Copilot for IT admins", "Security Copilot", "Copilot in Azure", "AI in Microsoft 365 administration"],
+  "ai-in-networking-why-ccna-skills-still-matter": ["AI in networking", "is CCNA still worth it", "AI network management", "network engineer career AI"],
+  "human-in-the-loop-why-ai-needs-it-engineers": ["human in the loop AI", "AI automation risks IT", "AI governance IT infrastructure"],
+  "it-infrastructure-careers-gcc-ai-era": ["IT jobs in Dubai", "IT infrastructure jobs UAE", "IT career in GCC", "cloud administrator jobs UAE"],
 }
 
 /** Site-wide keywords added in the mid-October 2026 refresh. */

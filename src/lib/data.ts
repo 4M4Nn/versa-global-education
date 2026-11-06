@@ -2,6 +2,7 @@ import type { Destination, ProcessStep, Testimonial, BlogPost, Stat, Founder, Ca
 import { OCTOBER_2026_POSTS } from "@/lib/blog-october-2026"
 import { NOVEMBER_2026_POSTS } from "@/lib/blog-november-2026"
 import { INTERNATIONAL_STUDENTS_POSTS } from "@/lib/blog-international-students"
+import { AI_IT_INFRASTRUCTURE_POSTS } from "@/lib/blog-ai-it-infrastructure"
 import { COUNTRY_GUIDE_POSTS } from "@/lib/blog-countries-2026"
 import { COURSE_AND_WEEKLY_POSTS } from "@/lib/blog-courses-2026"
 import { BLOG_KEYWORDS } from "@/lib/blog-keywords"
@@ -600,6 +601,7 @@ export const CAREER_PROGRAMS: CareerProgram[] = [
 const withKeywords = (posts: BlogPost[]) => posts.map((p) => (BLOG_KEYWORDS[p.slug] ? { ...p, keywords: BLOG_KEYWORDS[p.slug] } : p))
 
 export const BLOG_POSTS: BlogPost[] = [
+  ...AI_IT_INFRASTRUCTURE_POSTS,
   ...INTERNATIONAL_STUDENTS_POSTS,
   ...NOVEMBER_2026_POSTS,
   ...withKeywords(COURSE_AND_WEEKLY_POSTS),
