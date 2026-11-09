@@ -98,7 +98,7 @@ We check your eligibility, shortlist the right university, manage the applicatio
     publishedAt: "2026-11-05",
     excerpt:
       "Canada's Express Entry system and PGWP rules have both changed in 2026. Here is what Indian students aiming for Canadian permanent residency through their degree need to understand before they apply.",
-    image: img("1517825738569-0a9c57e3ce80"),
+    image: img("1517935706615-2717063c2225"),
     body: `Canada has long been the destination of choice for Indian students who want a path to permanent residency, not just a degree. Two things most influence that outcome: the Post-Graduation Work Permit (PGWP), which lets you gain Canadian work experience after graduating, and Express Entry, the federal system that awards points and selects skilled workers for permanent residency. Both have seen significant changes in 2026, and understanding them is essential before committing to a program.
 
 ## What Is the PGWP and Who Qualifies?
@@ -170,7 +170,7 @@ We guide you through choosing a provider, preparing the application, and submitt
     publishedAt: "2026-11-09",
     excerpt:
       "Australia replaced the Genuine Temporary Entrant assessment with the Genuine Student Requirement from March 2024. Here is what GSR means, what it asks, and how Indian students address it in their Subclass 500 visa application.",
-    image: img("1523482580672-768d00420efa"),
+    image: img("1506973035872-a4ec16b8e8d9"),
     body: `Australia moved from the Genuine Temporary Entrant (GTE) test to the Genuine Student Requirement (GSR) in March 2024. The name changed, but the core purpose is the same: demonstrating that your study plans, course choice, and intentions are genuine. Understanding what GSR asks and how to address it clearly is a key part of any Subclass 500 student visa application.
 
 ## What Is the Genuine Student Requirement?
@@ -213,7 +213,7 @@ We prepare your GSR responses with you as part of the visa file, briefed against
     publishedAt: "2026-11-10",
     excerpt:
       "Graduates of the Versa Global IT Infrastructure Engineer Program have been placed in IT Administrator, Cloud Administrator and System Administrator roles with GCC employers. Here is what the program delivers and for whom.",
-    image: img("1553484771-047a44eab818"),
+    image: img("1521737604893-d14cc237f11d"),
     body: `The IT Infrastructure Engineer Program launched by Versa Global in partnership with MACOB IT Solutions Dubai has placed its first graduates in GCC IT roles. Graduates have moved into positions including IT Administrator, IT Level 1 and Level 2 Administrator, Microsoft Cloud Administrator, and Network Administrator with employers in the UAE and across the Gulf.
 
 ## What Does the Program Cover?
@@ -459,7 +459,7 @@ We assess your academic background, target occupation and PR goals, and map them
     publishedAt: "2026-11-16",
     excerpt:
       "A complete guide to the Versa Global IT Infrastructure Engineer Program in Dubai — who it is for, what Azure, Office 365 and CCNA certifications cover, how the job placement works, and how it compares to a master&apos;s abroad.",
-    image: img("1553484771-047a44eab818"),
+    image: img("1573164713988-8665fc963095"),
     keywords: [
       "Dubai IT jobs for freshers India",
       "Azure certification Dubai program",

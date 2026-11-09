@@ -184,4 +184,52 @@ export const NOVEMBER_2026_FAQS: Faq[] = [
     answer:
       "It depends entirely on your goal. The Dubai IT program costs AED 23,500 (roughly ₹5.3 lakhs), takes 4.5–6 months, includes three certification exam fees (MCSE Azure, Office 365, CCNA Routing &amp; Switching), and leads to a GCC IT job with 100% placement assurance. A master&apos;s in the UK, Canada or Australia costs ₹25–80 lakhs all-in, takes 1–2 years, and leads to a broader academic qualification with a job search phase after. If your goal is specifically a GCC IT career within the year, the program is faster and dramatically lower cost. If your goal is a European or North American career, or you plan to use the qualification toward a PR pathway, a master&apos;s abroad serves you better.",
   },
+  {
+    category: "Dubai IT Program",
+    question: "How can I get a job in Dubai from India?",
+    answer:
+      "Build skills Dubai employers hire for, prove them with recognised certifications, prepare a Gulf-format CV and apply through employers or registered recruiters; the employer then sponsors your employment visa. In IT, the fastest route is infrastructure and cloud administration. Versa Global's Dubai IT Infrastructure Engineer Program covers networking, Windows Server, CCNA, Azure and Office 365 in 4.5–6 months with job-assurance support until placement in a GCC country.",
+  },
+  {
+    category: "Dubai IT Program",
+    question: "Which IT course in Dubai comes with job placement?",
+    answer:
+      "Versa Global's IT Infrastructure Engineer Program, delivered with MACOB IT Solutions, Dubai, includes 250 hours of training, live client exposure, three certification exams (MCSE Azure MS104, Office 365 MS101, CCNA) and a 7-stage career-readiness track. Learners who complete the requirements receive job-assurance support until they are placed in a GCC country; 60+ students have been placed so far.",
+  },
+  {
+    category: "Dubai IT Program",
+    question: "What is the salary of an IT support engineer in Dubai?",
+    answer:
+      "Indicative advertised salaries for entry-level IT Support Engineers in Dubai are around AED 4,500–7,000 a month in 2026. System and Network Administrators see around AED 6,000–10,000, and Azure or Microsoft 365 Administrators around AED 8,000–12,000, tax-free. Packages often add housing and transport allowances, medical insurance and an annual flight.",
+  },
+  {
+    category: "Dubai IT Program",
+    question: "Are job guarantee courses in Dubai genuine?",
+    answer:
+      "Check for written conditions, a real industry training partner, live project exposure, a structured placement process and a verifiable placement record. Never pay anyone for a job offer — UAE labour law does not allow employers to charge workers recruitment fees. Versa Global's job assurance is written down: learners who complete the program requirements and engage with placement receive support until placed in a GCC country.",
+  },
+  {
+    category: "Dubai IT Program",
+    question: "Can a non-IT graduate get an IT job in Dubai?",
+    answer:
+      "Yes. IT Support, Desktop Support and IT Coordinator roles are skills-based. The Dubai IT program accepts degree or diploma holders from any stream with basic computer familiarity and starts from hardware and networking fundamentals, so B.Com, BBA and non-IT engineering graduates can become interview-ready in 4.5–6 months.",
+  },
+  {
+    category: "Dubai IT Program",
+    question: "Can I do the Dubai IT program online from Kerala?",
+    answer:
+      "Yes. The program runs fully online from Kerala or anywhere in India, as a hybrid with periodic Dubai sessions, or as a full classroom in Dubai. All tracks share the same 250-hour curriculum, certification exams and job-assurance support. Versa Global is based in Kochi, and families are welcome to join the free consultation.",
+  },
+  {
+    category: "Dubai IT Program",
+    question: "How much is the Dubai IT program fee in rupees?",
+    answer:
+      "The fee is AED 23,500 as a single payment — roughly ₹5.3 lakhs depending on the exchange rate — and it includes MCSE Azure (MS104), Office 365 (MS101) and CCNA exam fees worth AED 6,500. A ₹20,000 limited-time discount currently applies. Visa fees and living costs in Dubai are the only extra costs on the hybrid and classroom tracks.",
+  },
+  {
+    category: "Dubai IT Program",
+    question: "Is CCNA enough to get a job in Dubai?",
+    answer:
+      "CCNA can open network support roles, but most UAE employers want an all-rounder who can also manage Windows Server, Active Directory, Microsoft 365 and Azure. Combining CCNA with Microsoft certifications and hands-on project work makes you a much stronger candidate for IT Support, System Administrator and Network Administrator jobs.",
+  },
 ]

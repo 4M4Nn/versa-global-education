@@ -3,6 +3,7 @@ import { OCTOBER_2026_POSTS } from "@/lib/blog-october-2026"
 import { NOVEMBER_2026_POSTS } from "@/lib/blog-november-2026"
 import { INTERNATIONAL_STUDENTS_POSTS } from "@/lib/blog-international-students"
 import { AI_IT_INFRASTRUCTURE_POSTS } from "@/lib/blog-ai-it-infrastructure"
+import { DUBAI_PROGRAM_SEARCH_POSTS } from "@/lib/blog-dubai-program-search"
 import { COUNTRY_GUIDE_POSTS } from "@/lib/blog-countries-2026"
 import { COURSE_AND_WEEKLY_POSTS } from "@/lib/blog-courses-2026"
 import { BLOG_KEYWORDS } from "@/lib/blog-keywords"
@@ -594,6 +595,20 @@ export const CAREER_PROGRAMS: CareerProgram[] = [
       "job assured IT course in Dubai for Indians",
       "CCNA Azure course with placement in UAE",
       "IT course in Dubai from Kerala",
+      "how to get a job in Dubai from India",
+      "IT courses in Dubai with job placement",
+      "job guarantee course in Dubai",
+      "best courses for jobs in Dubai",
+      "CCNA course in Dubai",
+      "Azure administrator course Dubai",
+      "IT support engineer jobs in Dubai",
+      "system administrator jobs in Dubai",
+      "IT salary in Dubai",
+      "jobs in Dubai for BCA graduates",
+      "non IT to IT career Dubai",
+      "online IT course with GCC placement",
+      "Gulf IT jobs from Kerala",
+      "Dubai work visa IT jobs for Indians",
     ],
   },
 ]
@@ -601,6 +616,7 @@ export const CAREER_PROGRAMS: CareerProgram[] = [
 const withKeywords = (posts: BlogPost[]) => posts.map((p) => (BLOG_KEYWORDS[p.slug] ? { ...p, keywords: BLOG_KEYWORDS[p.slug] } : p))
 
 export const BLOG_POSTS: BlogPost[] = [
+  ...DUBAI_PROGRAM_SEARCH_POSTS,
   ...AI_IT_INFRASTRUCTURE_POSTS,
   ...INTERNATIONAL_STUDENTS_POSTS,
   ...NOVEMBER_2026_POSTS,
