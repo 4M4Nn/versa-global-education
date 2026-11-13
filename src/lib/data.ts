@@ -4,6 +4,7 @@ import { NOVEMBER_2026_POSTS } from "@/lib/blog-november-2026"
 import { INTERNATIONAL_STUDENTS_POSTS } from "@/lib/blog-international-students"
 import { AI_IT_INFRASTRUCTURE_POSTS } from "@/lib/blog-ai-it-infrastructure"
 import { DUBAI_PROGRAM_SEARCH_POSTS } from "@/lib/blog-dubai-program-search"
+import { DUBAI_PROGRAM_SEARCH_POSTS_2 } from "@/lib/blog-dubai-program-search-2"
 import { COUNTRY_GUIDE_POSTS } from "@/lib/blog-countries-2026"
 import { COURSE_AND_WEEKLY_POSTS } from "@/lib/blog-courses-2026"
 import { BLOG_KEYWORDS } from "@/lib/blog-keywords"
@@ -533,6 +534,31 @@ export const CAREER_PROGRAMS: CareerProgram[] = [
         answer:
           "Start with a free consultation by phone or WhatsApp. Our Career Academy counsellors assess your background, help you choose between the online, hybrid and Dubai classroom tracks, and guide you through enrolment — including visa support if you choose a Dubai track.",
       },
+      {
+        question: "Is there a discount on the Dubai IT program right now?",
+        answer:
+          "Yes. A limited-time offer gives ₹20,000 off the program fee, with the full curriculum, all three certification exams and 100% job assurance still included. Seats at this price are limited, so confirm availability in a free consultation.",
+      },
+      {
+        question: "Can diploma holders, non-IT graduates and women join the program?",
+        answer:
+          "Yes. The program is open to degree or diploma holders from any stream with basic computer familiarity — including B.Com, BBA, BCA, BSc, BTech and polytechnic diploma holders. Training starts from hardware and networking fundamentals, and the online track lets anyone complete the full program from home in India before relocating.",
+      },
+      {
+        question: "Which countries can I be placed in after the program?",
+        answer:
+          "Job-assurance support covers placement in GCC countries — the UAE, Saudi Arabia, Qatar, Oman, Kuwait and Bahrain. Many learners start in Dubai, a regional hub for IT employers and service companies, and the skills and certifications are recognised across the Gulf.",
+      },
+      {
+        question: "What salary can I expect after the program?",
+        answer:
+          "Salaries depend on the employer, role and package. As an indication, entry-level IT Support roles in Dubai are commonly advertised around AED 4,500–7,000 a month, System and Network Administrators around AED 6,000–10,000, and Azure or Microsoft 365 Administrators around AED 8,000–12,000, tax-free.",
+      },
+      {
+        question: "Who sponsors my UAE work visa after I get a job?",
+        answer:
+          "Your employer. In the UAE, the hiring company applies for your work permit and employment visa, and employers are not allowed to charge workers recruitment fees. Versa Global provides visa support for the training period on the hybrid and Dubai classroom tracks.",
+      },
     ],
     tracks: [
       {
@@ -609,6 +635,17 @@ export const CAREER_PROGRAMS: CareerProgram[] = [
       "online IT course with GCC placement",
       "Gulf IT jobs from Kerala",
       "Dubai work visa IT jobs for Indians",
+      "UAE employment visa process for Indians",
+      "Microsoft 365 administrator course Dubai",
+      "Windows Server course in Dubai",
+      "cloud computing course in Dubai",
+      "IT helpdesk jobs in Dubai",
+      "IT jobs in Dubai without experience",
+      "IT jobs in Abu Dhabi for freshers",
+      "IT jobs in Saudi Arabia for Indians",
+      "GCC IT jobs 2026",
+      "IT course for diploma holders Gulf jobs",
+      "IT jobs in Dubai for women",
     ],
   },
 ]
@@ -616,6 +653,7 @@ export const CAREER_PROGRAMS: CareerProgram[] = [
 const withKeywords = (posts: BlogPost[]) => posts.map((p) => (BLOG_KEYWORDS[p.slug] ? { ...p, keywords: BLOG_KEYWORDS[p.slug] } : p))
 
 export const BLOG_POSTS: BlogPost[] = [
+  ...DUBAI_PROGRAM_SEARCH_POSTS_2,
   ...DUBAI_PROGRAM_SEARCH_POSTS,
   ...AI_IT_INFRASTRUCTURE_POSTS,
   ...INTERNATIONAL_STUDENTS_POSTS,

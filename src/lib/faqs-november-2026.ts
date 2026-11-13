@@ -232,4 +232,40 @@ export const NOVEMBER_2026_FAQS: Faq[] = [
     answer:
       "CCNA can open network support roles, but most UAE employers want an all-rounder who can also manage Windows Server, Active Directory, Microsoft 365 and Azure. Combining CCNA with Microsoft certifications and hands-on project work makes you a much stronger candidate for IT Support, System Administrator and Network Administrator jobs.",
   },
+  {
+    category: "Dubai IT Program",
+    question: "How does the UAE work visa process work for Indians?",
+    answer:
+      "Your employer applies for your work permit and employment visa after you accept a written offer. You then enter the UAE, complete a medical fitness test and Emirates ID biometrics, and receive your residence visa. Many employers also require your degree or diploma to be attested. Employment visa costs are the employer's responsibility, and employers may not charge workers recruitment fees.",
+  },
+  {
+    category: "Dubai IT Program",
+    question: "What is the monthly cost of living in Dubai for an Indian fresher?",
+    answer:
+      "A frugal fresher or trainee typically budgets around AED 2,500–4,000 a month in 2026: roughly AED 700–1,200 for a shared bed space, AED 600–1,200 for food if cooking at home, AED 250–450 for Metro and bus travel, and AED 100–200 for mobile data. Training online from India avoids these costs until you are interview-ready.",
+  },
+  {
+    category: "Dubai IT Program",
+    question: "Can I get an IT job in Dubai without experience?",
+    answer:
+      "Yes, in entry roles such as IT Support, Helpdesk, Desktop Support and IT Technician. Replace years of experience with evidence: CCNA, Azure and Microsoft 365 certifications, documented hands-on projects, live client exposure and strong interview preparation — all of which are built into Versa Global's Dubai IT program.",
+  },
+  {
+    category: "Dubai IT Program",
+    question: "What CV format do Dubai IT employers prefer?",
+    answer:
+      "A one- to two-page, single-column PDF in plain text that ATS software can read, with your target role, visa status, availability and key certifications at the top, followed by skills, hands-on projects written as results, experience and education.",
+  },
+  {
+    category: "Dubai IT Program",
+    question: "Are there IT jobs for Indians in Saudi Arabia, Qatar and other GCC countries?",
+    answer:
+      "Yes. Indian IT professionals are hired across the UAE, Saudi Arabia, Qatar, Oman, Kuwait and Bahrain, and networking, Windows Server, Microsoft 365 and Azure skills are in demand in all of them. Saudi Arabia's Vision 2030 investments are creating particularly strong demand for infrastructure and cloud professionals.",
+  },
+  {
+    category: "Dubai IT Program",
+    question: "Is Dubai better than Bangalore for an IT career?",
+    answer:
+      "For IT infrastructure, networking and cloud careers, Dubai often offers higher tax-free take-home pay, broader hands-on responsibility and international experience recognised across the GCC. India's tech hubs offer more software development roles and staying close to family. The right choice depends on the type of IT work you want.",
+  },
 ]

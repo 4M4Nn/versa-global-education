@@ -1,13 +1,14 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowRight, BriefcaseBusiness, CheckCircle2, MapPin } from "lucide-react"
-import { SITE, CAREER_PROGRAMS } from "@/lib/data"
+import { ArrowRight, BookOpen, BriefcaseBusiness, CheckCircle2, ChevronDown, MapPin } from "lucide-react"
+import { SITE, CAREER_PROGRAMS, FAQS } from "@/lib/data"
+import { getAllBlogPosts } from "@/lib/content"
 
 export const metadata: Metadata = {
-  title: "Career & Skills Academy — 100% Job-Assured Programs in the GCC",
+  title: "Dubai IT Jobs & Job-Assured IT Courses — Career & Skills Academy",
   description:
-    "Versa Global's Career & Skills Academy delivers 100% job-assured technical training for the GCC job market — online, hybrid or classroom in Dubai, with visa support and dedicated placement assistance.",
+    "Get an IT job in Dubai and the GCC: Versa Global's 100% job-assured IT Infrastructure Engineer Program (CCNA, Windows Server, Azure, Office 365) — online, hybrid or in Dubai, ₹20,000 off. Plus free guides on Dubai IT salaries, visas, CVs and interviews.",
   alternates: { canonical: "/career-academy" },
   keywords: [
     "career and skills academy",
@@ -15,21 +16,54 @@ export const metadata: Metadata = {
     "study in Dubai job assurance",
     "IT training Dubai visa support",
     "job assured courses in Dubai",
+    "IT jobs in Dubai for freshers",
+    "how to get a job in Dubai from India",
+    "IT courses in Dubai with job placement",
+    "Gulf IT jobs for Indians",
+    "CCNA Azure Office 365 course Dubai",
   ],
 }
 
+const clean = (text: string) => text.replace(/&apos;/g, "'").replace(/&amp;/g, "&")
+
 export default function CareerAcademyPage() {
   const waUrl = `https://wa.me/91${SITE.phone.replace(/\D/g, "").slice(-10)}`
+  const guides = getAllBlogPosts().filter((post) => post.category === "Career Academy")
+  const faqs = FAQS.filter((faq) => faq.category === "Dubai IT Program")
+
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: clean(faq.question),
+      acceptedAnswer: { "@type": "Answer", text: clean(faq.answer) },
+    })),
+  }
+
+  const guidesJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Dubai and GCC IT career guides",
+    itemListElement: guides.map((post, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      url: `https://www.versaglobal.in/blog/${post.slug}`,
+      name: clean(post.title),
+    })),
+  }
 
   return (
     <div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(guidesJsonLd) }} />
       <section className="bg-[#1B2A4A] text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-[#C9A84C] text-xs font-semibold tracking-widest uppercase mb-4">Career & Skills Academy</p>
           <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-5">
             100% Job-Assured Career Programs in the GCC
           </h1>
-          <p className="text-blue-200 text-lg">
+          <p className="speakable-summary text-blue-200 text-lg">
             Beyond study abroad — Versa Global&apos;s Career & Skills Academy trains you for real, in-demand roles
             and places you directly into GCC countries, with visa support for students who choose to train in Dubai.
           </p>
@@ -87,6 +121,52 @@ export default function CareerAcademyPage() {
             </div>
           ))}
         </div>
+
+        {guides.length > 0 && (
+          <div className="max-w-6xl mx-auto mt-14">
+            <p className="text-[#C9A84C] text-xs font-semibold tracking-widest uppercase mb-2">Free Career Guides</p>
+            <h2 className="font-playfair text-2xl md:text-3xl font-bold text-[#1B2A4A] mb-2">
+              Dubai &amp; GCC IT Career Guides
+            </h2>
+            <p className="text-[#6B7280] mb-8 max-w-3xl">
+              Straight answers on IT jobs in Dubai and the Gulf — salaries, visas, CVs, interviews, certifications and
+              which course leads to a job.
+            </p>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {guides.map((post) => (
+                <Link
+                  key={post.slug}
+                  href={`/blog/${post.slug}`}
+                  className="group flex gap-3 bg-white rounded-xl border border-gray-100 p-4 hover:border-[#C9A84C]/60 hover:shadow-sm transition-all"
+                >
+                  <BookOpen size={18} className="text-[#C9A84C] shrink-0 mt-0.5" />
+                  <span className="text-sm font-semibold text-[#1B2A4A] group-hover:text-[#C9A84C] transition-colors">
+                    {clean(post.title)}
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {faqs.length > 0 && (
+          <div className="max-w-4xl mx-auto mt-14">
+            <h2 className="font-playfair text-2xl md:text-3xl font-bold text-[#1B2A4A] mb-6 text-center">
+              Dubai IT Jobs &amp; Program — Frequently Asked Questions
+            </h2>
+            <div className="space-y-3">
+              {faqs.map((faq) => (
+                <details key={faq.question} className="group bg-white rounded-xl border border-gray-100 p-5">
+                  <summary className="flex items-center justify-between gap-4 cursor-pointer list-none font-semibold text-[#1B2A4A]">
+                    {clean(faq.question)}
+                    <ChevronDown size={18} className="shrink-0 text-[#C9A84C] transition-transform group-open:rotate-180" />
+                  </summary>
+                  <p className="speakable-answer text-[#4B5563] text-sm leading-relaxed mt-3">{clean(faq.answer)}</p>
+                </details>
+              ))}
+            </div>
+          </div>
+        )}
 
         <div className="max-w-6xl mx-auto mt-12 bg-[#1B2A4A] rounded-2xl p-8 md:p-10 text-center text-white">
           <h2 className="font-playfair text-2xl md:text-3xl font-bold mb-3">Not Sure This Is the Right Path for You?</h2>
