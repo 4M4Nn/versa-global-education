@@ -182,7 +182,7 @@ export const NOVEMBER_2026_FAQS: Faq[] = [
     category: "Dubai IT Program",
     question: "Is AED 23,500 for the Dubai IT program worth it compared to a master&apos;s abroad?",
     answer:
-      "It depends entirely on your goal. The Dubai IT program costs AED 23,500 (roughly ₹5.3 lakhs), takes 4.5–6 months, includes three certification exam fees (MCSE Azure, Office 365, CCNA Routing &amp; Switching), and leads to a GCC IT job with 100% placement assurance. A master&apos;s in the UK, Canada or Australia costs ₹25–80 lakhs all-in, takes 1–2 years, and leads to a broader academic qualification with a job search phase after. If your goal is specifically a GCC IT career within the year, the program is faster and dramatically lower cost. If your goal is a European or North American career, or you plan to use the qualification toward a PR pathway, a master&apos;s abroad serves you better.",
+      "It depends entirely on your goal. The Dubai IT program costs AED 23,500 (roughly ₹6 lakhs), takes 4.5–6 months, includes three certification exam fees (MCSE Azure, Office 365, CCNA Routing &amp; Switching), and leads to a GCC IT job with 100% placement assurance. A master&apos;s in the UK, Canada or Australia costs ₹25–80 lakhs all-in, takes 1–2 years, and leads to a broader academic qualification with a job search phase after. If your goal is specifically a GCC IT career within the year, the program is faster and dramatically lower cost. If your goal is a European or North American career, or you plan to use the qualification toward a PR pathway, a master&apos;s abroad serves you better.",
   },
   {
     category: "Dubai IT Program",
@@ -224,7 +224,7 @@ export const NOVEMBER_2026_FAQS: Faq[] = [
     category: "Dubai IT Program",
     question: "How much is the Dubai IT program fee in rupees?",
     answer:
-      "The fee is AED 23,500 as a single payment — roughly ₹5.3 lakhs depending on the exchange rate — and it includes MCSE Azure (MS104), Office 365 (MS101) and CCNA exam fees worth AED 6,500. A ₹20,000 limited-time discount currently applies. Visa fees and living costs in Dubai are the only extra costs on the hybrid and classroom tracks.",
+      "The fee is AED 23,500 as a single payment — roughly ₹6 lakhs depending on the exchange rate — and it includes MCSE Azure (MS104), Office 365 (MS101) and CCNA exam fees worth AED 6,500. A ₹20,000 limited-time discount currently applies. Visa fees and living costs in Dubai are the only extra costs on the hybrid and classroom tracks.",
   },
   {
     category: "Dubai IT Program",
@@ -267,5 +267,41 @@ export const NOVEMBER_2026_FAQS: Faq[] = [
     question: "Is Dubai better than Bangalore for an IT career?",
     answer:
       "For IT infrastructure, networking and cloud careers, Dubai often offers higher tax-free take-home pay, broader hands-on responsibility and international experience recognised across the GCC. India's tech hubs offer more software development roles and staying close to family. The right choice depends on the type of IT work you want.",
+  },
+  {
+    category: "Dubai IT Program",
+    question: "Is there an IT course in Kochi with Gulf placement?",
+    answer:
+      "Yes. Versa Global's office in Kakkanad, Kochi runs the Dubai IT Infrastructure Engineer Program, delivered with MACOB IT Solutions, Dubai. Students from Kochi and across Kerala train online, as a hybrid or in a Dubai classroom, earn CCNA, MCSE Azure (MS104) and Office 365 (MS101) certifications, and receive job-assurance support until placed in a GCC country.",
+  },
+  {
+    category: "Dubai IT Program",
+    question: "How much is a Dubai IT salary in Indian rupees?",
+    answer:
+      "At roughly ₹25.5 per dirham in November 2026, an entry-level IT Support salary of AED 4,500–7,000 a month is about ₹1.15–1.8 lakhs, a System Administrator salary of AED 6,000–10,000 is about ₹1.5–2.5 lakhs, and an Azure Administrator salary of AED 8,000–12,000 is about ₹2–3 lakhs, with no UAE personal income tax. Exchange rates change daily.",
+  },
+  {
+    category: "Dubai IT Program",
+    question: "Is a hardware and networking course enough for a Gulf job?",
+    answer:
+      "It mainly leads to technician and L1 support roles today. Gulf employers increasingly expect Windows Server, Active Directory, Microsoft 365 and Azure skills as well, so a program that combines hardware and networking with CCNA, server and cloud administration leads to administrator roles and better salaries.",
+  },
+  {
+    category: "Dubai IT Program",
+    question: "Can I join the Dubai IT program in January 2027?",
+    answer:
+      "Yes. Enrolment for the January 2027 batch is open, and seats at the ₹20,000 discounted fee are limited. Starting in January means finishing the 4.5–6 month program around mid-2027. Book a free consultation to confirm your track and start date.",
+  },
+  {
+    category: "Dubai IT Program",
+    question: "Does Emiratisation stop Indians getting IT jobs in the UAE?",
+    answer:
+      "No. Emiratisation requires private companies with 50 or more employees to increase the share of UAE nationals in skilled roles — reaching 10% by the end of 2026 — so most skilled roles are still filled by professionals of all nationalities. Recruiters report shortages in cloud and infrastructure skills, keeping certified professionals in demand.",
+  },
+  {
+    category: "Dubai IT Program",
+    question: "How do I start a cybersecurity career in Dubai?",
+    answer:
+      "Start with IT infrastructure: networking, Windows Server, Active Directory, Microsoft 365 security and Azure identity. Work one to two years as a System, Network or Cloud Administrator, then move into SOC analyst or security engineering roles with security certifications. Employers expect these foundations even for entry-level security jobs.",
   },
 ]

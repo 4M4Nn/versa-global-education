@@ -378,7 +378,7 @@ Yes. The online track delivers all 250 hours from home with live sessions and re
 
 ## How much does it cost in rupees?
 
-The program fee is AED 23,500 — roughly ₹5.3 lakhs, depending on the exchange rate — and it includes three certification exams (MCSE Azure MS104, Office 365 MS101 and CCNA). A ₹20,000 limited-time discount currently applies. If you choose a Dubai track, budget separately for visa fees and living costs.
+The program fee is AED 23,500 — roughly ₹6 lakhs, depending on the exchange rate — and it includes three certification exams (MCSE Azure MS104, Office 365 MS101 and CCNA). A ₹20,000 limited-time discount currently applies. If you choose a Dubai track, budget separately for visa fees and living costs.
 
 ## What do families usually ask?
 

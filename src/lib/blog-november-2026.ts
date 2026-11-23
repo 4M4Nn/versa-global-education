@@ -535,12 +535,10 @@ More than 60 graduates have been placed in GCC roles since the program began, wi
 
 ## Dubai IT Program vs Master&apos;s Abroad
 
-| Factor | Dubai IT Program | Master&apos;s Abroad (UK/Canada/Australia) |
-|--------|-----------------|-------------------------------------------|
-| Total cost | AED 23,500 (~₹5.3 lakhs) | ₹25–80 lakhs all-in |
-| Duration | 4.5–6 months | 1–2 years |
-| Outcome | GCC IT job with 3 certifications | Academic degree, then job search |
-| Best for | GCC IT career, fastest path | Broader career, PR pathway |
+- **Total cost:** Dubai IT Program AED 23,500 (~₹6 lakhs) vs a master&apos;s abroad (UK/Canada/Australia) at ₹25–80 lakhs all-in
+- **Duration:** 4.5–6 months vs 1–2 years
+- **Outcome:** a GCC IT job with 3 certifications vs an academic degree, then a job search
+- **Best for:** the fastest path to a GCC IT career vs a broader career or PR pathway
 
 For students whose goal is specifically a GCC IT career within the year, the program is faster and dramatically lower cost. For students who want a European or North American career or plan to use their qualification toward a PR pathway, a master&apos;s abroad serves better.
 
